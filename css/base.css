@@ -15,10 +15,6 @@ a{
 	color:inherit;
 	text-decoration:none;
 }
-h
-body{
-	font-family:Nexa;
-}
 :target:before {
 	content:"";
 	display:block;
@@ -32,16 +28,22 @@ body{
 body {
     width: 100%;
     height: 100%;
+    font-family:Nexa;
 }
 
 html {
     width: 100%;
     height: 100%;
 }
+h1,h2{
+	font-weight: bold;
+}
+
 
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
+        font-weight: bold;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
