@@ -11,6 +11,18 @@
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link href="css/morris.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet"  />
+		<script src="js/countdown.js"></script>
+		<script type="text/javascript">
+			var deadLine = "6/1/2016"; //Countdown date in MM/DD/YYYY format (no 0's required)
+			window.setInterval(function(){
+				$("#timeLeft").html(getTimeRemaining(deadLine));
+			}, 1000);
+		</script>
+		<style>
+			a{
+				font-weight: bold;
+			}
+		</style>
 	</head>
 
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -46,6 +58,12 @@
 					The Prefects Cup is a competition between 10 houses at Upper Canada College. They compete throughout the year in various house events, including seasonal house sports, special athletic events such as House Track and Field, and house spirit events such as Movember.
 					</p>
 				</div>
+				<div class="jumbotron">
+					<h1>Time Until the Winner is Decided:</h1>
+					<h2>
+						<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
+					</h2>
+				</div>
 			</div>
 		</section>
 
@@ -57,8 +75,10 @@
 
 		<section id="standings" class="section-one">
 			<div class="container">
-				<h1>Prefect Cup Points Standings</h1>
-				<div id="houseStandings" style="height:100%;"></div>
+				<div class="jumbotron">
+					<h1>Prefect Cup Points Standings</h1>
+					<div id="houseStandings" style="height:100%;"></div>
+				</div>
 			</div>
 		</section>
 
@@ -68,6 +88,7 @@
 					<div class="col-lg-12">
 						<h2>Thanks for reading</h2>
 						<h1>Need to contact us?</h1>
+						<h3><b>Web Designer: </b>Matthew Wang, FY, Orr's, <a href="mailto:matthew.wang@ucc.on.ca">matthew.wang@ucc.on.ca</a></br></h3>
 					</div>
 				</div>
 			</div>
@@ -81,6 +102,7 @@
 		<script src="js/raphael-min.js"></script>
 		<script src="js/morris.min.js"></script>
 		<script>
+			//here we do the graph stuff for the standings graph
 			new Morris.Line({ //instantiate new graph (line graph)
 				element: 'houseStandings', //div id we reference
 				data: [ //data array, booyah! for now manually inputted by matt 
