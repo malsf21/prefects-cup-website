@@ -31,6 +31,10 @@ body {
     font-family:Nexa;
 }
 
+.navbar-nav a{
+	font-weight: normal;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -43,7 +47,6 @@ h1,h2{
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
-        font-weight: bold;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -53,7 +56,9 @@ h1,h2{
         padding: 0;
     }
 }
-
+.navbar-brand{
+	font-weight: bold;
+}
 .section-one {
     height: 100%;
     padding-top: 150px;
@@ -65,5 +70,6 @@ h1,h2{
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #0859A1;
+    color: #FFF
 }
