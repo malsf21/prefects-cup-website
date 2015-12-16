@@ -1,2 +1,2 @@
-# prefects-cup-website
-Website code for pc.ucc.on.ca
+# Website for the Prefect's Cup Competition
+## pc.ucc.on.ca
