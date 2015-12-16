@@ -1,2 +1,2 @@
-# Website for the Prefect's Cup Competition
+# Website for the Prefect Cup Competition
 ## pc.ucc.on.ca
