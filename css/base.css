@@ -66,6 +66,11 @@ h1,h2{
     background: #fff;
 }
 
+.section-one .jumbotron{
+	background: #0859A1;
+	color:#FFF;
+}
+
 .section-two {
     height: 100%;
     padding-top: 150px;
