@@ -8,9 +8,6 @@
 	src:url(nexa/nexa_bold.otf);
 }
 
-html{
-	min-height:100%;
-}
 :target:before {
 	content:"";
 	display:block;
@@ -59,7 +56,7 @@ h1,h2{
 }
 .section-one {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #fff;
 }
@@ -68,10 +65,9 @@ h1,h2{
 	background: #0859A1;
 	color:#FFF;
 }
-
 .section-two {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #0859A1;
     color: #FFF
