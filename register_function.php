@@ -37,8 +37,8 @@
 		 
 		$row = $stmt->fetch(); 
 		 
-		if($row) { 
-			die("This email address is already registered"); 
+		if(!$row) { 
+			die("This email address hasn't been registered! Contact Matthew Wang to get taht done."); 
 		} 
 		 
 		$query = " 
@@ -75,8 +75,8 @@
 			die("Failed to run query: " . $ex->getMessage()); 
 		} 
 		 
-		header("Location: login_page.php"); 
+		header("Location: backend.html"); 
 		 
-		die("Redirecting to login_page.php"); 
+		die("Redirecting to backend.html"); 
 	}
 ?> 
