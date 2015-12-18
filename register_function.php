@@ -42,7 +42,7 @@
 		} 
 		 
 		$query = " 
-			INSERT INTO users ( 
+			REPLACE INTO users ( 
 				password, 
 				salt, 
 				email 
