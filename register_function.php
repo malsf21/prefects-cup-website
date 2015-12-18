@@ -75,8 +75,8 @@
 			die("Failed to run query: " . $ex->getMessage()); 
 		} 
 		 
-		header("Location: backend.html"); 
+		header("Location: login_page.php"); 
 		 
-		die("Redirecting to backend.html"); 
+		die("Redirecting to login_page.php"); 
 	}
 ?> 
