@@ -51,9 +51,7 @@
 				<h1>Prefects Cup</h1>
 				<div class="well well-lg">
 					<h3>
-					</br>
 					The Prefects Cup is a competition between 10 houses at Upper Canada College. They compete throughout the year in various house events, including seasonal house sports, special athletic events such as House Track and Field, and house spirit events such as Movember.
-					</br>
 					</br>
 					</h3>
 				</div>
