@@ -81,14 +81,14 @@
 
 		<section id="events" class="section-two">
 			<div class="container">
-				<h3>Click on a picture to expand</h3>
+				<h6>Click on a picture to expand</h6>
 				<h2>Ongoing Events</h2>
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse1" data-toggle="collapse">
 						<img src = "img/hockey_player.jpg" class="img-rounded" height="128px"></img>
 						</a>
-						<h2>House Hockey</h2>
+						<h3>House Hockey</h3>
 						<div class="collapse" id="collapse1">
 							House Hockey features 9 teams fighting tooth and nail at the UCC arena to claim themselves the champion of Canada's national pastime. 
 							</br>
@@ -100,20 +100,20 @@
 						<a href ="#collapse2" data-toggle="collapse">
 						<img src = "img/placeholder.png" class="img-rounded" height="128px"></img>
 						</a>
-						<h2>Activity Two</h2>
+						<h3>Activity Two</h3>
 						<div class="collapse" id="collapse2">
 							Description of activity
 						</div>
 					</div>
 				</div>
 				</br>
-				<h1>Upcoming Events</h1>
+				<h2>Upcoming Events</h2>
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse3" data-toggle="collapse">
 						<img src = "img/placeholder.png" class="img-rounded" height="128px"></img>
 						</a>
-						<h2>Activity Three</h2>
+						<h3>Activity Three</h3>
 						<div class="collapse" id="collapse3">
 							Description of activity
 						</div>
@@ -122,7 +122,7 @@
 						<a href ="#collapse4" data-toggle="collapse">
 						<img src = "img/placeholder.png" class="img-rounded" height="128px"></img>
 						</a>
-						<h2>Activity Four</h2>
+						<h3>Activity Four</h3>
 						<div class="collapse" id="collapse4">
 							Description of activity
 						</div>
