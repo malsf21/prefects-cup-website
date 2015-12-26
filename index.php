@@ -57,7 +57,7 @@
 				</div>
 				<h2>This year's contenders are: </h2>
 				<div class="well well-lg">
-					<h3>
+					<h4>
 					<span style="color:red; font-weight: bold;">Bremner's, </span>
 					<span style="color:orange; font-weight: bold;">Howard's, </span>
 					<span style="color:yellow; font-weight: bold;">Jackson's, </span>
@@ -68,7 +68,7 @@
 					<span style="color:teal; font-weight: bold;">Scadding's, </span>
 					<span style="color:green; font-weight: bold;">Seaton's, </span>and
 					<span style="color:black; font-weight: bold;">Wedd's.</span>
-					</h3>
+					</h4>
 				</div>
 				<h2>Time Until the Winner is Announced:</h2>
 				<div class="well well-lg">
