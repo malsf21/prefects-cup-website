@@ -32,7 +32,7 @@
 	$date = $_POST['date'];
 
 	$query = " 
-	REPLACE INTO info (
+	REPLACE INTO standings (
 		date,
 		bremner,
 		howard,
