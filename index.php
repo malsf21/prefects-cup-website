@@ -100,7 +100,7 @@
 						<a href ="#collapse2" data-toggle="collapse">
 						<img src = "img/placeholder.png" class="img-rounded" height="128px"></img>
 						</a>
-						<h3>Activity Two</h3>
+						<h3>House Basketball</h3>
 						<div class="collapse" id="collapse2">
 							Description of activity
 						</div>

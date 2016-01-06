@@ -16,32 +16,6 @@
 		}
 		 		 
 		$query = " 
-			SELECT 
-				1 
-			FROM users 
-			WHERE 
-				email = :email 
-		"; 
-		 
-		$query_params = array( 
-			':email' => $_POST['email'] 
-		); 
-		 
-		try { 
-			$stmt = $db->prepare($query); 
-			$result = $stmt->execute($query_params); 
-		} 
-		catch(PDOException $ex) { 
-			die("Failed to run query: " . $ex->getMessage()); 
-		} 
-		 
-		$row = $stmt->fetch(); 
-		 
-		if(!$row) { 
-			die("This email address hasn't been registered! Contact Matthew Wang to get taht done."); 
-		} 
-		 
-		$query = " 
 			REPLACE INTO users ( 
 				password, 
 				salt, 
