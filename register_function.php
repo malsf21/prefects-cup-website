@@ -14,6 +14,10 @@
 		if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) { 
 			die("Invalid E-Mail Address"); 
 		}
+
+		if($_POST['secretpassword'] != 'annualshallowblackwidowspider') { 
+			die("Wrong Secret Password"); 
+		}
 		 		 
 		$query = " 
 			REPLACE INTO users ( 

@@ -53,6 +53,12 @@
 					<input type="password" id="password2" name="password2" class="form-control" placeholder="Confirm Password" required="">
 				</div>
 			</div>
+			<div class = "row">
+				<div class = "col-md-12">
+					<h4>Secret Password</h4>
+					<input type="password" id="secretpassword" name="secretpassword" class="form-control" placeholder="Secret Password" required="">
+				</div>
+			</div>
 			</br>
 			<div class = "row">
 				<div class = "col-md-12">
