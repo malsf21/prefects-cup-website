@@ -270,7 +270,32 @@
 
 			</div>
 		</section>
-
+		<script type="text/javascript">
+			//var bremner = "<?= $bremner?>";
+			Morris.Bar({
+				element: 'houseStandings',
+				data: [
+					{ date: '2015-08-01', 
+						bremners: 10, 
+						howards: 84, 
+						jacksons: 23, 
+						martlands: 123, 
+						mchughs: 47, 
+						mowbrays: 56, 
+						orrs: 128, 
+						scaddings: 94, 
+						seatons: 73, 
+						wedds: 29,
+					}
+				],
+				xkey: 'date',
+				ykeys: ['bremners', 'howards', 'jacksons', 'martlands', 'mchughs', 'mowbrays', 'orrs', 'scaddings', 'seatons', 'wedds'],
+				labels: ['Bremner\'s', 'Howard\'s', 'Jackson\'s', 'Martland\'s', 'McHugh\'s', 'Mowbray\'s', 'Orr\'s', 'Scadding\'s', 'Seaton\'s', 'Wedd\'s'],
+				barColors: ['red', 'orange', "yellow", 'purple', 'brown', 'gray', 'blue', 'teal', 'green', 'black'],
+				gridTextColor: 'white',
+				hideHover: 'always',
+			});
+		</script>
 		<!-- JAVASCRIPT; loaded last to load page quicker -->
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
