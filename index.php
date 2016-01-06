@@ -48,6 +48,29 @@
 			</div>
 		</nav>
 
+		<!-- FOOTER -->
+		<nav class="navbar navbar-default navbar-fixed-bottom navbar-footer hidden-xs">
+			<div class="container-fluid navbar-footer">
+				<div class="navbar-header">
+					
+				</div>
+				<div class="collapse navbar-collapse" id="footer-navbar">
+					<ul class="nav navbar-nav">
+						<p class="navbar-text" style =" vertical-align:middle; display:table-cell;">Developed by <a href="http://twitter.com/malsf21">Matthew Wang</a>, with the help of <a href="http://jack.antinode.ca">Jack Sarick</a>.
+						</p>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<p style="text-align:right;font-size: 8px">
+						This website utilises <a href="http://getbootstrap.com">the bootstrap framework</a>.
+						</br>
+						Source code is available <a href="#">here</a>.
+						</p>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- BODY CONTENT -->
 		<section id="start" class="section-one">
 			<div class="container">
 				<h1>Prefects Cup</h1>
