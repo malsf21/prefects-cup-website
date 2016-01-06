@@ -278,12 +278,13 @@
 		<script src="js/raphael-min.js"></script>
 		<script src="js/morris.min.js"></script>
 		<script type="text/javascript">
+			var bremner = 1000;
 			//var bremner = "<?= $bremner?>";
 			Morris.Bar({
 				element: 'houseStandings',
 				data: [
 					{ date: '2015-08-01', 
-						bremners: 10, 
+						bremners: bremner, 
 						howards: 84, 
 						jacksons: 23, 
 						martlands: 123, 
