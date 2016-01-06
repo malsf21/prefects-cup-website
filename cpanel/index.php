@@ -7,9 +7,9 @@
 		<meta name="description" content="Prefects Cup">
 		<meta name="author" content="">
 		<title>Control Panel</title>
-		<link rel="icon" href="../css/favicon.ico" />
-		<link href="../css/bootstrap.css" rel="stylesheet" />
-		<link href="../css/base.css" rel="stylesheet"  />
+		<link rel="icon" href="./css/favicon.ico" />
+		<link href="./css/bootstrap.css" rel="stylesheet" />
+		<link href="./css/base.css" rel="stylesheet"  />
 	</head>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<!-- NAVBAR -->
@@ -237,10 +237,10 @@
 		</section>
 
 		<!-- JAVASCRIPT; loaded last to load page quicker -->
-		<script src="../js/jquery.js"></script>
-		<script src="../js/scrolling-nav.js"></script>
-		<script src="../js/jquery.easing.min.js"></script>
-		<script src="../js/bootstrap.js"></script>
+		<script src="./js/jquery.js"></script>
+		<script src="./js/scrolling-nav.js"></script>
+		<script src="./js/jquery.easing.min.js"></script>
+		<script src="./js/bootstrap.js"></script>
 	</body>
 
 </html>
