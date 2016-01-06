@@ -56,7 +56,7 @@
 		'$scadding',
 		'$seaton',
 		'$wedd',
-		1
+		'1'
 	);";
 
 	try { 
