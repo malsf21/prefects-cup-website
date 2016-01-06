@@ -278,22 +278,34 @@
 		<script src="js/raphael-min.js"></script>
 		<script src="js/morris.min.js"></script>
 		<script type="text/javascript">
-			var bremner = 1000;
-			//var bremner = "<?= $bremner?>";
+
+			//This part is just importing the variables from the previous database import of the standings values.
+			var bremner = "<?= $bremner?>";
+			var howard = "<?= $howard?>";
+			var jackson = "<?= $jackson?>";
+			var martland = "<?= $martland?>";
+			var mchugh = "<?= $mchugh?>";
+			var mowbray = "<?= $mowbray?>";
+			var orr = "<?= $orr?>";
+			var scadding = "<?= $scadding?>";
+			var seaton = "<?= $seaton?>";
+			var wedd = "<?= $wedd?>";
+
+			//implements the bar graph
 			Morris.Bar({
 				element: 'houseStandings',
 				data: [
 					{ date: '2015-08-01', 
 						bremners: bremner, 
-						howards: 84, 
-						jacksons: 23, 
-						martlands: 123, 
-						mchughs: 47, 
-						mowbrays: 56, 
-						orrs: 128, 
-						scaddings: 94, 
-						seatons: 73, 
-						wedds: 29,
+						howards: howard, 
+						jacksons: jackson, 
+						martlands: martland, 
+						mchughs: mchugh, 
+						mowbrays: mowbray, 
+						orrs: orr, 
+						scaddings: scadding, 
+						seatons: seaton, 
+						wedds: wedd,
 					}
 				],
 				xkey: 'date',
