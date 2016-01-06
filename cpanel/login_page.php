@@ -8,9 +8,9 @@
 		<meta name="description" content="Prefects Cup">
 		<meta name="author" content="">
 		<title>Login| Prefects Cup</title>
-		<link rel="icon" href="./css/favicon.ico" />
-		<link href="./css/bootstrap.css" rel="stylesheet" />
-		<link href="./css/base.css" rel="stylesheet"  />
+		<link rel="icon" href="../css/favicon.ico" />
+		<link href="../css/bootstrap.css" rel="stylesheet" />
+		<link href="../css/base.css" rel="stylesheet"  />
 	</head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -58,7 +58,7 @@
 		</div>
 	</div>
 	</div>
-	<script src="./js/jquery.js"></script>
-	<script src="./js/bootstrap.js"></script>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.js"></script>
 </body>
 </html>
