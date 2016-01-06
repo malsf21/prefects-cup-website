@@ -50,8 +50,8 @@
 			 
 			$_SESSION['user'] = $row; 
 			 
-			header("Location: backend.php"); 
-			die("Redirecting to: backend.php"); 
+			header("Location: index.php"); 
+			die("Redirecting to: index.php"); 
 		} 
 		else 
 		{ 
