@@ -270,6 +270,13 @@
 
 			</div>
 		</section>
+		<!-- JAVASCRIPT; loaded last to load page quicker -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/scrolling-nav.js"></script>
+		<script src="js/raphael-min.js"></script>
+		<script src="js/morris.min.js"></script>
 		<script type="text/javascript">
 			//var bremner = "<?= $bremner?>";
 			Morris.Bar({
@@ -296,13 +303,7 @@
 				hideHover: 'always',
 			});
 		</script>
-		<!-- JAVASCRIPT; loaded last to load page quicker -->
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/scrolling-nav.js"></script>
-		<script src="js/raphael-min.js"></script>
-		<script src="js/morris.min.js"></script>
+
 	</body>
 
 </html>
