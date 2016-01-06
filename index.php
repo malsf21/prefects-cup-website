@@ -20,25 +20,7 @@
 		</script>
 	</head>
 
-	<?php
-		require("common.php");
-
-		$query = "SELECT * FROM standings";
-		 
-		try 
-		{ 
-			$stmt = $db->prepare($query); 
-			$stmt->execute();
-		} 
-
-		catch(PDOException $ex) 
-		{ 
-			die("Failed to run query: " . $ex->getMessage()); 
-		}  
-
-		$info = $stmt->fetch();
-		
-	?>
+	<?php include_once("import_standings.php") ?>
 
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<!-- NAVBAR -->

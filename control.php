@@ -11,6 +11,7 @@
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet"  />
 	</head>
+	<?php include_once("import_standings.php") ?>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -58,51 +59,51 @@
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Bremner's</h4>
-									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $row['bremner']; ?>" autofocus="">
+									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $info['bremner']; ?>" autofocus="">
 								</div>
 								<div class="col-md-6">
 									<h4>Howard's</h4>
-									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $row['howard']; ?>">
+									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $info['howard']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Jackson's</h4>
-									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $row['jackson']; ?>">
+									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $info['jackson']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Martland's</h4>
-									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $row['martland']; ?>">
+									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $info['martland']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>McHugh's</h4>
-									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $row['mchugh']; ?>">
+									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $info['mchugh']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Mowbray's</h4>
-									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $row['mowbray']; ?>">
+									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $info['mowbray']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Orr's</h4>
-									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $row['orr']; ?>">
+									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $info['orr']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Scadding's</h4>
-									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $row['scadding']; ?>">
+									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $info['scadding']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Seaton's</h4>
-									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $row['seaton']; ?>">
+									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $info['seaton']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Wedd's</h4>
-									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $row['wedd']; ?>">
+									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $info['wedd']; ?>">
 								</div>
 							</div>
 							<!--
@@ -140,51 +141,51 @@
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Bremner's</h4>
-									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $row['bremner']; ?>" autofocus="">
+									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $info['bremner']; ?>" autofocus="">
 								</div>
 								<div class="col-md-6">
 									<h4>Howard's</h4>
-									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $row['howard']; ?>">
+									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $info['howard']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Jackson's</h4>
-									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $row['jackson']; ?>">
+									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $info['jackson']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Martland's</h4>
-									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $row['martland']; ?>">
+									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $info['martland']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>McHugh's</h4>
-									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $row['mchugh']; ?>">
+									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $info['mchugh']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Mowbray's</h4>
-									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $row['mowbray']; ?>">
+									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $info['mowbray']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Orr's</h4>
-									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $row['orr']; ?>">
+									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $info['orr']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Scadding's</h4>
-									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $row['scadding']; ?>">
+									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $info['scadding']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Seaton's</h4>
-									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $row['seaton']; ?>">
+									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $info['seaton']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Wedd's</h4>
-									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $row['wedd']; ?>">
+									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $info['wedd']; ?>">
 								</div>
 							</div>
 							<!--
