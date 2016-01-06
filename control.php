@@ -132,7 +132,7 @@
 						<h4 class="modal-title" id="mainHeader">Edit Total Points</h4>
 					</div>
 					<div class="modal-body">
-						<form class="form-signin" action="update_info.php" method="post">
+						<form class="form-signin" action="edit_standings_function.php" method="post">
 							<h4>Set New Total Points</h4>
 							<p>
 							Input values for the new <b>total</b> points for each house. If you just want to add points to the current value, please use the add to total button instead.
@@ -218,7 +218,7 @@
 				<h1>Edit House Standings</h1>
 				<h2>Add a New Set of Points</h2>
 				<h4>This adds on to the current values of points! Useful if you have results from a house event.</h4>
-				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addPoints">Add New Set of Points</button>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addPoints" disabled="disabled">Add New Set of Points</button>
 				</br>
 				</br>
 				<h1>-- Or --</h1>
