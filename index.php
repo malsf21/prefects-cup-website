@@ -20,6 +20,26 @@
 		</script>
 	</head>
 
+	<?php
+		require("common.php");
+
+		$query = "SELECT * FROM standings";
+		 
+		try 
+		{ 
+			$stmt = $db->prepare($query); 
+			$stmt->execute();
+		} 
+
+		catch(PDOException $ex) 
+		{ 
+			die("Failed to run query: " . $ex->getMessage()); 
+		}  
+
+		$info = $stmt->fetch();
+		
+	?>
+
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -280,16 +300,16 @@
 		<script type="text/javascript">
 
 			//This part is just importing the variables from the previous database import of the standings values.
-			var bremner = "<?= $bremner?>";
-			var howard = "<?= $howard?>";
-			var jackson = "<?= $jackson?>";
-			var martland = "<?= $martland?>";
-			var mchugh = "<?= $mchugh?>";
-			var mowbray = "<?= $mowbray?>";
-			var orr = "<?= $orr?>";
-			var scadding = "<?= $scadding?>";
-			var seaton = "<?= $seaton?>";
-			var wedd = "<?= $wedd?>";
+			var bremner = "<?= $info['bremner'] ?>";
+			var howard = "<?= $info['howard'] ?>";
+			var jackson = "<?= $info['jackson'] ?>";
+			var martland = "<?= $info['martland'] ?>";
+			var mchugh = "<?= $info['mchugh'] ?>";
+			var mowbray = "<?= $info['mowbray'] ?>";
+			var orr = "<?= $info['orr'] ?>";
+			var scadding = "<?= $info['scadding'] ?>";
+			var seaton = "<?= $info['seaton'] ?>";
+			var wedd = "<?= $info['wedd'] ?>";
 
 			//implements the bar graph
 			Morris.Bar({
