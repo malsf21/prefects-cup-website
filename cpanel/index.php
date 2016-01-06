@@ -187,13 +187,13 @@
 									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $row['wedd']; ?>">
 								</div>
 							</div>
-
+							<!--
 							<h4>Email (to confirm change)</h4>
 							<input type="email" id="email" class="form-control" placeholder="john.doe@ucc.on.ca" name="email" required="">
 
 							<h4>Password (to confirm change)</h4>
 							<input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
-							
+							-->
 
 				
 					</div>
