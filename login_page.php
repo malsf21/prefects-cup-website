@@ -16,7 +16,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-login">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -24,7 +24,7 @@
 				<a class="navbar-brand page-scroll" href="#page-top">Prefects Cup Control Panel</a>
 			</div>
 
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<div class="collapse navbar-collapse navbar-login">
 				<ul class="nav navbar-nav">
 					<li><a href="index.php">Back to Home</a></li>
 					<li><a href="register_page.php">Register</a></li>

@@ -17,7 +17,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-control">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -26,11 +26,15 @@
 				</div>
 
 
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<div class="collapse navbar-collapse navbar-control">
 					<ul class="nav navbar-nav">
 						<li class="hidden"><a href="#page-top"></a></li>
 						<li><a class="page-scroll" href="#standings">Edit Standings</a></li>
 						<li><a class="page-scroll" href="#contact">Contact</a></li>	
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.php">Back to Home</a></li>	
 					</ul>
 				</div>
 			</div>
@@ -216,7 +220,7 @@
 
 		<section id="standings" class="section-two">
 			<div class="container">
-				<h1>Edit House Standings</h1>
+				<h1>Edit House Standings <b>Disabled</b></h1>
 				<h2>Add a New Set of Points</h2>
 				<h4>This adds on to the current values of points! Useful if you have results from a house event.</h4>
 				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addPoints" disabled="disabled">Add New Set of Points</button>
