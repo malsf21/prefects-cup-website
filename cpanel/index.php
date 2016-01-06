@@ -43,11 +43,18 @@
 						<h4 class="modal-title" id="mainHeader">Add New Set of Points</h4>
 					</div>
 					<div class="modal-body">
-						<form class="form-signin" action="update_info.php" method="post">
+						<form class="form-signin" action="new_standings_function.php" method="post">
 							<h4>Add a New Set of Points</h4>
 							<p>
 							Input values to <b>add to the current set</b> of points for each house. If you to set the new total points, please use the add to total button instead.
 							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Date</h4>
+									<h6>Submit in the format YYYY-MM-DD</h6>
+									<input type="text" id="date" name="date" class="form-control" required="" value="">
+								</div>
+							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Bremner's</h4>
