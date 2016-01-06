@@ -303,7 +303,6 @@
 		<script src="js/scrolling-nav.js"></script>
 		<script src="js/raphael-min.js"></script>
 		<script src="js/morris.min.js"></script>
-		<script src="js/linegraph.js"></script>
 	</body>
 
 </html>
