@@ -45,7 +45,7 @@
 		wedd,
 		id
 	) VALUES (
-		'2016'
+		'2016',
 		'$bremner',
 		'$howard',
 		'$jackson', 
