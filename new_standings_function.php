@@ -62,12 +62,12 @@
 		$stmt = $db->prepare($query); 
 		$stmt->execute();
 	
-		header("Location: index.php"); 		 
+		header("Location: control.php"); 		 
 	}
 	
 	catch(PDOException $ex) 
 	{ 
 		die("Failed to run query: " . $ex->getMessage()); 
-		header("Location: index.php");
+		header("Location: control.php");
 	}
 ?>

@@ -32,6 +32,7 @@
 
 	$query = " 
 	REPLACE INTO standings (
+		date,
 		bremner,
 		howard,
 		jackson,
@@ -41,8 +42,10 @@
 		orr,
 		scadding,
 		seaton,
-		wedd
+		wedd,
+		id
 	) VALUES (
+		'Houses'
 		'$bremner',
 		'$howard',
 		'$jackson', 
@@ -52,19 +55,20 @@
 		'$orr',
 		'$scadding',
 		'$seaton',
-		'$wedd'
+		'$wedd',
+		1
 	);";
 
 	try { 
 		$stmt = $db->prepare($query); 
 		$stmt->execute();
 	
-		header("Location: index.php"); 		 
+		header("Location: control.php"); 		 
 	}
 	
 	catch(PDOException $ex) 
 	{ 
 		die("Failed to run query: " . $ex->getMessage()); 
-		header("Location: index.php");
+		header("Location: control.php");
 	}
 ?>
