@@ -97,10 +97,12 @@
 				<span style="color:green; font-weight: bold;">Seaton's, </span>and
 				<span style="color:black; font-weight: bold;">Wedd's.</span>
 				</h2>
-				<h2>Time Until the Winner is Announced:</h2>
-				<h1>
-					<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
-				</h1>
+				<div style="border-top: solid #337ab7">
+					<h2>Time Until the Winner is Announced:</h2>
+					<h1>
+						<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
+					</h1>
+				</div>
 			</div>
 		</section>
 
