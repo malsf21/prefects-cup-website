@@ -56,7 +56,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="footer-navbar">
 					<ul class="nav navbar-nav">
-						<p class="navbar-text" style =" vertical-align:middle; display:table-cell;">Developed by <a href="http://twitter.com/malsf21">Matthew Wang</a>, with the help of <a href="http://jack.antinode.ca">Jack Sarick</a>.
+						<p class="navbar-text" style =" vertical-align:middle; display:table-cell;">Developed by <a href="http://twitter.com/malsf21"><b>Matthew Wang</b></a>, with the help of <a href="http://jack.antinode.ca"><b>Jack Sarick</b></a>.
 						</p>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
