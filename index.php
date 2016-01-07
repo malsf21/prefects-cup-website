@@ -80,7 +80,7 @@
 				<h1>Prefects Cup</h1>
 				</br>
 				</br>
-				<a class="page-scroll" href="#information" style="color:white"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+				<a class="page-scroll btn btn-default" href="#information" style="color:white;background-color:#FFF;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</span>
 			</div>
 		</section>
