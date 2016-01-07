@@ -79,6 +79,7 @@
 				<span style="display: table-cell;vertical-align: middle; text-align:center;">
 				<h1>Prefects Cup</h1>
 				</br>
+				</br>
 				</span>
 			</div>
 		</section>
