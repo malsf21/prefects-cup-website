@@ -80,6 +80,7 @@
 				<h1>Prefects Cup</h1>
 				</br>
 				</br>
+				<a href="#information"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</span>
 			</div>
 		</section>
