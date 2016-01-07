@@ -168,7 +168,7 @@
 		<section id="standings" class="section-two">
 			<div class="container">
 				<h1>Prefects Cup Points Standings</h1>
-				<h3>These are updated erratically; they won't always be accurate to today's date.</h3>
+				<h3>These are updated periodically; they won't always be accurate to today's date.</h3>
 				<div id="houseStandings" style="height:100%;"></div>
 			</div>
 		</section>

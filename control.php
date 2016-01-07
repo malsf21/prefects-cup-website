@@ -1,3 +1,10 @@
+<?php
+	require("common.php");
+	if(empty($_SESSION['user'])){ 
+		header("Location: login_page.php"); 
+		die("Redirecting to login_page.php"); 
+	}
+?> 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
