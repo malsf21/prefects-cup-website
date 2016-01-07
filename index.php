@@ -60,7 +60,7 @@
 						</p>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<p style="text-align:right;font-size: 8px">
+						<p style="text-align:right;font-size: 8px;vertical-align:middle; display:table-cell;">
 						This website utilises <a href="http://getbootstrap.com">the bootstrap framework</a>.
 						</br>
 						Source code is available <a href="#">here</a>.
