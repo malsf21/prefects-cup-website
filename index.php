@@ -39,6 +39,7 @@
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav">
 						<li class="hidden"><a href="#page-top"></a></li>
+						<li><a class="page-scroll" href="#information">Info</a></li>
 						<li><a class="page-scroll" href="#events">Events</a></li>
 						<li><a class="page-scroll" href="#schedule">Schedule</a></li>
 						<li><a class="page-scroll" href="#standings">Standings</a></li>
@@ -71,15 +72,17 @@
 		</nav>
 
 		<!-- BODY CONTENT -->
-		<section id="start" class="section-one">
+
+		<section id="start" class="section-two">
 			<div class="container">
 				<h1>Prefects Cup</h1>
-				<div class="well well-lg">
-					<h4>
-					The Prefects Cup is a competition between 10 houses at Upper Canada College. They compete throughout the year in various house events, including seasonal house sports, special athletic events such as House Track and Field, and house spirit events such as Movember.
-					</br>
-					</h4>
-				</div>
+				<h4>
+				The Prefects Cup is a competition between 10 houses at Upper Canada College. They compete throughout the year in various house events, including seasonal house sports, special athletic events such as House Track and Field, and house spirit events such as Movember.
+				</h4>
+			</div>
+		</section>
+		<section id="information" class="section-one">
+			<div class="container">
 				<h2>This year's contenders are: </h2>
 				<div class="well well-lg">
 					<h4>
