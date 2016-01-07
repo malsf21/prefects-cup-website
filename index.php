@@ -86,25 +86,23 @@
 		<section id="information" class="section-one">
 			<div class="center-parent">
 				<span class="center-child">
-					<div class="container" style="padding-top:0px; padding-bottom:0px;">
-						<h2>This year's contenders are: 
-						<span style="color:red; font-weight: bold;">Bremner's, </span>
-						<span style="color:orange; font-weight: bold;">Howard's, </span>
-						<span style="color:yellow; font-weight: bold;">Jackson's, </span>
-						<span style="color:purple; font-weight: bold;">Martland's, </span>
-						<span style="color:brown; font-weight: bold;">McHugh's, </span>
-						<span style="color:gray; font-weight: bold;">Mowbray's, </span>
-						<span style="color:blue; font-weight: bold;">Orr's, </span>
-						<span style="color:teal; font-weight: bold;">Scadding's, </span>
-						<span style="color:green; font-weight: bold;">Seaton's, </span>and
-						<span style="color:black; font-weight: bold;">Wedd's.</span>
-						</h2>
-						<div style="border-top: solid #337ab7;">
-							<h2>Time Until the Winner is Announced:</h2>
-							<h1>
-								<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
-							</h1>
-						</div>
+					<h2>This year's contenders are: 
+					<span style="color:red; font-weight: bold;">Bremner's, </span>
+					<span style="color:orange; font-weight: bold;">Howard's, </span>
+					<span style="color:yellow; font-weight: bold;">Jackson's, </span>
+					<span style="color:purple; font-weight: bold;">Martland's, </span>
+					<span style="color:brown; font-weight: bold;">McHugh's, </span>
+					<span style="color:gray; font-weight: bold;">Mowbray's, </span>
+					<span style="color:blue; font-weight: bold;">Orr's, </span>
+					<span style="color:teal; font-weight: bold;">Scadding's, </span>
+					<span style="color:green; font-weight: bold;">Seaton's, </span>and
+					<span style="color:black; font-weight: bold;">Wedd's.</span>
+					</h2>
+					<div style="border-top: solid #337ab7;">
+						<h2>Time Until the Winner is Announced:</h2>
+						<h1>
+							<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
+						</h1>
 					</div>
 				</span>
 			</div>
