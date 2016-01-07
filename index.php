@@ -27,7 +27,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-index">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -36,7 +36,7 @@
 				</div>
 
 
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<div class="collapse navbar-collapse navbar-index">
 					<ul class="nav navbar-nav">
 						<li class="hidden"><a href="#page-top"></a></li>
 						<li><a class="page-scroll" href="#information">Info</a></li>
@@ -57,11 +57,11 @@
 				</div>
 				<div class="collapse navbar-collapse" id="footer-navbar">
 					<ul class="nav navbar-nav">
-						<p class="navbar-text" style =" vertical-align:middle; display:table-cell;">Developed by <a href="http://twitter.com/malsf21"><b>Matthew Wang</b></a>, with the help of <a href="http://jack.antinode.ca"><b>Jack Sarick</b></a>.
+						<p class="navbar-text">Developed by <a href="http://twitter.com/malsf21"><b>Matthew Wang</b></a>, with the help of <a href="http://jack.antinode.ca"><b>Jack Sarick</b></a>.
 						</p>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<p class="navbar-text" style="text-align:right;font-size:8px;vertical-align:middle; display:table-cell;">
+						<p class="navbar-text">
 						This website utilises <a href="http://getbootstrap.com">the bootstrap framework</a>.
 						</br>
 						Source code is available <a href="https://github.com/malsf21/prefects-cup-website">here</a>.
@@ -75,10 +75,14 @@
 
 		<section id="start" class="section-two">
 			<div class="container">
-				<h1>Prefects Cup</h1>
-				<h4>
-				The Prefects Cup is a competition between 10 houses at Upper Canada College. They compete throughout the year in various house events, including seasonal house sports, special athletic events such as House Track and Field, and house spirit events such as Movember.
-				</h4>
+				<div style="display:table">
+					<div style="display:table-cell;vertical-align:middle;">
+						<h1>Prefects Cup</h1>
+						<h4>
+						The Prefects Cup is a competition between 10 houses at Upper Canada College. They compete throughout the year in various house events, including seasonal house sports, special athletic events such as House Track and Field, and house spirit events such as Movember.
+						</h4>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section id="information" class="section-one">
