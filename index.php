@@ -50,7 +50,7 @@
 		</nav>
 
 		<!-- FOOTER -->
-		<nav class="navbar navbar-default navbar-fixed-bottom navbar-footer hidden-xs">
+		<nav class="navbar navbar-default navbar-fixed-bottom navbar-footer hidden-xs top-nav-collapse">
 			<div class="container-fluid navbar-footer">
 				<div class="navbar-header">
 					
