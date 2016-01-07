@@ -57,17 +57,17 @@ h1,h2{
     height: 100%;
     padding-top: 80px;
     text-align: center;
-    background: #fff;
+    background: #DDD;
 }
 
 .section-one .well{
-	background: #0859A1;
-	color:#FFF;
+	background: #337ab7;
+	color:#DDD;
 }
 .section-two {
     height: 100%;
     padding-top: 50px;
     text-align: center;
-    background: #0859A1;
-    color: #FFF
+    background: #337ab7;
+    color: #DDD
 }
