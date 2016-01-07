@@ -285,6 +285,10 @@
 
 			</div>
 		</section>
+		<section id="end" class="section-one">
+			<div class="container">
+			</div>
+		</section>
 		<!-- JAVASCRIPT; loaded last to load page quicker -->
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
