@@ -281,17 +281,7 @@
 						<h3><a href="rturner@ucc.on.ca" style="font-weight: bold;">rturner@ucc.on.ca</a></h3>
 					</div>
 				</div>
-				<!-- OLD FORMATTING
-				<h3><b>Web Designer: </b>Matthew Wang, <a href="mailto:matthew.wang@ucc.on.ca" style="font-weight: bold;">matthew.wang@ucc.on.ca</a></br></h3>
-				<h3><b>Head Organiser: </b>Evan Williams, <a href="evan.williams@ucc.on.ca" style="font-weight: bold;">evan.williams@ucc.on.ca</a></br></h3>
-				<h3><b>House Soccer Organiser: </b>Felipe Nilo, <a href="fnilo@ucc.on.ca" style="font-weight: bold;">fnilo@ucc.on.ca</a></br></h3>
-				<h3><b>House Soccer Organiser: </b>Reem Aweida-Parsons, <a href="raweida-parsons@ucc.on.ca" style="font-weight: bold;">raweida-parsons@ucc.on.ca</a></br></h3>
-				<h3><b>Junior House Soccer Organiser: </b>Kevin Olds, <a href="kolds@ucc.on.ca" style="font-weight: bold;">kolds@ucc.on.ca</a></br></h3>
-				<h3><b>House Basketball Organiser: </b>Mario Sturino, <a href="msturino@ucc.on.ca" style="font-weight: bold;">msturino@ucc.on.ca</a></br></h3>
-				<h3><b>House Volleyball Organiser: </b>Mario Sturino, <a href="msturino@ucc.on.ca" style="font-weight: bold;">msturino@ucc.on.ca</a></br></h3>
-				<h3><b>House Hockey Organiser: </b>Ian Toope, <a href="itoope@ucc.on.ca" style="font-weight: bold;">itoope@ucc.on.ca</a></br></h3>
-				<h3><b>House Softball Organiser: </b>Richard Turner, <a href="rturner@ucc.on.ca" style="font-weight: bold;">rturner@ucc.on.ca</a></br></h3>
-				-->
+				
 
 			</div>
 		</section>
