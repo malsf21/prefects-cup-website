@@ -328,7 +328,7 @@
 				labels: ['Bremner\'s', 'Howard\'s', 'Jackson\'s', 'Martland\'s', 'McHugh\'s', 'Mowbray\'s', 'Orr\'s', 'Scadding\'s', 'Seaton\'s', 'Wedd\'s'],
 				barColors: ['red', 'orange', "yellow", 'purple', 'brown', 'gray', 'blue', 'teal', 'green', 'black'],
 				gridTextColor: 'white',
-				hideHover: 'always',
+				//hideHover: 'always',
 			});
 		</script>
 
