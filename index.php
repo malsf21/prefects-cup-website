@@ -98,11 +98,9 @@
 				<span style="color:black; font-weight: bold;">Wedd's.</span>
 				</h2>
 				<h2>Time Until the Winner is Announced:</h2>
-				<div class="well well-lg">
-					<h1>
-						<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
-					</h1>
-				</div>
+				<h1>
+					<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
+				</h1>
 			</div>
 		</section>
 
