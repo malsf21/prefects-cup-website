@@ -81,7 +81,7 @@
 				<h1>Prefects Cup</h1>
 				<h2>2016</h2>
 				</br>
-				<a class="page-scroll btn btn-default btn-lg" href="#information" style="color:white;background-color:#337ab7;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+				<a class="page-scroll btn btn-default btn-lg" href="#information" style="color:white;opacity:0.0;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</span>
 			</div>
 		</section>
