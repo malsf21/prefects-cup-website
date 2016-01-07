@@ -104,6 +104,7 @@
 							<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
 						</h1>
 					</div>
+					<a class="page-scroll btn btn-default btn-lg" href="#events" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</span>
 			</div>
 		</section>
