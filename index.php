@@ -86,7 +86,7 @@
 		<section id="information" class="section-one">
 			<div class="center-parent">
 				<span class="center-child">
-					<div class="container">
+					<div class="container" style="padding-top:0px; padding-bottom:0px;">
 						<h2>This year's contenders are: 
 						<span style="color:red; font-weight: bold;">Bremner's, </span>
 						<span style="color:orange; font-weight: bold;">Howard's, </span>
