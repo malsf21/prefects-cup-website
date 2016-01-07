@@ -74,9 +74,9 @@
 		<!-- BODY CONTENT -->
 
 		<section id="start" class="section-two">
-			<div style=" position:absolute;height:100%;width:100%;display:table;text-align:center">
+			<div class="center-parent">
 				</br>
-				<span style="display: table-cell;vertical-align: middle; text-align:center;">
+				<span class="center-child">
 				<h3>The</h3>
 				<h1>Prefects Cup</h1>
 				<h2>2016</h2>

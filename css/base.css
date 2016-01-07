@@ -71,3 +71,15 @@ h1,h2{
     background: #337ab7;
     color: #FFF
 }
+.center-parent{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: table;
+    text-align: center
+}
+.center-child{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
