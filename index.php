@@ -63,7 +63,7 @@
 						<p class="navbar-text" style="text-align:right;font-size:8px;vertical-align:middle; display:table-cell;">
 						This website utilises <a href="http://getbootstrap.com">the bootstrap framework</a>.
 						</br>
-						Source code is available <a href="#">here</a>.
+						Source code is available <a href="https://github.com/malsf21/prefects-cup-website">here</a>.
 						</p>
 					</ul>
 				</div>
