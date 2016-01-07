@@ -76,7 +76,10 @@
 		<section id="start" class="section-two">
 			<div style=" position:absolute;height:100%;width:100%;display:table;text-align:center">
 				</br>
-				<h1 style="display: table-cell;vertical-align: middle; text-align:center;">Prefects Cup</h1>
+				<span style="display: table-cell;vertical-align: middle; text-align:center;">
+				<h1>Prefects Cup</h1>
+				</br>
+				</span>
 			</div>
 		</section>
 		<section id="information" class="section-one">
