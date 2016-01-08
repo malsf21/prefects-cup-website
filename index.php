@@ -134,8 +134,8 @@
 					</div>
 					<div class = "col-md-6">
 						<a href ="#collapse2" data-toggle="collapse">
-							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
-							<h3 class="collapse-text">House Hockey</h3>
+							<img src = "img/basketball_player.jpg" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
+							<h3 class="collapse-text">House Basketball</h3>
 						</a>
 						<div class="collapse" id="collapse2">
 							Description of activity
@@ -146,11 +146,11 @@
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse3" data-toggle="collapse">
-							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
-							<h3 class="collapse-text">House Hockey</h3>
+							<img src = "img/volleyball.jpg" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
+							<h3 class="collapse-text">House Volleyball</h3>
 						</a>
 						<div class="collapse" id="collapse3">
-							Description of activity
+							House Volleyball features boys serving, spiking, and smashing their way through a single-elimination tourney. Both senior and junior variants are avaiable.
 						</div>
 					</div>
 					<div class = "col-md-6">
