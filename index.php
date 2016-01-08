@@ -118,8 +118,8 @@
 					<div class = "col-md-6">
 						<a href ="#collapse1" data-toggle="collapse">
 						<img src = "img/hockey_player.jpg" class="img-rounded" height="128px"></img>
+						<h3 style="color:white;text-decoraton:none;">House Hockey</h3>
 						</a>
-						<h3>House Hockey</h3>
 						<div class="collapse" id="collapse1">
 							House Hockey features 9 teams fighting tooth and nail at the UCC arena to claim themselves the champion of Canada's national pastime. 
 							</br>
