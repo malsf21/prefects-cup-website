@@ -135,7 +135,7 @@
 					</div>
 					<div class = "col-md-6">
 						<a href ="#collapse2" data-toggle="collapse">
-							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm img-responsive" max-height="50%"></img>
+							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm img-responsive" max-width="50%"></img>
 							<h3 class="collapse-text">House Hockey</h3>
 						</a>
 						<div class="collapse" id="collapse2">
