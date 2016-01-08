@@ -50,7 +50,7 @@
 		</nav> 
 
 		<?php include_once("footer.php") ?>
-		
+
 		<!-- Add Points Modal -->
 		<div class="modal fade" id="addPoints" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">
@@ -240,7 +240,31 @@
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Event Day (ex. Monday)</h4>
-									<input type="text" id="day" name="day" class="form-control" required="" value="">
+									<select class="form-control" id="day" name="day" required="" value="">
+										<option value = "NULL">Event Day.</option>
+										<option value="mon">Monday</option>
+										<option value="tue">Tuesday</option>
+										<option value="wed">Wednesday</option>
+										<option value="thu">Thursday</option>
+										<option value="fri">Friday</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<h4>Event Date (ex. 2016-02-01) (YYYY-MM-DD)</h4>
+									<input type="text" id="date" name="date" class="form-control" required="" value="">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>General Event Time (ex. Before School, Lunch)</h4>
+									<select class="form-control" id="category" name="category" required="" value="">
+										<option value = "NULL">General Event Time.</option>
+										<option value="before">Before School</option>
+										<option value="during">During School</option>
+										<option value="lunch">Lunch</option>
+										<option value="after">After School</option>
+										<option value="special">Special Schedule (other)</option>
+									</select>
 								</div>
 								<div class="col-md-6">
 									<h4>Event Start Time (ex. 3:30)</h4>
