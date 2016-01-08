@@ -138,7 +138,7 @@
 							<h3 class="collapse-text">House Basketball</h3>
 						</a>
 						<div class="collapse" id="collapse2">
-							Description of activity
+							House Basketball
 						</div>
 					</div>
 				</div>
@@ -146,7 +146,7 @@
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse3" data-toggle="collapse">
-							<img src = "img/volleyball.jpg" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
+							<img src = "img/volleyball_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
 							<h3 class="collapse-text">House Volleyball</h3>
 						</a>
 						<div class="collapse" id="collapse3">
@@ -155,11 +155,11 @@
 					</div>
 					<div class = "col-md-6">
 						<a href ="#collapse4" data-toggle="collapse">
-							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
-							<h3 class="collapse-text">House Hockey</h3>
+							<img src = "img/soccer_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
+							<h3 class="collapse-text">Junior House Soccer</h3>
 						</a>
 						<div class="collapse" id="collapse4">
-							Description of activity
+							Junior House Soccer, in the field bubble, has all houses competing to win as many games in a round robin regular season. 
 						</div>
 					</div>
 				</div>	
