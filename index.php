@@ -123,7 +123,7 @@
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse1" data-toggle="collapse">
-							<img src = "img/hockey_player.jpg" class="img-rounded hidden-xs hidden-sm img-responsive" height="128px"></img>
+							<img src = "img/hockey_player.jpg" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
 							<h3 class="collapse-text">House Hockey</h3>
 						</a>
 						<div class="collapse" id="collapse1">
@@ -135,7 +135,7 @@
 					</div>
 					<div class = "col-md-6">
 						<a href ="#collapse2" data-toggle="collapse">
-							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm img-responsive" height="128px"></img>
+							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
 							<h3 class="collapse-text">House Hockey</h3>
 						</a>
 						<div class="collapse" id="collapse2">
@@ -148,7 +148,7 @@
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse3" data-toggle="collapse">
-							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm img-responsive" height="128px"></img>
+							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
 							<h3 class="collapse-text">House Hockey</h3>
 						</a>
 						<div class="collapse" id="collapse3">
@@ -157,7 +157,7 @@
 					</div>
 					<div class = "col-md-6">
 						<a href ="#collapse4" data-toggle="collapse">
-							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm img-responsive" height="128px"></img>
+							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
 							<h3 class="collapse-text">House Hockey</h3>
 						</a>
 						<div class="collapse" id="collapse4">
