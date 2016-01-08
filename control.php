@@ -230,24 +230,26 @@
 
 		<section id="standings" class="section-two">
 			<div class="container">
-				<h1>Edit House Standings <b>Disabled</b></h1>
-				<h2>Add a New Set of Points</h2>
-				<h4>This adds on to the current values of points! Useful if you have results from a house event.</h4>
-				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addPoints" disabled="disabled">Add New Set of Points</button>
+				<h2>Edit the Total Points</h2>
+				<h4>This hard sets the new total points. Useful if there's some incorrect data, or you need to reset the points.</h4>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#totalPoints">Edit Total Points</button>
 				</br>
 				</br>
 				<h1>-- Or --</h1>
 				</br>
-				<h2>Edit the Total Points</h2>
-				<h4>This hard sets the new total points. Useful if there's some incorrect data, or you need to reset the points.</h4>
-				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#totalPoints">Edit Total Points</button>
-			</div>
+				<h1>Edit House Standings <b>Disabled</b></h1>
+				<h2>Add a New Set of Points</h2>
+				<h4>This adds on to the current values of points! Useful if you have results from a house event.</h4>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addPoints" disabled="disabled">Add New Set of Points</button>
+				</div>
 		</section>
 
 		<section id="contact" class="section-two">
-			<div class="container" style="vertical-align:middle;">
-				<h1>Something going wrong?</h1>
-				<h2>Email Matthew Wang at <b><a href="mailto:matthew.wang@ucc.on.ca">matthew.wang@ucc.on.ca</a></b></h2>
+			<div class="center-parent">
+				<span class="center-child">
+					<h1>Something going wrong?</h1>
+					<h2>Email Matthew Wang at <b><a href="mailto:matthew.wang@ucc.on.ca" style="color:white;">matthew.wang@ucc.on.ca</a></b></h2>
+				</span>
 			</div>
 		</section>
 
