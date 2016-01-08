@@ -166,6 +166,7 @@
 					</div>
 				</div>	
 			</div>
+			<a class="page-scroll btn btn-default btn-lg" href="#schedule" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 		</section>
 
 		<section id="schedule" class ="section-one">
