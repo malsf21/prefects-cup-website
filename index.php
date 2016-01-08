@@ -119,7 +119,6 @@
 		<section id="events" class="section-two">
 			<div class="container">
 				<h6>Click on an icon to expand</h6>
-				<h2>Ongoing Events</h2>
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse1" data-toggle="collapse">
@@ -144,7 +143,6 @@
 					</div>
 				</div>
 				</br>
-				<h2>Upcoming Events</h2>
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse3" data-toggle="collapse">
