@@ -155,7 +155,7 @@
 					</div>
 					<div class = "col-md-6">
 						<a href ="#collapse4" data-toggle="collapse">
-							<img src = "img/soccer_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
+							<img src = "img/soccer_player.jpeg" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
 							<h3 class="collapse-text">Junior House Soccer</h3>
 						</a>
 						<div class="collapse" id="collapse4">
