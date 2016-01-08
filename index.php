@@ -313,16 +313,16 @@
 		<script type="text/javascript">
 
 			//This part is just importing the variables from the previous database import of the standings values.
-			var bremner = "<?= $info['bremner'] ?>";
-			var howard = "<?= $info['howard'] ?>";
-			var jackson = "<?= $info['jackson'] ?>";
-			var martland = "<?= $info['martland'] ?>";
-			var mchugh = "<?= $info['mchugh'] ?>";
-			var mowbray = "<?= $info['mowbray'] ?>";
-			var orr = "<?= $info['orr'] ?>";
-			var scadding = "<?= $info['scadding'] ?>";
-			var seaton = "<?= $info['seaton'] ?>";
-			var wedd = "<?= $info['wedd'] ?>";
+			var bremner = "<?= $standings['bremner'] ?>";
+			var howard = "<?= $standings['howard'] ?>";
+			var jackson = "<?= $standings['jackson'] ?>";
+			var martland = "<?= $standings['martland'] ?>";
+			var mchugh = "<?= $standings['mchugh'] ?>";
+			var mowbray = "<?= $standings['mowbray'] ?>";
+			var orr = "<?= $standings['orr'] ?>";
+			var scadding = "<?= $standings['scadding'] ?>";
+			var seaton = "<?= $standings['seaton'] ?>";
+			var wedd = "<?= $standings['wedd'] ?>";
 
 			//implements the bar graph
 			Morris.Bar({

@@ -1,19 +1,19 @@
 <?php
-		require("common.php");
+	require("common.php");
 
-		$query = "SELECT * FROM standings";
-		 
-		try 
-		{ 
-			$stmt = $db->prepare($query); 
-			$stmt->execute();
-		} 
+	$query = "SELECT * FROM standings";
+	 
+	try 
+	{ 
+		$stmt = $db->prepare($query); 
+		$stmt->execute();
+	} 
 
-		catch(PDOException $ex) 
-		{ 
-			die("Failed to run query: " . $ex->getMessage()); 
-		}  
+	catch(PDOException $ex) 
+	{ 
+		die("Failed to run query: " . $ex->getMessage()); 
+	}  
 
-		$info = $stmt->fetch();
-		
-	?>
+	$standings = $stmt->fetch();
+	
+?>
