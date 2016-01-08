@@ -40,6 +40,8 @@
 			</div>
 		</div>
 	</nav> 
+
+	<?php include_once("footer.php") ?>
 	<div class="section-one">
 	<div class="container">
 		<h1>Account Login</h1>
