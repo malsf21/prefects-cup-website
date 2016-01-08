@@ -181,7 +181,7 @@
 				<h2>Thanks For Supporting Your House!</h2>
 				<h1>Need to contact us?</h1>
 				<div class="row">
-					<div class="col-md-4" style="text-align:left;">
+					<div class="col-md-4" style="text-align:center;">
 						<h3>Web Designer: </h3>
 					</div>
 					<div class="col-md-4">
@@ -193,7 +193,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4" style="text-align:left;">
+					<div class="col-md-4" style="text-align:center;">
 						<h3>Head Organiser: </h3>
 					</div>
 					<div class="col-md-4">
@@ -205,7 +205,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4" style="text-align:left;">
+					<div class="col-md-4" style="text-align:center;">
 						<h3>House Soccer Organiser: </h3>
 					</div>
 					<div class="col-md-4">
@@ -217,7 +217,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4" style="text-align:left;">
+					<div class="col-md-4" style="text-align:center;">
 						<h3>House Soccer Organiser: </h3>
 					</div>
 					<div class="col-md-4">
@@ -229,7 +229,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4" style="text-align:left;">
+					<div class="col-md-4" style="text-align:center;">
 						<h3>Junior House Soccer Organiser: </h3>
 					</div>
 					<div class="col-md-4">
@@ -241,7 +241,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4" style="text-align:left;">
+					<div class="col-md-4" style="text-align:center;">
 						<h3>House Basketball Organiser: </h3>
 					</div>
 					<div class="col-md-4">
@@ -253,7 +253,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4" style="text-align:left;">
+					<div class="col-md-4" style="text-align:center;">
 						<h3>House Volleyball Organiser: </h3>
 					</div>
 					<div class="col-md-4">
@@ -265,7 +265,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4" style="text-align:left;">
+					<div class="col-md-4" style="text-align:center;">
 						<h3>House Hockey Organiser: </h3>
 					</div>
 					<div class="col-md-4">
@@ -277,7 +277,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4" style="text-align:left;">
+					<div class="col-md-4" style="text-align:center;">
 						<h3>House Softball Organiser: </h3>
 					</div>
 					<div class="col-md-4">
