@@ -19,6 +19,12 @@
 				$("#timeLeft").html(getTimeRemaining(deadLine));
 			}, 1000);
 		</script>
+		<style>
+			.collapse-text{
+				color:white;
+				text-decoration:none;
+			}
+		</style>
 	</head>
 
 	<?php include_once("import_standings.php") ?>
@@ -112,13 +118,13 @@
 
 		<section id="events" class="section-two">
 			<div class="container">
-				<h6>Click on a picture to expand</h6>
+				<h6>Click on an icon to expand</h6>
 				<h2>Ongoing Events</h2>
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse1" data-toggle="collapse">
-						<img src = "img/hockey_player.jpg" class="img-rounded" height="128px"></img>
-						<h3 style="color:white;text-decoraton:none;">House Hockey</h3>
+							<img src = "img/hockey_player.jpg" class="img-rounded hidden-xs hidden-sm img-responsive" height="128px"></img>
+							<h3 class="collapse-text">House Hockey</h3>
 						</a>
 						<div class="collapse" id="collapse1">
 							House Hockey features 9 teams fighting tooth and nail at the UCC arena to claim themselves the champion of Canada's national pastime. 
@@ -129,9 +135,9 @@
 					</div>
 					<div class = "col-md-6">
 						<a href ="#collapse2" data-toggle="collapse">
-						<img src = "img/placeholder.png" class="img-rounded" height="128px"></img>
+							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm img-responsive" height="128px"></img>
+							<h3 class="collapse-text">House Hockey</h3>
 						</a>
-						<h3>House Basketball</h3>
 						<div class="collapse" id="collapse2">
 							Description of activity
 						</div>
@@ -142,18 +148,18 @@
 				<div class = "row">
 					<div class = "col-md-6">
 						<a href ="#collapse3" data-toggle="collapse">
-						<img src = "img/placeholder.png" class="img-rounded" height="128px"></img>
+							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm img-responsive" height="128px"></img>
+							<h3 class="collapse-text">House Hockey</h3>
 						</a>
-						<h3>Activity Three</h3>
 						<div class="collapse" id="collapse3">
 							Description of activity
 						</div>
 					</div>
 					<div class = "col-md-6">
 						<a href ="#collapse4" data-toggle="collapse">
-						<img src = "img/placeholder.png" class="img-rounded" height="128px"></img>
+							<img src = "img/placeholder.png" class="img-rounded hidden-xs hidden-sm img-responsive" height="128px"></img>
+							<h3 class="collapse-text">House Hockey</h3>
 						</a>
-						<h3>Activity Four</h3>
 						<div class="collapse" id="collapse4">
 							Description of activity
 						</div>
