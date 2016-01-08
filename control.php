@@ -220,9 +220,11 @@
 		</div>
 
 		<section id="start" class="section-one">
-			<div class="container">
-				<b><h1>Prefects Cup Control Panel</h1></b>
-				<h2>Welcome <b>PLACEHOLDER</b></h2>
+			<div class="center-parent">
+				<span class="center-child">
+					<b><h1>Prefects Cup Control Panel</h1></b>
+					<h2>Hello there!</h2>
+				</span>
 			</div>
 		</section>
 
