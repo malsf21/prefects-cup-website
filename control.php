@@ -49,6 +49,29 @@
 			</div>
 		</nav> 
 
+		<!-- FOOTER -->
+		<nav class="navbar navbar-default navbar-fixed-bottom navbar-footer hidden-xs top-nav-collapse">
+			<div class="container-fluid navbar-footer">
+				<div class="navbar-header">
+					
+				</div>
+				<div class="collapse navbar-collapse" id="footer-navbar">
+					<ul class="nav navbar-nav">
+						<p class="navbar-text">Developed by <a href="http://twitter.com/malsf21"><b>Matthew Wang</b></a>, with the help of <a href="http://jack.antinode.ca"><b>Jack Sarick</b></a>.
+						</p>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<p class="navbar-text" style="font-size:8px">
+						This website utilises <a href="http://getbootstrap.com">the bootstrap framework</a>.
+						</br>
+						Source code is available <a href="https://github.com/malsf21/prefects-cup-website">here</a>.
+						</p>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Add Points Modal -->
 		<div class="modal fade" id="addPoints" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -138,6 +161,7 @@
 			</div>
 		</div>
 
+		<!-- Edit Points Modal -->
 		<div class="modal fade" id="totalPoints" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -211,6 +235,7 @@
 			</div>
 		</div>
 
+		<!-- Add Event Modal -->
 		<div class="modal fade" id="addEvent" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -262,6 +287,7 @@
 			</div>
 		</div>
 
+		<!-- Edit Event Modeal -->
 		<div class="modal fade" id="addPoints" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
