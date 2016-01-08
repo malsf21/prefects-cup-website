@@ -52,7 +52,11 @@
 						<li><a class="page-scroll" href="#standings">Standings</a></li>
 						<li><a class="page-scroll" href="#contact">Contact</a></li>	
 					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="control.php">Control Panel</a></li>	
+					</ul>
 				</div>
+
 			</div>
 		</nav>
 

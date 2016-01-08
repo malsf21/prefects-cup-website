@@ -1,6 +1,12 @@
+<?php
+	require("common.php");
+	if(!empty($_SESSION['user'])){ 
+		header("Location: control.php"); 
+		die("Redirecting to control.php"); 
+	}
+?> 
 <!DOCTYPE html>
 <html lang="en">
-	
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,7 +43,7 @@
 	<div class="section-one">
 	<div class="container">
 		<h1>Account Login</h1>
-		<h3>Don't have an account? <b><a href="register_page.php">Register</a></b>.</h3>
+		<h3>Don't have an account? <b><a href="mailto:matthew.wang@ucc.on.ca">Contact Matthew Wang</a></b>.</h3>
 		<form class="form-signin" action="login_function.php" method="post">
 			<div class = "row">
 				<div class = "col-md-12">
