@@ -38,6 +38,7 @@
 					<ul class="nav navbar-nav">
 						<li class="hidden"><a href="#page-top"></a></li>
 						<li><a class="page-scroll" href="#standings">Edit Standings</a></li>
+						<li><a class="page-scroll" href="#schedule">Edit Schedule</a></li>
 						<li><a class="page-scroll" href="#contact">Contact</a></li>	
 					</ul>
 
