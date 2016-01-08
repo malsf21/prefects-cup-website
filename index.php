@@ -166,12 +166,14 @@
 					</div>
 				</div>	
 			</div>
-			<a class="page-scroll btn btn-default btn-lg" href="#schedule" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+			<a class="page-scroll btn btn-default btn-lg" href="#schedule" style="color:white;background-color:#337ab7;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 		</section>
 
 		<section id="schedule" class ="section-one">
 			<div class="container">
 				<h1>Schedule</h1>
+				<a class="page-scroll btn btn-default btn-lg" href="#standings" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+				
 			</div>
 		</section>
 
@@ -180,6 +182,7 @@
 				<h1>Prefects Cup Points Standings</h1>
 				<h3>These are updated periodically; they won't always be accurate to today's date.</h3>
 				<div id="houseStandings" style="height:100%;"></div>
+				<a class="page-scroll btn btn-default btn-lg" href="#contact" style="color:white;background-color:#337ab7;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 			</div>
 		</section>
 
