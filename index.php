@@ -11,6 +11,7 @@
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link href="css/morris.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet"  />
+		<script src="js/google_analytics.js"></script>
 		<script src="js/countdown.js"></script>
 		<script type="text/javascript">
 			var deadLine = "6/1/2016"; //Countdown date in MM/DD/YYYY format (no 0's required)

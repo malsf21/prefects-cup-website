@@ -17,6 +17,7 @@
 		<link rel="icon" href="css/favicon.ico" />
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet"  />
+		<script src="js/google_analytics.js"></script>
 	</head>
 	<?php include_once("import_standings.php") ?>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">

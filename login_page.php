@@ -11,6 +11,7 @@
 		<link rel="icon" href="css/favicon.ico" />
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet"  />
+		<script src="js/google_analytics.js"></script>
 	</head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
