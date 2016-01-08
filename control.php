@@ -71,51 +71,51 @@
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Bremner's</h4>
-									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $info['bremner']; ?>" autofocus="">
+									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $standings['bremner']; ?>" autofocus="">
 								</div>
 								<div class="col-md-6">
 									<h4>Howard's</h4>
-									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $info['howard']; ?>">
+									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $standings['howard']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Jackson's</h4>
-									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $info['jackson']; ?>">
+									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $standings['jackson']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Martland's</h4>
-									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $info['martland']; ?>">
+									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $standings['martland']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>McHugh's</h4>
-									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $info['mchugh']; ?>">
+									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $standings['mchugh']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Mowbray's</h4>
-									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $info['mowbray']; ?>">
+									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $standings['mowbray']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Orr's</h4>
-									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $info['orr']; ?>">
+									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $standings['orr']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Scadding's</h4>
-									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $info['scadding']; ?>">
+									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $standings['scadding']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Seaton's</h4>
-									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $info['seaton']; ?>">
+									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $standings['seaton']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Wedd's</h4>
-									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $info['wedd']; ?>">
+									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $standings['wedd']; ?>">
 								</div>
 							</div>
 							<!--
@@ -153,51 +153,191 @@
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Bremner's</h4>
-									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $info['bremner']; ?>" autofocus="">
+									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $standings['bremner']; ?>" autofocus="">
 								</div>
 								<div class="col-md-6">
 									<h4>Howard's</h4>
-									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $info['howard']; ?>">
+									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $standings['howard']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Jackson's</h4>
-									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $info['jackson']; ?>">
+									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $standings['jackson']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Martland's</h4>
-									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $info['martland']; ?>">
+									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $standings['martland']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>McHugh's</h4>
-									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $info['mchugh']; ?>">
+									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $standings['mchugh']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Mowbray's</h4>
-									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $info['mowbray']; ?>">
+									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $standings['mowbray']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Orr's</h4>
-									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $info['orr']; ?>">
+									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $standings['orr']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Scadding's</h4>
-									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $info['scadding']; ?>">
+									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $standings['scadding']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Seaton's</h4>
-									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $info['seaton']; ?>">
+									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $standings['seaton']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Wedd's</h4>
-									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $info['wedd']; ?>">
+									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $standings['wedd']; ?>">
+								</div>
+							</div>
+							<!--
+							<h4>Email (to confirm change)</h4>
+							<input type="email" id="email" class="form-control" placeholder="john.doe@ucc.on.ca" name="email" required="">
+
+							<h4>Password (to confirm change)</h4>
+							<input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+							-->
+
+				
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-success" id="submitbutton" value="Login" >Confirm Changes</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="addEvent" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="mainHeader">Add New Event</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-signin" action="add_game_function.php" method="post">
+							<h4>Add a New Set of Points</h4>
+							<div class="row">
+								<div class="col-md-12">
+									<h4>House Event (ex. House Hockey)</h4>
+									<input type="text" id="name" name="name" class="form-control" required="" value="" autofocus="">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<input type="text" id="competitors" name="competitors" class="form-control" required="" value="">	
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Event Day (ex. Monday)</h4>
+									<input type="text" id="day" name="day" class="form-control" required="" value="">
+								</div>
+								<div class="col-md-6">
+									<h4>Event Start Time (ex. 3:30)</h4>
+									<input type="text" id="start" name="start" class="form-control" required="" value="">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Event Location (ex. Field Bubble)</h4>
+									<input type="text" id="location" name="location" class="form-control" required="" value="">
+								</div>
+								<div class="col-md-6">
+									<h4>Event Organiser (ex. Mr. Williams)</h4>
+									<input type="text" id="organiser" name="organiser" class="form-control" required="" value="">
+								</div>
+							</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-success" id="submitbutton" value="Login" >Add Event</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="addPoints" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="mainHeader">Add New Set of Points</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-signin" action="new_standings_function.php" method="post">
+							<h4>Add a New Set of Points</h4>
+							<p>
+							Input values to <b>add to the current set</b> of points for each house. If you to set the new total points, please use the add to total button instead.
+							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Date</h4>
+									<h6>Submit in the format YYYY-MM-DD</h6>
+									<input type="text" id="date" name="date" class="form-control" required="" value="">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Bremner's</h4>
+									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $standings['bremner']; ?>" autofocus="">
+								</div>
+								<div class="col-md-6">
+									<h4>Howard's</h4>
+									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $standings['howard']; ?>">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Jackson's</h4>
+									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $standings['jackson']; ?>">
+								</div>
+								<div class="col-md-6">
+									<h4>Martland's</h4>
+									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $standings['martland']; ?>">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>McHugh's</h4>
+									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $standings['mchugh']; ?>">
+								</div>
+								<div class="col-md-6">
+									<h4>Mowbray's</h4>
+									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $standings['mowbray']; ?>">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Orr's</h4>
+									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $standings['orr']; ?>">
+								</div>
+								<div class="col-md-6">
+									<h4>Scadding's</h4>
+									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $standings['scadding']; ?>">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Seaton's</h4>
+									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $standings['seaton']; ?>">
+								</div>
+								<div class="col-md-6">
+									<h4>Wedd's</h4>
+									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $standings['wedd']; ?>">
 								</div>
 							</div>
 							<!--
@@ -237,11 +377,24 @@
 				</br>
 				<h1>-- Or --</h1>
 				</br>
-				<h1>Edit House Standings <b>Disabled</b></h1>
+				<h1><strike>Edit House Standings</strike> <b>Disabled</b></h1>
 				<h2>Add a New Set of Points</h2>
 				<h4>This adds on to the current values of points! Useful if you have results from a house event.</h4>
 				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addPoints" disabled="disabled">Add New Set of Points</button>
-				</div>
+			</div>
+		</section>
+
+		<section id="schedule" class="section-one">
+			<div class="container">
+				<h2>Add a new Event</h2>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addGame">Add Event</button>
+				</br>
+				</br>
+				<h1>-- Or --</h1>
+				</br>
+				<h2>Edit an Event</h2>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#editGame">Edit Event</button>
+			</div>
 		</section>
 
 		<section id="contact" class="section-two">
