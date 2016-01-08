@@ -200,15 +200,6 @@
 									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $standings['wedd']; ?>">
 								</div>
 							</div>
-							<!--
-							<h4>Email (to confirm change)</h4>
-							<input type="email" id="email" class="form-control" placeholder="john.doe@ucc.on.ca" name="email" required="">
-
-							<h4>Password (to confirm change)</h4>
-							<input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
-							-->
-
-				
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
@@ -227,11 +218,11 @@
 						<h4 class="modal-title" id="mainHeader">Add New Event</h4>
 					</div>
 					<div class="modal-body">
-						<form class="form-signin" action="add_game_function.php" method="post">
+						<form class="form-signin" action="add_event_function.php" method="post">
 							<h4>Add a New Set of Points</h4>
 							<div class="row">
 								<div class="col-md-12">
-									<h4>House Event (ex. House Hockey)</h4>
+									<h4>Event Name (ex. House Hockey)</h4>
 									<input type="text" id="name" name="name" class="form-control" required="" value="" autofocus="">
 								</div>
 							</div>
@@ -278,77 +269,39 @@
 						<h4 class="modal-title" id="mainHeader">Add New Set of Points</h4>
 					</div>
 					<div class="modal-body">
-						<form class="form-signin" action="new_standings_function.php" method="post">
+						<form class="form-signin" action="edit_event_function.php" method="post">
 							<h4>Add a New Set of Points</h4>
-							<p>
-							Input values to <b>add to the current set</b> of points for each house. If you to set the new total points, please use the add to total button instead.
-							</p>
 							<div class="row">
-								<div class="col-md-6">
-									<h4>Date</h4>
-									<h6>Submit in the format YYYY-MM-DD</h6>
-									<input type="text" id="date" name="date" class="form-control" required="" value="">
+								<div class="col-md-12">
+									<h4>Event Name (ex. House Hockey)</h4>
+									<input type="text" id="name" name="name" class="form-control" required="" value="" autofocus="">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<input type="text" id="competitors" name="competitors" class="form-control" required="" value="">	
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<h4>Bremner's</h4>
-									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $standings['bremner']; ?>" autofocus="">
+									<h4>Event Day (ex. Monday)</h4>
+									<input type="text" id="day" name="day" class="form-control" required="" value="">
 								</div>
 								<div class="col-md-6">
-									<h4>Howard's</h4>
-									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $standings['howard']; ?>">
+									<h4>Event Start Time (ex. 3:30)</h4>
+									<input type="text" id="start" name="start" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<h4>Jackson's</h4>
-									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $standings['jackson']; ?>">
+									<h4>Event Location (ex. Field Bubble)</h4>
+									<input type="text" id="location" name="location" class="form-control" required="" value="">
 								</div>
 								<div class="col-md-6">
-									<h4>Martland's</h4>
-									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $standings['martland']; ?>">
+									<h4>Event Organiser (ex. Mr. Williams)</h4>
+									<input type="text" id="organiser" name="organiser" class="form-control" required="" value="">
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<h4>McHugh's</h4>
-									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $standings['mchugh']; ?>">
-								</div>
-								<div class="col-md-6">
-									<h4>Mowbray's</h4>
-									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $standings['mowbray']; ?>">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<h4>Orr's</h4>
-									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $standings['orr']; ?>">
-								</div>
-								<div class="col-md-6">
-									<h4>Scadding's</h4>
-									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $standings['scadding']; ?>">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<h4>Seaton's</h4>
-									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $standings['seaton']; ?>">
-								</div>
-								<div class="col-md-6">
-									<h4>Wedd's</h4>
-									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $standings['wedd']; ?>">
-								</div>
-							</div>
-							<!--
-							<h4>Email (to confirm change)</h4>
-							<input type="email" id="email" class="form-control" placeholder="john.doe@ucc.on.ca" name="email" required="">
-
-							<h4>Password (to confirm change)</h4>
-							<input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
-							-->
-
-				
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
