@@ -225,7 +225,7 @@
 					</div>
 					<div class="modal-body">
 						<form class="form-signin" action="add_event_function.php" method="post">
-							<h4>Add a New Set of Points</h4>
+							<h4>Add a New Event</h4>
 							<div class="row">
 								<div class="col-md-12">
 									<h4>Event Name (ex. House Hockey)</h4>
@@ -234,6 +234,7 @@
 							</div>
 							<div class="row">
 								<div class="col-md-12">
+									<h4>Competitors (ex. Orr's vs. Bremner's)
 									<input type="text" id="competitors" name="competitors" class="form-control" required="" value="">	
 								</div>
 							</div>
@@ -251,7 +252,7 @@
 								</div>
 								<div class="col-md-6">
 									<h4>Event Date (ex. 2016-02-01) (YYYY-MM-DD)</h4>
-									<input type="text" id="date" name="date" class="form-control" required="" value="">
+									<input type="text" id="date" name="date" class="form-control" required="" value="YYYY-MM-DD">
 								</div>
 							</div>
 							<div class="row">
@@ -281,6 +282,12 @@
 									<input type="text" id="organiser" name="organiser" class="form-control" required="" value="">
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<h4>Event Description (optional)</h4>
+									<textarea rows="3" id="about" name="about" value="Leave blank if none needed." class="form-control" >
+									</textarea>
+								</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
@@ -377,7 +384,7 @@
 				<h1>-- Or --</h1>
 				</br>
 				<h2>Edit an Event</h2>
-				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#editGame">Edit Event</button>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#editGame" disabled="disabled">Edit Event</button>
 			</div>
 		</section>
 
