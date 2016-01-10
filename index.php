@@ -164,7 +164,7 @@
 			<div class="container">
 				<h1>Prefects Cup Points Standings</h1>
 				<h3>These are updated periodically; they won't always be accurate to today's date.</h3>
-				<div id="houseStandings" style="height:100%;"></div>
+				<div id="houseStandings" style="height:100%;" class="hidden-xs hidden-sm"></div>
 				<a class="page-scroll btn btn-default btn-lg" href="#contact" style="color:white;background-color:#337ab7;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 			</div>
 		</section>
