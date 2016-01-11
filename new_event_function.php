@@ -47,7 +47,7 @@
 			'$start',
 			'$location',
 			'$organiser',
-			'$about',
+			'$about'
 		);";
 
 		try { 
