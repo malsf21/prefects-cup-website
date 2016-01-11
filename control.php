@@ -298,19 +298,6 @@
 			</div>
 		</div>
 
-		<!-- Edit Event Modeal -->
-		<div class="modal fade" id="addPoints" tabindex="-1" role="dialog">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="mainHeader">Add New Set of Points</h4>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-
 		<section id="start" class="section-one">
 			<div class="center-parent">
 				<span class="center-child">
