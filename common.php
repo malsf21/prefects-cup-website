@@ -1,5 +1,4 @@
 <?php 
-	echo "hello from the other side";
 	$username = "root"; 
 	$password = ""; 
 	$host = "localhost"; 
