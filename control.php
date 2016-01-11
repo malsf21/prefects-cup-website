@@ -327,13 +327,13 @@
 		<section id="schedule" class="section-one">
 			<div class="container">
 				<h2>Add a new Event</h2>
-				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addGame">Add Event</button>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addEvent">Add Event</button>
 				</br>
 				</br>
 				<h1>-- Or --</h1>
 				</br>
 				<h2>Edit an Event</h2>
-				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#editGame" disabled="disabled">Edit Event</button>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#editEvent" disabled="disabled">Edit Event</button>
 			</div>
 		</section>
 
