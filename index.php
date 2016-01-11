@@ -24,6 +24,10 @@
 				color:white;
 				text-decoration:none;
 			}
+			.table-index{
+				text-align: center;
+				font-weight: bold;
+			}
 		</style>
 	</head>
 
