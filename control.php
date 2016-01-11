@@ -288,6 +288,7 @@
 									<textarea rows="3" id="about" name="about" value="Leave blank if none needed." class="form-control" >
 									</textarea>
 								</div>
+							</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
