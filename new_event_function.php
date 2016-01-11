@@ -7,6 +7,7 @@
 			empty($_POST['day'])         ||
 			empty($_POST['date'])        ||
 			empty($_POST['time'])        ||
+			empty($_POST['start'])        ||
 			empty($_POST['location'])    ||
 			empty($_POST['organiser'])   ||
 			empty($_POST['about'])
@@ -21,6 +22,7 @@
 		$day = $_POST['day'];
 		$date = $_POST['date'];
 		$time = $_POST['time'];
+		$time = $_POST['start'];
 		$location = $_POST['location'];
 		$organiser = $_POST['orgainser'];
 		$about = $_POST['about'];
@@ -32,6 +34,7 @@
 			day,
 			date,
 			time,
+			start,
 			location,
 			organiser,
 			about
@@ -41,6 +44,7 @@
 			'$day',
 			'$date', 
 			'$time', 
+			'$start',
 			'$location',
 			'$organiser',
 			'$about',

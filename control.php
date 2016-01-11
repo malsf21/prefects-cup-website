@@ -258,7 +258,7 @@
 							<div class="row">
 								<div class="col-md-6">
 									<h4>General Event Time (ex. Before School, Lunch)</h4>
-									<select class="form-control" id="category" name="category" required="" value="">
+									<select class="form-control" id="time" name="time" required="" value="">
 										<option value = "NULL">General Event Time.</option>
 										<option value="before">Before School</option>
 										<option value="during">During School</option>
