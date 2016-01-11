@@ -7,7 +7,7 @@
 			empty($_POST['day'])         ||
 			empty($_POST['date'])        ||
 			empty($_POST['time'])        ||
-			empty($_POST['start'])        ||
+			empty($_POST['start'])       ||
 			empty($_POST['location'])    ||
 			empty($_POST['organiser'])   ||
 			empty($_POST['about'])
@@ -28,7 +28,7 @@
 		$about = $_POST['about'];
 
 		$query = " 
-		REPLACE INTO schedule (
+		INSERT INTO schedule (
 			name,
 			competitors,
 			day,
