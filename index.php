@@ -160,7 +160,7 @@
 			<div class="container">
 				<div class="table-responsive">
 					<h1>Schedule</h1>
-					<table>
+					<table class="table-bordered">
 						<tr class="table-index">
 							<td></td>
 							<td>Monday</td>
