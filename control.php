@@ -224,7 +224,7 @@
 						<h4 class="modal-title" id="mainHeader">Add New Event</h4>
 					</div>
 					<div class="modal-body">
-						<form class="form-signin" action="add_event_function.php" method="post">
+						<form class="form-signin" action="new_event_function.php" method="post">
 							<h4>Add a New Event</h4>
 							<div class="row">
 								<div class="col-md-12">
@@ -306,46 +306,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title" id="mainHeader">Add New Set of Points</h4>
 					</div>
-					<div class="modal-body">
-						<form class="form-signin" action="edit_event_function.php" method="post">
-							<h4>Add a New Set of Points</h4>
-							<div class="row">
-								<div class="col-md-12">
-									<h4>Event Name (ex. House Hockey)</h4>
-									<input type="text" id="name" name="name" class="form-control" required="" value="" autofocus="">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<input type="text" id="competitors" name="competitors" class="form-control" required="" value="">	
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<h4>Event Day (ex. Monday)</h4>
-									<input type="text" id="day" name="day" class="form-control" required="" value="">
-								</div>
-								<div class="col-md-6">
-									<h4>Event Start Time (ex. 3:30)</h4>
-									<input type="text" id="start" name="start" class="form-control" required="" value="">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<h4>Event Location (ex. Field Bubble)</h4>
-									<input type="text" id="location" name="location" class="form-control" required="" value="">
-								</div>
-								<div class="col-md-6">
-									<h4>Event Organiser (ex. Mr. Williams)</h4>
-									<input type="text" id="organiser" name="organiser" class="form-control" required="" value="">
-								</div>
-							</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-						<button type="submit" class="btn btn-success" id="submitbutton" value="Login" >Confirm Changes</button>
-						</form>
-					</div>
+					
 				</div>
 			</div>
 		</div>
