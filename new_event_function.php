@@ -22,9 +22,9 @@
 		$day = $_POST['day'];
 		$date = $_POST['date'];
 		$time = $_POST['time'];
-		$time = $_POST['start'];
+		$start = $_POST['start'];
 		$location = $_POST['location'];
-		$organiser = $_POST['orgainser'];
+		$organiser = $_POST['organiser'];
 		$about = $_POST['about'];
 
 		$query = " 
