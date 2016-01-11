@@ -154,7 +154,60 @@
 
 		<section id="schedule" class ="section-one">
 			<div class="container">
-				<h1>Schedule</h1>
+				<div class="table-responsive">
+					<h1>Schedule</h1>
+					<table>
+						<tr class="table-index">
+							<td></td>
+							<td>Monday</td>
+							<td>Tuesday</td>
+							<td>Wednesday</td>
+							<td>Thursday</td>
+							<td>Friday</td>
+						</tr>
+						<tr>
+							<td class="table-index">Special Events</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="table-index">Before School</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="table-index">During School</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="table-index">Lunch</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="table-index">After School</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+
 				<a class="page-scroll btn btn-default btn-lg" href="#standings" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				
 			</div>
