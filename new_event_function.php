@@ -9,7 +9,7 @@
 		empty($_POST['time'])        ||
 		empty($_POST['location'])    ||
 		empty($_POST['organiser'])   ||
-		empty($_POST['about'])       ||
+		empty($_POST['about'])
 	) { 
 		die("You missed a field"); 
 	}
