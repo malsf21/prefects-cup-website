@@ -159,7 +159,7 @@
 		<section id="schedule" class ="section-one">
 			<div class="table-responsive img-responsive">
 				<h1>Schedule</h1>
-				<table class="table-bordered" style="width:100%;">
+				<table style="width:100%;">
 					<tr class="table-index">
 						<td></td>
 						<td>Monday</td>
