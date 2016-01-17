@@ -248,7 +248,7 @@
 						<h3>Evan Williams</h3>
 					</div>
 					<div class="col-md-4">
-						<h3><a href="evan.williams@ucc.on.ca" style="font-weight: bold;">evan.williams@ucc.on.ca</a></h3>
+						<h3><a href="ewilliams@ucc.on.ca" style="font-weight: bold;">ewilliams@ucc.on.ca</a></h3>
 					</div>
 				</div>
 
