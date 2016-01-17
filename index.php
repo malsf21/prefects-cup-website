@@ -157,7 +157,8 @@
 		</section>
 
 		<section id="schedule" class ="section-one">
-			<div class="table-responsive img-responsive">
+			<h2>This section is coming soon!</h2>
+			<div class="table-responsive img-responsive hidden">
 				<h1>Schedule</h1>
 				<table style="width:100%;">
 					<tr class="table-index">
