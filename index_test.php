@@ -81,7 +81,7 @@
 		</section>
 		<section id="information" class="section-one">
 			<div class="center-parent">
-				<div class="center-child well">
+				<div class="center-child">
 					<h2>This year's contenders are:
 					<span style="color:red; font-weight: bold;">Bremner's, </span>
 					<span style="color:orange; font-weight: bold;">Howard's, </span>
