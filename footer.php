@@ -2,11 +2,11 @@
 <nav class="navbar navbar-default navbar-fixed-bottom navbar-footer hidden-xs top-nav-collapse">
 	<div class="container-fluid navbar-footer">
 		<div class="navbar-header">
-			
+
 		</div>
 		<div class="collapse navbar-collapse" id="footer-navbar">
 			<ul class="nav navbar-nav">
-				<p class="navbar-text">Developed by <a href="http://twitter.com/malsf21"><b>Matthew Wang</b></a>, with the help of <a href="http://jack.antinode.ca"><b>Jack Sarick</b></a>.
+				<p class="navbar-text">Developed by <a href="http://twitter.com/malsf21"><b>Matthew Wang</b></a>
 				</p>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
