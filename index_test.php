@@ -348,8 +348,7 @@
 		<script src="js/bootstrap.js"></script>
 		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/scrolling-nav.js"></script>
-		<script src="js/raphael-min.js"></script>
-		<script src="js/morris.min.js"></script>
+		<script src="js/plotly.js"></script>
 		<script type="text/javascript">
 
 			//This part is just importing the variables from the previous database import of the standings values.
@@ -363,7 +362,7 @@
 			var scadding = "<?= $standings['scadding'] ?>";
 			var seaton = "<?= $standings['seaton'] ?>";
 			var wedd = "<?= $standings['wedd'] ?>";
-
+			/*
 			//implements the bar graph
 			Morris.Bar({
 				element: '_houseStandings',
@@ -388,11 +387,12 @@
 				gridTextColor: 'white',
 				hideHover: 'auto',
 			});
+			*/
 
 			//club month info
 			var trace1_houseStandings = {
 				x: ['Bremner\'s', 'Howard\'s', 'Jackson\'s', 'Martland\'s', 'McHugh\'s', 'Mowbray\'s', 'Orr\'s', 'Scadding\'s', 'Seaton\'s', 'Wedd\'s'],
-				y: [35,56,49,23,58,63,14,33,32,29],
+				y: [bremner, howard, jackson, martland, mchugh, mowbray, orr, scadding, seaton, wedd],
 				type: 'bar',
 			};
 
