@@ -28,6 +28,9 @@
 				text-align: center;
 				font-weight: bold;
 			}
+			.borderless td, .borderless th {
+				border:none;
+			}
 		</style>
 	</head>
 
@@ -229,7 +232,7 @@
 					<h2>Thanks For Supporting Your House!</h2>
 					<h1>Need to contact us?</h1>
 					<div class="table-responsive">
-						<table class="table">
+						<table class="table borderless">
 							<tr>
 								<td>Web Designer:</td>
 								<td>Matthew Wang</td>
