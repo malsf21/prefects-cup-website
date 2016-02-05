@@ -398,6 +398,8 @@
 
 			var data_houseStandings = [trace1_houseStandings];
 
+			var annotationContent_houseStandings = [];
+
 			var layout_houseStandings = {
 				title: 'Standings',
 				xaxis: {
@@ -410,7 +412,8 @@
 					family: '"Nexa Light","Open Sans", verdana, arial, sans-serif'
 				},
 				paper_bgcolor: 'rgba(0,0,0,0)',
-				plot_bgcolor: 'rgba(0,0,0,0)'
+				plot_bgcolor: 'rgba(0,0,0,0)',
+				annotations: annotationContent_houseStandings
 			};
 
 			//global info
@@ -421,6 +424,19 @@
         */
         displayModeBar: false
       }
+
+			for( var i = 0 ; i < xValue.length ; i++ ){
+			  var result = {
+			    x: xValue[i],
+			    y: yValue[i],
+			    text: yValue[i],
+			    xanchor: 'center',
+			    yanchor: 'bottom',
+			    showarrow: false
+			  };
+			  annotationContent_houseStandings.push(result);
+			}
+
 
 			Plotly.newPlot('graph_houseStandings', data_houseStandings, layout_houseStandings, tweaks);
 		</script>
