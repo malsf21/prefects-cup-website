@@ -101,54 +101,56 @@
 		</section>
 
 		<section id="events" class="section-two">
-			<div class="container">
-				<h6>Click on an icon to expand</h6>
-				<div class = "row">
-					<div class = "col-md-6">
-						<a href ="#collapse1" data-toggle="collapse">
-							<img src = "img/hockey_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
-							<h3 class="collapse-text">House Hockey</h3>
-						</a>
-						<div class="collapse" id="collapse1">
-							House Hockey features 9 teams fighting tooth and nail at the UCC arena to claim themselves the champion of Canada's national pastime.
-							</br>
-							</br>
-							The rules can be found <a href="files/house_hockey_2015.pdf" style="color:#FFF;font-weight: bold;">here</a>, while the schedule can be found <a href="https://docs.google.com/spreadsheets/u/2/d/1GzFvd7Y6hQpUnl_AjiJjQYygN6WydNMemBAoPJXPo4s/pubhtml" style="color:#FFF;font-weight: bold;">here</a>.
+			<div class="center-parent">
+				<div class="center-child">
+					<h6>Click on an icon to expand</h6>
+					<div class = "row">
+						<div class = "col-md-6">
+							<a href ="#collapse1" data-toggle="collapse">
+								<img src = "img/hockey_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
+								<h3 class="collapse-text">House Hockey</h3>
+							</a>
+							<div class="collapse" id="collapse1">
+								House Hockey features 9 teams fighting tooth and nail at the UCC arena to claim themselves the champion of Canada's national pastime.
+								</br>
+								</br>
+								The rules can be found <a href="files/house_hockey_2015.pdf" style="color:#FFF;font-weight: bold;">here</a>, while the schedule can be found <a href="https://docs.google.com/spreadsheets/u/2/d/1GzFvd7Y6hQpUnl_AjiJjQYygN6WydNMemBAoPJXPo4s/pubhtml" style="color:#FFF;font-weight: bold;">here</a>.
+							</div>
+						</div>
+						<div class = "col-md-6">
+							<a href ="#collapse2" data-toggle="collapse">
+								<img src = "img/basketball_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
+								<h3 class="collapse-text">House Basketball</h3>
+							</a>
+							<div class="collapse" id="collapse2">
+								House Basketball
+							</div>
 						</div>
 					</div>
-					<div class = "col-md-6">
-						<a href ="#collapse2" data-toggle="collapse">
-							<img src = "img/basketball_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
-							<h3 class="collapse-text">House Basketball</h3>
-						</a>
-						<div class="collapse" id="collapse2">
-							House Basketball
+					</br>
+					<div class = "row">
+						<div class = "col-md-6">
+							<a href ="#collapse3" data-toggle="collapse">
+								<img src = "img/volleyball_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
+								<h3 class="collapse-text">House Volleyball</h3>
+							</a>
+							<div class="collapse" id="collapse3">
+								House Volleyball features boys serving, spiking, and smashing their way through a single-elimination tourney. Both senior and junior variants are avaiable.
+							</div>
+						</div>
+						<div class = "col-md-6">
+							<a href ="#collapse4" data-toggle="collapse">
+								<img src = "img/soccer_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
+								<h3 class="collapse-text">Junior House Soccer</h3>
+							</a>
+							<div class="collapse" id="collapse4">
+								Junior House Soccer, in the field bubble, has all houses competing to win as many games in a round robin regular season.
+							</div>
 						</div>
 					</div>
-				</div>
-				</br>
-				<div class = "row">
-					<div class = "col-md-6">
-						<a href ="#collapse3" data-toggle="collapse">
-							<img src = "img/volleyball_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
-							<h3 class="collapse-text">House Volleyball</h3>
-						</a>
-						<div class="collapse" id="collapse3">
-							House Volleyball features boys serving, spiking, and smashing their way through a single-elimination tourney. Both senior and junior variants are avaiable.
-						</div>
-					</div>
-					<div class = "col-md-6">
-						<a href ="#collapse4" data-toggle="collapse">
-							<img src = "img/soccer_player.png" class="img-rounded hidden-xs hidden-sm" height="128px"></img>
-							<h3 class="collapse-text">Junior House Soccer</h3>
-						</a>
-						<div class="collapse" id="collapse4">
-							Junior House Soccer, in the field bubble, has all houses competing to win as many games in a round robin regular season.
-						</div>
-					</div>
+					<a class="page-scroll btn btn-default btn-lg" href="#schedule" style="color:white;background-color:#337ab7;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</div>
 			</div>
-			<a class="page-scroll btn btn-default btn-lg" href="#schedule" style="color:white;background-color:#337ab7;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 		</section>
 
 		<section id="schedule" class ="section-one">
