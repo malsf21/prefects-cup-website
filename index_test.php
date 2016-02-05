@@ -390,9 +390,14 @@
 			*/
 
 			//club month info
+
+			var xValue = ['Bremner\'s', 'Howard\'s', 'Jackson\'s', 'Martland\'s', 'McHugh\'s', 'Mowbray\'s', 'Orr\'s', 'Scadding\'s', 'Seaton\'s', 'Wedd\'s'];
+
+			var yValue = [bremner, howard, jackson, martland, mchugh, mowbray, orr, scadding, seaton, wedd];
+
 			var trace1_houseStandings = {
-				x: ['Bremner\'s', 'Howard\'s', 'Jackson\'s', 'Martland\'s', 'McHugh\'s', 'Mowbray\'s', 'Orr\'s', 'Scadding\'s', 'Seaton\'s', 'Wedd\'s'],
-				y: [bremner, howard, jackson, martland, mchugh, mowbray, orr, scadding, seaton, wedd],
+				x: xValue,
+  			y: yValue,
 				type: 'bar',
 			};
 
