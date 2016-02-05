@@ -157,9 +157,12 @@
 		</section>
 
 		<section id="schedule" class ="section-one">
-			<h2>Event Schedules</h2>
-			<h4><a href="files/senior_house_ball.xls">Senior House Basketball</h4>
-			<div class="table-responsive img-responsive hidden">
+			<div class="center-parent">
+				<div class="center-child">
+					<h2>Event Schedules</h2>
+					<h4><a href="files/senior_house_ball.xls">Senior House Basketball</h4>
+			<!--
+			<div class="table-responsive">
 				<h1>Schedule</h1>
 				<table style="width:100%;">
 					<tr class="table-index">
@@ -212,9 +215,11 @@
 					</tr>
 				</table>
 			</div>
+			-->
 
-			<a class="page-scroll btn btn-default btn-lg" href="#standings" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
-
+				<a class="page-scroll btn btn-default btn-lg" href="#standings" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+				</div>
+			</div>
 		</section>
 
 		<section id="standings" class="section-two">
