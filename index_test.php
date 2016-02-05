@@ -400,6 +400,9 @@
 				x: xValue,
   			y: yValue,
 				type: 'bar',
+				marker:{
+					color: ['red', 'orange', "yellow", 'purple', 'brown', 'gray', 'blue', 'teal', 'green', 'black']
+				}
 			};
 
 			var data_houseStandings = [trace1_houseStandings];
