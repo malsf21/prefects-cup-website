@@ -418,7 +418,8 @@
 					title: 'Total Points'
 				},
 				font: {
-					family: '"Nexa Light","Open Sans", verdana, arial, sans-serif'
+					family: '"Nexa Light","Open Sans", verdana, arial, sans-serif',
+					color: 'white'
 				},
 				paper_bgcolor: 'rgba(0,0,0,0)',
 				plot_bgcolor: 'rgba(0,0,0,0)',
