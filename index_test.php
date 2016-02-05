@@ -228,7 +228,7 @@
 				<div class="center-child">
 					<h2>Thanks For Supporting Your House!</h2>
 					<h1>Need to contact us?</h1>
-					<table>
+					<table style="float:center">
 						<tr>
 							<td>Web Designer:</td>
 							<td>Matthew Wang</td>
