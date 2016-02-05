@@ -29,7 +29,7 @@
 				font-weight: bold;
 			}
 			.borderless td, .borderless th {
-				border:none;
+				border:none !important;
 			}
 		</style>
 	</head>
