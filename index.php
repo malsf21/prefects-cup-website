@@ -157,7 +157,8 @@
 		</section>
 
 		<section id="schedule" class ="section-one">
-			<div class="table-responsive img-responsive">
+			<h2>This section is coming soon!</h2>
+			<div class="table-responsive img-responsive hidden">
 				<h1>Schedule</h1>
 				<table style="width:100%;">
 					<tr class="table-index">
@@ -248,7 +249,7 @@
 						<h3>Evan Williams</h3>
 					</div>
 					<div class="col-md-4">
-						<h3><a href="evan.williams@ucc.on.ca" style="font-weight: bold;">evan.williams@ucc.on.ca</a></h3>
+						<h3><a href="ewilliams@ucc.on.ca" style="font-weight: bold;">ewilliams@ucc.on.ca</a></h3>
 					</div>
 				</div>
 
