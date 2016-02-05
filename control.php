@@ -1,10 +1,10 @@
 <?php
 	require("common.php");
-	if(empty($_SESSION['user'])){ 
-		header("Location: login_page.php"); 
-		die("Redirecting to login_page.php"); 
+	if(empty($_SESSION['user'])){
+		header("Location: login_page.php");
+		die("Redirecting to login_page.php");
 	}
-?> 
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -39,15 +39,15 @@
 						<li class="hidden"><a href="#page-top"></a></li>
 						<li><a class="page-scroll" href="#standings">Edit Standings</a></li>
 						<li><a class="page-scroll" href="#schedule">Edit Schedule</a></li>
-						<li><a class="page-scroll" href="#contact">Contact</a></li>	
+						<li><a class="page-scroll" href="#contact">Contact</a></li>
 					</ul>
 
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.php">Back to Home</a></li>	
+						<li><a href="index.php">Back to Home</a></li>
 					</ul>
 				</div>
 			</div>
-		</nav> 
+		</nav>
 
 		<?php include_once("footer.php") ?>
 
@@ -130,7 +130,7 @@
 							<input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
 							-->
 
-				
+
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
@@ -235,7 +235,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<h4>Competitors (ex. Orr's vs. Bremner's)
-									<input type="text" id="competitors" name="competitors" class="form-control" required="" value="">	
+									<input type="text" id="competitors" name="competitors" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
@@ -326,6 +326,7 @@
 
 		<section id="schedule" class="section-one">
 			<div class="container">
+				<h1>Currently WIP</h1>
 				<h2>Add a new Event</h2>
 				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#addEvent">Add Event</button>
 				</br>
