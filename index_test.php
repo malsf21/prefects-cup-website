@@ -415,7 +415,8 @@
 					title: 'House'
 				},
 				yaxis: {
-					title: 'Total Points'
+					title: 'Total Points',
+					showticklabels: 'false'
 				},
 				font: {
 					family: '"Nexa Light","Open Sans", verdana, arial, sans-serif',
