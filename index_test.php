@@ -157,7 +157,8 @@
 		</section>
 
 		<section id="schedule" class ="section-one">
-			<h2>This section is coming soon!</h2>
+			<h2>Event Schedules</h2>
+			<h4><a href="files/senior_house_ball.xls">Senior House Basketball</h4>
 			<div class="table-responsive img-responsive hidden">
 				<h1>Schedule</h1>
 				<table style="width:100%;">
