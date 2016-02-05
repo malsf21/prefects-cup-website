@@ -71,12 +71,10 @@
 
 		<section id="start" class="section-two">
 			<div class="center-parent">
-				<span class="center-child">
-				<h3>The</h3>
-				<h1>Prefects Cup</h1>
-				<h2>2016</h2>
-				<a class="page-scroll btn btn-default btn-lg" href="#information" style="color:white;background-color:#337ab7;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
-				</span>
+				<div class="center-child">
+					<h1>The <small>Prefects Cup 2016</small></h1>
+					<a class="page-scroll btn btn-default btn-lg" href="#information" style="color:white;background-color:#337ab7;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+				</div>
 			</div>
 		</section>
 		<section id="information" class="section-one">
