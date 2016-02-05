@@ -160,6 +160,7 @@
 			<div class="center-parent">
 				<div class="center-child">
 					<h2>Event Schedules</h2>
+					<h4><a href="https://docs.google.com/spreadsheets/d/1GzFvd7Y6hQpUnl_AjiJjQYygN6WydNMemBAoPJXPo4s/pubhtml">House Hockey</a></h4>
 					<h4><a href="files/senior_house_ball.xls">Senior House Basketball</h4>
 			<!--
 			<div class="table-responsive">
