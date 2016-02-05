@@ -72,7 +72,7 @@
 		<section id="start" class="section-two">
 			<div class="center-parent">
 				<div class="center-child">
-					<h1>The <small>Prefects Cup 2016</small></h1>
+					<h1>The Prefects Cup 2016</h1>
 					<a class="page-scroll btn btn-default btn-lg" href="#information" style="color:white;background-color:#337ab7;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</div>
 			</div>
