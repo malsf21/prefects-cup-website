@@ -230,119 +230,55 @@
 			<div class="container">
 				<h2>Thanks For Supporting Your House!</h2>
 				<h1>Need to contact us?</h1>
-				<div class="row">
-					<div class="col-md-4">
-						<h3>Web Designer: </h3>
-					</div>
-					<div class="col-md-4">
-						<h3>Matthew Wang</h3>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="mailto:matthew.wang@ucc.on.ca" style="font-weight: bold;">matthew.wang@ucc.on.ca</a></h3>
-					</div>
+				<div class="table-responsive">
+					<table class="table">
+						<tr>
+							<td>Web Designer:</td>
+							<td>Matthew Wang</td>
+							<td><a href="mailto:matthew.wang@ucc.on.ca">matthew.wang@ucc.on.ca</a></td>
+						</tr>
+						<tr>
+							<td>Head Organiser:</td>
+							<td>Evan Williams</td>
+							<td><a href="evan.williams@ucc.on.ca">evan.williams@ucc.on.ca</a></td>
+						</tr>
+						<tr>
+							<td>House Soccer Organiser:</td>
+							<td>Felipe Nilo</td>
+							<td><a href="fnilo@ucc.on.ca">fnilo@ucc.on.ca</a></td>
+						</tr>
+						<tr>
+							<td>House Soccer Organiser:</td>
+							<td>Reem Aweida-Parsons</td>
+							<td><a href="raweida-parsons@ucc.on.ca">raweida-parsons@ucc.on.ca</a></td>
+						</tr>
+						<tr>
+							<td>Junior House Soccer Organiser:</td>
+							<td>Kevin Olds</td>
+							<td><a href="kolds@ucc.on.ca">kolds@ucc.on.ca</a></td>
+						</tr>
+						<tr>
+							<td>House Basketball Organiser:</td>
+							<td>Mario Sturino</td>
+							<td><a href="msturino@ucc.on.ca">msturino@ucc.on.ca</a></td>
+						</tr>
+						<tr>
+							<td>House Volleyball Organiser:</td>
+							<td>Mario Sturino</td>
+							<td><a href="msturino@ucc.on.ca">msturino@ucc.on.ca</a></td>
+						</tr>
+						<tr>
+							<td>House Hockey Organiser:</td>
+							<td>Ian Toope</td>
+							<td><a href="itoope@ucc.on.ca">itoope@ucc.on.ca</a></td>
+						</tr>
+						<tr>
+							<td>House Softball Organiser:</td>
+							<td>Richard Turner</td>
+							<td><a href="rturner@ucc.on.ca">rturner@ucc.on.ca</a></td>
+						</tr>
+					<table>
 				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<h3>Head Organiser: </h3>
-					</div>
-					<div class="col-md-4">
-						<h3>Evan Williams</h3>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="evan.williams@ucc.on.ca" style="font-weight: bold;">evan.williams@ucc.on.ca</a></h3>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<h3>House Soccer Organiser: </h3>
-					</div>
-					<div class="col-md-4">
-						<h3>Felipe Nilo</h3>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="fnilo@ucc.on.ca" style="font-weight: bold;">fnilo@ucc.on.ca</a></h3>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<h3>House Soccer Organiser: </h3>
-					</div>
-					<div class="col-md-4">
-						<h3>Reem Aweida-Parsons</h3>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="raweida-parsons@ucc.on.ca" style="font-weight: bold;">raweida-parsons@ucc.on.ca</a></h3>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<h3>Junior House Soccer Organiser: </h3>
-					</div>
-					<div class="col-md-4">
-						<h3>Kevin Olds</h3>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="kolds@ucc.on.ca" style="font-weight: bold;">kolds@ucc.on.ca</a></h3>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<h3>House Basketball Organiser: </h3>
-					</div>
-					<div class="col-md-4">
-						<h3>Mario Sturino</h3>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="msturino@ucc.on.ca" style="font-weight: bold;">msturino@ucc.on.ca</a></h3>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<h3>House Volleyball Organiser: </h3>
-					</div>
-					<div class="col-md-4">
-						<h3>Mario Sturino</h3>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="msturino@ucc.on.ca" style="font-weight: bold;">msturino@ucc.on.ca</a></h3>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<h3>House Hockey Organiser: </h3>
-					</div>
-					<div class="col-md-4">
-						<h3>Ian Toope</h3>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="itoope@ucc.on.ca" style="font-weight: bold;">itoope@ucc.on.ca</a></h3>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<h3>House Softball Organiser: </h3>
-					</div>
-					<div class="col-md-4">
-						<h3>Richard Turner</h3>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="rturner@ucc.on.ca" style="font-weight: bold;">rturner@ucc.on.ca</a></h3>
-					</div>
-				</div>
-
-
-			</div>
-		</section>
-		<section id="end" class="section-one">
-			<div class="container">
 			</div>
 		</section>
 		<!-- JAVASCRIPT; loaded last to load page quicker -->
