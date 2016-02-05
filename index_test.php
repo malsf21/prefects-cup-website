@@ -228,8 +228,8 @@
 				<div class="center-child">
 					<h2>Thanks For Supporting Your House!</h2>
 					<h1>Need to contact us?</h1>
-					<div class="table-responsive table-bordered">
-						<table class="table">
+					<div class="table-responsive">
+						<table>
 							<tr>
 								<td>Web Designer:</td>
 								<td>Matthew Wang</td>
