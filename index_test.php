@@ -78,27 +78,25 @@
 			</div>
 		</section>
 		<section id="information" class="section-one">
-			<div class="container">
-				<div class="center-parent">
-					<div class="center-child">
-						<h2>This year's contenders are:
-						<span style="color:red; font-weight: bold;">Bremner's, </span>
-						<span style="color:orange; font-weight: bold;">Howard's, </span>
-						<span style="color:yellow; font-weight: bold;">Jackson's, </span>
-						<span style="color:purple; font-weight: bold;">Martland's, </span>
-						<span style="color:brown; font-weight: bold;">McHugh's, </span>
-						<span style="color:gray; font-weight: bold;">Mowbray's, </span>
-						<span style="color:blue; font-weight: bold;">Orr's, </span>
-						<span style="color:teal; font-weight: bold;">Scadding's, </span>
-						<span style="color:green; font-weight: bold;">Seaton's, </span>and
-						<span style="color:black; font-weight: bold;">Wedd's.</span>
-						</h2>
-						<h2>Time Until the Winner is Announced:</h2>
-						<h1>
-							<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
-						</h1>
-						<a class="page-scroll btn btn-default btn-lg" href="#events" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
-					</div>
+			<div class="center-parent">
+				<div class="center-child">
+					<h2>This year's contenders are:
+					<span style="color:red; font-weight: bold;">Bremner's, </span>
+					<span style="color:orange; font-weight: bold;">Howard's, </span>
+					<span style="color:yellow; font-weight: bold;">Jackson's, </span>
+					<span style="color:purple; font-weight: bold;">Martland's, </span>
+					<span style="color:brown; font-weight: bold;">McHugh's, </span>
+					<span style="color:gray; font-weight: bold;">Mowbray's, </span>
+					<span style="color:blue; font-weight: bold;">Orr's, </span>
+					<span style="color:teal; font-weight: bold;">Scadding's, </span>
+					<span style="color:green; font-weight: bold;">Seaton's, </span>and
+					<span style="color:black; font-weight: bold;">Wedd's.</span>
+					</h2>
+					<h2>Time Until the Winner is Announced:</h2>
+					<h1>
+						<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
+					</h1>
+					<a class="page-scroll btn btn-default btn-lg" href="#events" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</div>
 			</div>
 		</section>
