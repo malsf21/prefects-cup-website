@@ -9,7 +9,6 @@
 		<title>Prefects Cup</title>
 		<link rel="icon" href="css/favicon.ico" />
 		<link href="css/bootstrap.css" rel="stylesheet" />
-		<link href="css/morris.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet"  />
 		<script src="js/google_analytics.js"></script>
 		<script src="js/countdown.js"></script>
