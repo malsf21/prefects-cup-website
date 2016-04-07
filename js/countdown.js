@@ -1,4 +1,3 @@
-// I tried to make it as simple as possible
 function getTimeRemaining(endtime){
 	var t = Date.parse(endtime) - Date.parse(new Date());
 	var seconds = Math.floor( (t/1000) % 60 );
