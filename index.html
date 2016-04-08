@@ -160,15 +160,24 @@
 		</script>
 		<script src="js/plotly.min.js"></script>
 		<script type="text/javascript">
+			function httpGet(theUrl){
+			  var xmlHttp = new XMLHttpRequest();
+			  xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+			  xmlHttp.send( null );
+			  return xmlHttp.responseText;
+			}
+
 			//setting up the hamburger
 			var $hamburger = $(".hamburger");
 			$hamburger.on("click", function(e) {
 				$hamburger.toggleClass("is-active");
 			});
 
-			// Plotly Stuff
+			// parsing data
+			var pc_data = JSON.parse(httpGet("api/pc_data.json"));
+
 			//This part is just importing the variables from the JSON values
-			var bremner = 10;
+			var bremner = pc_data["data"]["points"]["bremner"];
 			var howard = 20;
 			var jackson = 30;
 			var martland = 40;
@@ -178,6 +187,8 @@
 			var scadding = 80;
 			var seaton = 90;
 			var wedd = 100;
+			console.log(bremner);
+			// Plotly Stuff
 
 			//club month info
 

@@ -1,0 +1,20 @@
+{
+  "timestamp": 10,
+  "data": {
+    "points":{
+      "bremner": 10,
+      "howard": 20,
+      "jackson": 30,
+      "martland": 40,
+      "mchugh": 50,
+      "mowbray": 60,
+      "orr": 70,
+      "scadding": 80,
+      "seaton": 90,
+      "wedd": 100
+    },
+    "events":{
+      "boop" : 0
+    }
+  }
+}
