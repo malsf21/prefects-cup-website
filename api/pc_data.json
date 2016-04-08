@@ -1,17 +1,18 @@
 {
-  "timestamp": 10,
+  "timestamp": 1460148195,
+  "timeleft": 1464739200,
   "data": {
     "points":{
-      "bremner": 10,
-      "howard": 20,
-      "jackson": 30,
-      "martland": 40,
-      "mchugh": 50,
-      "mowbray": 60,
-      "orr": 200,
-      "scadding": 80,
-      "seaton": 90,
-      "wedd": 100
+      "bremner": 234,
+      "howard": 246,
+      "jackson": 143,
+      "martland": 237,
+      "mchugh": 110,
+      "mowbray": 129,
+      "orr": 226,
+      "scadding": 181,
+      "seaton": 204,
+      "wedd": 168
     },
     "events":{
       "boop" : 0
