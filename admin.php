@@ -1,6 +1,6 @@
 <?php
 	require("common.php");
-	if(!empty($_SESSION['user'])){
+	if(empty($_SESSION['user'])){
 		header("Location: admin.php");
 		die("Redirecting to admin.php");
 	}
