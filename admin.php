@@ -1,10 +1,10 @@
-<!--<?php
+<?php
 	require("common.php");
 	if(!empty($_SESSION['user'])){
 		header("Location: admin.php");
 		die("Redirecting to admin.php");
 	}
-?>-->
+?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
