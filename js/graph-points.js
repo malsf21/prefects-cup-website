@@ -1,17 +1,17 @@
 // parsing data
-var pc_data = JSON.parse(httpGet("api/pc_data.json"));
+var points_data = JSON.parse(httpGet("api/points_data.json"));
 
 //This part is just importing the variables from the JSON values
-var bremner = pc_data["data"]["points"]["bremner"];
-var howard = pc_data["data"]["points"]["howard"];
-var jackson = pc_data["data"]["points"]["jackson"];
-var martland = pc_data["data"]["points"]["martland"];
-var mchugh = pc_data["data"]["points"]["mchugh"];
-var mowbray = pc_data["data"]["points"]["mowbray"];
-var orr = pc_data["data"]["points"]["orr"];
-var scadding = pc_data["data"]["points"]["scadding"];
-var seaton = pc_data["data"]["points"]["seaton"];
-var wedd = pc_data["data"]["points"]["wedd"];
+var bremner = points_data["data"]["points"]["bremner"];
+var howard = points_data["data"]["points"]["howard"];
+var jackson = points_data["data"]["points"]["jackson"];
+var martland = points_data["data"]["points"]["martland"];
+var mchugh = points_data["data"]["points"]["mchugh"];
+var mowbray = points_data["data"]["points"]["mowbray"];
+var orr = points_data["data"]["points"]["orr"];
+var scadding = points_data["data"]["points"]["scadding"];
+var seaton = points_data["data"]["points"]["seaton"];
+var wedd = points_data["data"]["points"]["wedd"];
 // Plotly Stuff
 
 //club month info
