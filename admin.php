@@ -14,9 +14,9 @@
 		if (isset($_GET['setPoints'])){
 			if(!empty($_POST)){
 				$current_time = time();
-				//$pc_data = $pc_data;
-				$pc_data["time"] = $current_time;
-				$pc_data["data"]["points"] =
+				$new_data = $pc_data;
+				$new_data["time"] = $current_time;
+				$new_data["data"]["points"] =
 				[
 					"bremner" => $_POST["bremner"],
 		      "howard" => $_POST["howard"],
@@ -30,11 +30,11 @@
 		      "wedd" =>  $_POST["wedd"],
 				];
 				$pcfile = fopen("api/pc_data.json", "w");
-				fwrite($pcfile, json_encode($pc_data));
+				fwrite($pcfile, json_encode($new_data));
 				fclose($pcfile);
 				header("Location: admin.php");
 				die("Redirecting to: admin.php");
-				//file_put_contents('api/pc_data.json', json_encode($pc_data));
+				//file_put_contents('api/pc_data.json', json_encode($new_data));
 			}
 		}
 	}
