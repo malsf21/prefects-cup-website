@@ -1,9 +1,20 @@
 # Website for the Prefect Cup
 
 ## About
-Hey, Matthew Wang here. This repository contains everything involved in the [prefects cup website](http://pc.ucc.on.ca). It's a nice pet project that also serves some sort of useful purpose. 
+Hey, Matthew Wang here. This repository contains everything involved in the [prefects cup website](http://pc.ucc.on.ca). It's a nice pet project that also serves some sort of useful purpose.
 
 Right now, I'm rewriting the code to rely less and less on databases, be updated to newer Bootstrap Versions, be less crappy, and be easier to clone/replicate. That involves switching chart data from a SQL Database to JSON, updating the website's design feel to look less ew, and rewriting a lot of the mechanisms that I use to make the site work out.
+
+## Setup
+Firstly, you need to copy the api_example folder to api. This is mostly just for giving a starting point to the files.
+```
+cp api_example/ api/
+```
+Secondly, you need to give PHP write permission to the api folder. It'll look something like this (though it depends on whatever user PHP is running from).
+```
+chown -R www-data:www-data api
+chmod -R g+w api
+```
 
 ## Credit
 * [Bootstrap](http://getbootstrap.com), the framework I've used for responsive utilities, pretty web UI elements, and robust Javascript.
