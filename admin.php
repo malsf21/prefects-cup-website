@@ -6,7 +6,10 @@
 	}
 ?>
 <?php
- 	$pc_data = json_decode(file_get_contents("api/pc_data.json"), true);
+	$pcfile = fopen("api/pc_data.json", "r");
+	$pc_data = fread($pcfile,filesize("api/pc_data.json"));
+	fclose($pcfile);
+ 	//$pc_data = json_decode(file_get_contents("api/pc_data.json"), true);
 	function setPoints(){
 		if (isset($_GET['setPoints'])){
 			if(!empty($_POST)){
@@ -29,6 +32,8 @@
 				$pcfile = fopen("api/pc_data.json", "w");
 				fwrite($pcfile, json_encode($new_data));
 				fclose($pcfile);
+				header("Location: admin.php");
+				die("Redirecting to: admin.php");
 				//file_put_contents('api/pc_data.json', json_encode($new_data));
 			}
 		}
