@@ -26,7 +26,10 @@
 		      "seaton" =>  $_POST["seaton"],
 		      "wedd" =>  $_POST["wedd"],
 				];
-				file_put_contents('api/pc_data.json', json_encode($new_data, JSON_FORCE_OBJECT));
+				$pcfile = fopen("api/pc_data.json", "w");
+				fwrite($pcfile, json_encode($new_data));
+				fclose($pcfile);
+				//file_put_contents('api/pc_data.json', json_encode($new_data));
 			}
 		}
 	}
