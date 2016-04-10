@@ -5,6 +5,33 @@
 		die("Redirecting to login.php");
 	}
 ?>
+<?php
+ 	$pc_data = json_decode(file_get_contents("api/pc_data.json"), true);
+	function setPoints(){
+		if (isset($_GET['setPoints'])){
+			if(!empty($_POST)){
+				$current_time = time();
+				$new_data = $pc_data;
+				$new_data["time"] = $current_time;
+				$new_data["data"]["points"] =
+				[
+					"bremner" => $_POST["bremner"],
+		      "howard" => $_POST["howard"],
+		      "jackson" => $_POST["jackson"],
+		      "martland" => $_POST["martland"],
+		      "mchugh" => $_POST["mchugh"],
+		      "mowbray" => $_POST["mowbray"],
+		      "orr" => $_POST["orr"],
+		      "scadding" =>  $_POST["scadding"],
+		      "seaton" =>  $_POST["seaton"],
+		      "wedd" =>  $_POST["wedd"],
+				];
+				file_put_contents('api/pc_data.json', json_encode($new_data, JSON_FORCE_OBJECT));
+			}
+		}
+	}
+	setPoints();
+?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -19,76 +46,69 @@
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
 	</head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-		<div class="modal fade" id="addPointsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="setPointsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h4 class="modal-title" id="addPointsModalLabel">Add Some Points!</h4>
+						<h4 class="modal-title" id="setPointsModalLabel">Set some points!</h4>
 					</div>
 					<div class="modal-body">
-						<form class="form-signin" action="new_standings_function.php" method="post">
-							<h4>Add a New Set of Points</h4>
+						<form class="form-signin" action="?setPoints" method="post">
+							<h4>Set Points</h4>
 							<p>
-							Input values to <b>add to the current set</b> of points for each house. If you to set the new total points, please use the add to total button instead.
+							Input values to <b>set</b> the points for each house. If you to add a new set of points, please use the add set button instead.
 							</p>
-							<div class="row">
-								<div class="col-md-12">
-									<h4>Date</h4>
-									<h6>Submit in the format YYYY-MM-DD</h6>
-									<input type="text" id="date" name="date" class="form-control" required="" value="">
-								</div>
-							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Bremner's</h4>
-									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $standings['bremner']; ?>" autofocus="">
+									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['bremner']; ?>" autofocus="">
 								</div>
 								<div class="col-md-6">
 									<h4>Howard's</h4>
-									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $standings['howard']; ?>">
+									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['howard']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Jackson's</h4>
-									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $standings['jackson']; ?>">
+									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['jackson']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Martland's</h4>
-									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $standings['martland']; ?>">
+									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['martland']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>McHugh's</h4>
-									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $standings['mchugh']; ?>">
+									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['mchugh']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Mowbray's</h4>
-									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $standings['mowbray']; ?>">
+									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['mowbray']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Orr's</h4>
-									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $standings['orr']; ?>">
+									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['orr']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Scadding's</h4>
-									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $standings['scadding']; ?>">
+									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['scadding']; ?>">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<h4>Seaton's</h4>
-									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $standings['seaton']; ?>">
+									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['seaton']; ?>">
 								</div>
 								<div class="col-md-6">
 									<h4>Wedd's</h4>
-									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $standings['wedd']; ?>">
+									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $pc_data["data"]["points"]['wedd']; ?>">
 								</div>
 							</div>
 					</div>
@@ -135,12 +155,12 @@
 				<div id="graph" class="img-responsive"></div>
 				<div class="row">
 					<div class="col-xs-6" style="text-align:right;">
-						<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#addPointsModal">
-			        Add Points
+						<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
+			        Set Points
 			      </button>
 					</div>
 					<div class="col-xs-6" style="text-align:left;">
-			      <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#addPointsModal">
+			      <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
 			        Add Points
 			      </button>
 					</div>
