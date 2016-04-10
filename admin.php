@@ -7,7 +7,7 @@
 ?>
 <?php
 	$pcfile = fopen("api/pc_data.json", "r");
-	$pc_data = fread($pcfile,filesize("api/pc_data.json"));
+	$pc_data = json_decode(fread($pcfile,filesize("api/pc_data.json")),true);
 	fclose($pcfile);
  	//$pc_data = json_decode(file_get_contents("api/pc_data.json"), true);
 	function setPoints(){
