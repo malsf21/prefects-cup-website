@@ -1,8 +1,8 @@
 <?php
 	require("common.php");
 	if(empty($_SESSION['user'])){
-		header("Location: admin.php");
-		die("Redirecting to admin.php");
+		header("Location: login.php");
+		die("Redirecting to login.php");
 	}
 ?>
 <html lang="en">
