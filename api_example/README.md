@@ -9,12 +9,18 @@ Let's take a look at what each file represents.
 ```
 data
 └───timestamp
-│   file011.txt
-│   file012.txt
 │
 ├───points
     │   bremner
     │   howard
-    │   etc.
+    │   jackson
+    │   martland
+    │   mchugh
+    │   mowbray
+    │   orr
+    │   scadding
+    │   seaton
+    │   wedd
+
 
 ```
