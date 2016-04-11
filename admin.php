@@ -153,7 +153,7 @@
 						<li class="nav-item">
 				      <a class="nav-link page-scroll" href="#contact">Contact</a>
 				    </li>
-						<button class="btn btn-success-outline pull-xs-right">Manage</button>
+						<a class="btn btn-info-outline pull-xs-right" href="index.html">To Home</a>
 				  </ul>
 			</div>
 		</nav>
