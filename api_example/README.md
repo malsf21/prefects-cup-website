@@ -13,8 +13,8 @@ data
 │   file012.txt
 │
 ├───points
-│   │   bremner
-│   │   howard
-│   │   etc.
+    │   bremner
+    │   howard
+    │   etc.
 
 ```
