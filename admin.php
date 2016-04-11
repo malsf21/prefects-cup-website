@@ -15,7 +15,7 @@
 			if(!empty($_POST)){
 				$current_time = time();
 				$new_data = $points_data;
-				$new_data["time"] = $current_time;
+				$new_data["data"]["timestamp"] = $current_time;
 				$new_data["data"]["points"] =
 				[
 					"bremner" => $_POST["bremner"],

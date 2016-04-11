@@ -1,7 +1,6 @@
 {
-  "timestamp": 1460148195,
-  "timeleft": 1464739200,
   "data": {
+    "timestamp": 1460148195,
     "points":{
       "bremner": 234,
       "howard": 246,
@@ -13,9 +12,6 @@
       "scadding": 181,
       "seaton": 204,
       "wedd": 168
-    },
-    "events":{
-      "boop" : 0
     }
   }
 }
