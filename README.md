@@ -16,6 +16,9 @@ chown -R www-data:www-data api
 chmod -R g+w api
 ```
 
+## API
+I've made a semi-legitimate API for the website. You can get data on each house's individual points, when they were last updated, as well as a lot of other data (that hasn't actually been implemented yet). You can find more about each API and its usage/format in the README of the api_example folder.
+
 ## Credit
 * [Bootstrap](http://getbootstrap.com), the framework I've used for responsive utilities, pretty web UI elements, and robust Javascript.
 * [plotly.js](https://plot.ly/javascript/), the (better) framework I've used for creating that nice looking bar graph.
