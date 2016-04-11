@@ -175,11 +175,17 @@
 			</div>
 			</div>
 		</div>
+		<footer class="footer">
+      <div class="container">
+        <span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span>
+      </div>
+    </footer>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/google_analytics.js"></script>
 		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/scrolling-nav.js"></script>
+		<script src="js/plotly.min.js"></script>
 		<script>
 			function httpGet(theUrl){
 				var xmlHttp = new XMLHttpRequest();
