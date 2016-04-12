@@ -129,6 +129,81 @@
 			</div>
 		</div>
 
+		<div class="modal fade" id="addPointsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="addPointsModalLabel">Set some points!</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-signin" action="?setPoints" method="post">
+							<h4>Add Points</h4>
+							<p>
+							Input values to <b>add to the current set</b> of points for each house. If you want to set the new points, please use the add set button instead.
+							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Bremner's</h4>
+									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['bremner']; ?>" autofocus="">
+								</div>
+								<div class="col-md-6">
+									<h4>Howard's</h4>
+									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['howard']; ?>">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Jackson's</h4>
+									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['jackson']; ?>">
+								</div>
+								<div class="col-md-6">
+									<h4>Martland's</h4>
+									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['martland']; ?>">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>McHugh's</h4>
+									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mchugh']; ?>">
+								</div>
+								<div class="col-md-6">
+									<h4>Mowbray's</h4>
+									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mowbray']; ?>">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Orr's</h4>
+									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['orr']; ?>">
+								</div>
+								<div class="col-md-6">
+									<h4>Scadding's</h4>
+									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['scadding']; ?>">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<h4>Seaton's</h4>
+									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['seaton']; ?>">
+								</div>
+								<div class="col-md-6">
+									<h4>Wedd's</h4>
+									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['wedd']; ?>">
+								</div>
+							</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-primary">Save changes</button>
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
 			<div class="container">
 				<button class="hamburger hamburger--spring navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#collapse-navbar">
