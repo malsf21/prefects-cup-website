@@ -5,6 +5,8 @@ Hey, Matthew Wang here. This repository contains everything involved in the [pre
 
 Right now, I'm rewriting the code to rely less and less on databases, be updated to newer Bootstrap Versions, be less crappy, and be easier to clone/replicate. That involves switching chart data from a SQL Database to JSON, updating the website's design feel to look less ew, and rewriting a lot of the mechanisms that I use to make the site work out.
 
+You can find a test version of the most stable release at [my website](http://matthewwang.me/pc).
+
 ## Setup
 Firstly, you need to copy the api_example folder to api. This is mostly just for giving a starting point to the files.
 ```
