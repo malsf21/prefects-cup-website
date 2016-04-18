@@ -3,7 +3,7 @@
 ## About
 Hey, Matthew Wang here. This repository contains everything involved in the [prefect cup website](http://pc.ucc.on.ca). It's a nice pet project that also serves some sort of useful purpose. 
 
-Right now, I'm working on `v2`. You can find my progress on v2 in the `v2` branch.
+**Right now, I'm working on `v2`. You can find my progress on v2 in the `v2` branch.**
 
 ## Credit
 * [Bootstrap](http://getbootstrap.com), the framework I've used for responsive utilities, pretty web UI elements, and robust Javascript.
