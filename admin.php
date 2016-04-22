@@ -93,7 +93,7 @@
 			      </button>
 					</div>
 					<div class="col-xs-6" style="text-align:left;">
-			      <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
+			      <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#addPointsModal">
 			        Add Points
 			      </button>
 					</div>
@@ -181,8 +181,8 @@
 							</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-outline" data-dismiss="modal">Cancel</button>
-						<button type="submit" class="btn btn-outline">Save changes</button>
+						<button type="button" class="btn btn-secondary-outline" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-primary-outline">Save changes</button>
 					</form>
 					</div>
 				</div>
