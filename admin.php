@@ -53,7 +53,7 @@
 		<link href="css/base.css" rel="stylesheet" />
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
 	</head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="text-align:center;">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
 			<div class="container">
 				<button class="hamburger hamburger--spring navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#collapse-navbar">
@@ -87,12 +87,12 @@
 				<div id="graph" class="img-responsive"></div>
 				<div class="row">
 					<div class="col-xs-6" style="text-align:right;">
-						<button type="button" class="btn btn-success-outline btn-lg" data-toggle="modal" data-target="#setPointsModal">
+						<button type="button" class="btn btn-secondary-outline btn-lg" data-toggle="modal" data-target="#setPointsModal">
 			        Set Points
 			      </button>
 					</div>
 					<div class="col-xs-6" style="text-align:left;">
-			      <button type="button" class="btn btn-success-outline btn-lg" data-toggle="modal" data-target="#addPointsModal">
+			      <button type="button" class="btn btn-secondary-outline btn-lg" data-toggle="modal" data-target="#addPointsModal">
 			        Add Points
 			      </button>
 					</div>
