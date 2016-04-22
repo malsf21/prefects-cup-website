@@ -84,16 +84,15 @@
 		</nav>
 		<div class="section-two" id="points">
 			<div class="container">
-				<h1>Prefects Cup Points</h1>
 				<div id="graph" class="img-responsive"></div>
 				<div class="row">
 					<div class="col-xs-6" style="text-align:right;">
-						<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
+						<button type="button" class="btn btn-success-outline btn-lg" data-toggle="modal" data-target="#setPointsModal">
 			        Set Points
 			      </button>
 					</div>
 					<div class="col-xs-6" style="text-align:left;">
-			      <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#addPointsModal">
+			      <button type="button" class="btn btn-success-outline btn-lg" data-toggle="modal" data-target="#addPointsModal">
 			        Add Points
 			      </button>
 					</div>
@@ -104,7 +103,7 @@
 			<div class="container">
 				<h1>Schedule</h1>
 				<div id="schedule"></div>
-				<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#editScheduleModal">
+				<button type="button" class="btn btn-primary-outline btn-lg" data-toggle="modal" data-target="#editScheduleModal">
 					Edit Schedule
 				</button>
 			</div>
@@ -181,8 +180,8 @@
 							</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary-outline" data-dismiss="modal">Cancel</button>
-						<button type="submit" class="btn btn-primary-outline">Save changes</button>
+						<button type="button" class="btn btn-danger-outline" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-success-outline">Save changes</button>
 					</form>
 					</div>
 				</div>
@@ -256,8 +255,8 @@
 							</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary-outline" data-dismiss="modal">Cancel</button>
-						<button type="submit" class="btn btn-primary-outline">Save changes</button>
+						<button type="button" class="btn btn-danger-outline" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-success-outline">Save changes</button>
 					</form>
 					</div>
 				</div>
@@ -292,8 +291,8 @@
           </div>
           <div class="modal-footer">
             <form method="post" onsubmit="submitSchedule()">
-              <button type="button" class="btn btn-secondary-outline" data-dismiss="modal" onclick="revertScheduleData()">Close</button>
-              <button type="submit" class="btn btn-primary-outline">Save changes</button>
+              <button type="button" class="btn btn-danger-outline" data-dismiss="modal" onclick="revertScheduleData()">Close</button>
+              <button type="submit" class="btn btn-success-outline">Save changes</button>
             </form>
           </div>
         </div>
