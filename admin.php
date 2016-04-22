@@ -181,8 +181,8 @@
 							</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-						<button type="submit" class="btn btn-primary">Save changes</button>
+						<button type="button" class="btn btn-outline" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-outline">Save changes</button>
 					</form>
 					</div>
 				</div>
@@ -256,8 +256,8 @@
 							</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-						<button type="submit" class="btn btn-primary">Save changes</button>
+						<button type="button" class="btn btn-secondary-outline" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-primary-outline">Save changes</button>
 					</form>
 					</div>
 				</div>
@@ -292,8 +292,8 @@
           </div>
           <div class="modal-footer">
             <form method="post" onsubmit="submitSchedule()">
-              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="revertScheduleData()">Close</button>
-              <button type="submit" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary-outline" data-dismiss="modal" onclick="revertScheduleData()">Close</button>
+              <button type="submit" class="btn btn-primary-outline">Save changes</button>
             </form>
           </div>
         </div>
