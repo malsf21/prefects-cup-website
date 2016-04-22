@@ -104,7 +104,7 @@
 			<div class="container">
 				<h1>Schedule</h1>
 				<div id="schedule"></div>
-				<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
+				<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#editScheduleModal">
 					Edit Schedule
 				</button>
 			</div>
@@ -263,7 +263,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" tabindex="-1" role="dialog" id="editSchedules">
+		<div class="modal fade" tabindex="-1" role="dialog" id="editScheduleModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -299,23 +299,6 @@
         </div>
       </div>
     </div>
-		<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="deleteUserModalLabel">Delete User Profile</h4>
-		      </div>
-		      <div class="modal-body">
-		        Are you sure you want to <b>delete your user profile</b>? You'll lose all of your data!
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">No, I like this website!</button>
-		        <button type="button" class="btn btn-danger" onclick="removeCookie()">Yeah, go ahead!</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/google_analytics.js"></script>
