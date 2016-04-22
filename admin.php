@@ -53,7 +53,67 @@
 		<link href="css/base.css" rel="stylesheet" />
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
 	</head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="text-align:center;">
+		<nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
+			<div class="container">
+				<button class="hamburger hamburger--spring navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#collapse-navbar">
+				  <span class="hamburger-box">
+				    <span class="hamburger-inner"></span>
+				  </span>
+				</button>
+				  <a class="navbar-brand">Admin Panel</a>
+				  <ul class="nav navbar-nav collapse navbar-toggleable-xs" id="collapse-navbar">
+				    <li class="nav-item">
+				      <a class="nav-link page-scroll" href="#points">Edit Points</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link page-scroll" href="#events">Edit Events</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link page-scroll" href="#schedule">Edit Schedule</a>
+				    </li>
+						<li class="nav-item">
+				      <a class="nav-link page-scroll" href="#standings">Standings</a>
+				    </li>
+						<li class="nav-item">
+				      <a class="nav-link page-scroll" href="#contact">Contact</a>
+				    </li>
+						<a class="btn btn-info-outline pull-xs-right" href="index.html">To Home</a>
+				  </ul>
+			</div>
+		</nav>
+		<div class="section-two" id="points">
+			<div class="container">
+				<h1>Prefects Cup Points</h1>
+				<div id="graph" class="img-responsive"></div>
+				<div class="row">
+					<div class="col-xs-6" style="text-align:right;">
+						<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
+			        Set Points
+			      </button>
+					</div>
+					<div class="col-xs-6" style="text-align:left;">
+			      <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
+			        Add Points
+			      </button>
+					</div>
+			</div>
+			</div>
+		</div>
+		<div class="section-one" id="schedule">
+			<div class="container">
+				<h1>Schedule</h1>
+				<div id="schedule"></div>
+				<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
+					Edit Schedule
+				</button>
+			</div>
+		</div>
+		<footer class="footer">
+      <div class="container">
+        <span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span>
+      </div>
+    </footer>
 		<div class="modal fade" id="setPointsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -203,58 +263,59 @@
 				</div>
 			</div>
 		</div>
-
-		<nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
-			<div class="container">
-				<button class="hamburger hamburger--spring navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#collapse-navbar">
-				  <span class="hamburger-box">
-				    <span class="hamburger-inner"></span>
-				  </span>
-				</button>
-				  <a class="navbar-brand">Admin Panel</a>
-				  <ul class="nav navbar-nav collapse navbar-toggleable-xs" id="collapse-navbar">
-				    <li class="nav-item">
-				      <a class="nav-link page-scroll" href="#points">Edit Points</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link page-scroll" href="#events">Edit Events</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link page-scroll" href="#schedule">Edit Schedule</a>
-				    </li>
-						<li class="nav-item">
-				      <a class="nav-link page-scroll" href="#standings">Standings</a>
-				    </li>
-						<li class="nav-item">
-				      <a class="nav-link page-scroll" href="#contact">Contact</a>
-				    </li>
-						<a class="btn btn-info-outline pull-xs-right" href="index.html">To Home</a>
-				  </ul>
-			</div>
-		</nav>
-		<div class="section-two" id="points">
-			<div class="container">
-				<h1>Prefects Cup Points</h1>
-				<div id="graph" class="img-responsive"></div>
-				<div class="row">
-					<div class="col-xs-6" style="text-align:right;">
-						<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
-			        Set Points
-			      </button>
-					</div>
-					<div class="col-xs-6" style="text-align:left;">
-			      <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
-			        Add Points
-			      </button>
-					</div>
-			</div>
-			</div>
-		</div>
-		<footer class="footer">
-      <div class="container">
-        <span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span>
+		<div class="modal fade" tabindex="-1" role="dialog" id="editSchedules">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Edit Schedules</h2>
+          </div>
+          <div class="modal-body">
+            <h3>Hey there!</h3>
+            <p>If you want to edit the schedules that show up, you can edit them here.</p>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <input type="text" id="new-schedule-name" name="new-schedule-name" class="form-control" required="" placeholder="House Event">
+                    </div>
+                    <div class="col-sm-5">
+                      <input type="text" id="new-schedule-link" name="new-schedule-link" class="form-control" required="" placeholder="yourlink.com">
+                    </div>
+                    <div class="col-sm-3" style="color:white;text-align:right;">
+                      <button class="btn btn-success" onclick=""><span class="fa fa-plus"></span></button> <button class="btn btn-danger"><span class="fa fa-ban"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div id="new-schedule-list">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <form method="post" onsubmit="submitSchedule()">
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="revertScheduleData()">Close</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
+		<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="deleteUserModalLabel">Delete User Profile</h4>
+		      </div>
+		      <div class="modal-body">
+		        Are you sure you want to <b>delete your user profile</b>? You'll lose all of your data!
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">No, I like this website!</button>
+		        <button type="button" class="btn btn-danger" onclick="removeCookie()">Yeah, go ahead!</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/google_analytics.js"></script>
