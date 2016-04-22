@@ -129,51 +129,51 @@
 							Input values to <b>set</b> the points for each house. If you to add a new set of points, please use the add set button instead.
 							</p>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Bremner's</h4>
 									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['bremner']; ?>" autofocus="">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Howard's</h4>
 									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['howard']; ?>">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Jackson's</h4>
 									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['jackson']; ?>">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Martland's</h4>
 									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['martland']; ?>">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>McHugh's</h4>
 									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mchugh']; ?>">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Mowbray's</h4>
 									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mowbray']; ?>">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Orr's</h4>
 									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['orr']; ?>">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Scadding's</h4>
 									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['scadding']; ?>">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Seaton's</h4>
 									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['seaton']; ?>">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Wedd's</h4>
 									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['wedd']; ?>">
 								</div>
@@ -204,51 +204,51 @@
 							Input values to <b>add to the current set</b> of points for each house. If you want to set the new points, please use the add set button instead.
 							</p>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Bremner's</h4>
 									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['bremner']; ?>" autofocus="">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Howard's</h4>
 									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['howard']; ?>">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Jackson's</h4>
 									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['jackson']; ?>">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Martland's</h4>
 									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['martland']; ?>">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>McHugh's</h4>
 									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mchugh']; ?>">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Mowbray's</h4>
 									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mowbray']; ?>">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Orr's</h4>
 									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['orr']; ?>">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Scadding's</h4>
 									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['scadding']; ?>">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Seaton's</h4>
 									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['seaton']; ?>">
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<h4>Wedd's</h4>
 									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['wedd']; ?>">
 								</div>
