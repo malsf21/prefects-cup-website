@@ -9,36 +9,31 @@
 	$pointsfile = fopen("api/points_data.json", "r");
 	$points_data = json_decode(fread($pointsfile,filesize("api/points_data.json")),true);
 	fclose($pointsfile);
- 	//$points_data = json_decode(file_get_contents("api/points_data.json"), true);
-	function setPoints(){
-		if (isset($_GET['setPoints'])){
-			if(!empty($_POST)){
-				$current_time = time();
-				$new_data = $points_data;
-				$new_data["data"]["timestamp"] = $current_time;
-				$new_data["data"]["points"] =
-				[
-					"bremner" => $_POST["bremner"],
-		      "howard" => $_POST["howard"],
-		      "jackson" => $_POST["jackson"],
-		      "martland" => $_POST["martland"],
-		      "mchugh" => $_POST["mchugh"],
-		      "mowbray" => $_POST["mowbray"],
-		      "orr" => $_POST["orr"],
-		      "scadding" =>  $_POST["scadding"],
-		      "seaton" =>  $_POST["seaton"],
-		      "wedd" =>  $_POST["wedd"],
-				];
-				$pointsfile = fopen("api/points_data.json", "w");
-				fwrite($pointsfile, json_encode($new_data));
-				fclose($pointsfile);
-				header("Location: admin.php");
-				die("Redirecting to: admin.php");
-				//file_put_contents('api/points_data.json', json_encode($new_data));
-			}
+	if (isset($_GET['setPoints'])){
+		if(!empty($_POST)){
+			$current_time = time();
+			$new_data = $points_data;
+			$new_data["data"]["timestamp"] = $current_time;
+			$new_data["data"]["points"] =
+			[
+				"bremner" => $_POST["bremner"],
+	      "howard" => $_POST["howard"],
+	      "jackson" => $_POST["jackson"],
+	      "martland" => $_POST["martland"],
+	      "mchugh" => $_POST["mchugh"],
+	      "mowbray" => $_POST["mowbray"],
+	      "orr" => $_POST["orr"],
+	      "scadding" =>  $_POST["scadding"],
+	      "seaton" =>  $_POST["seaton"],
+	      "wedd" =>  $_POST["wedd"],
+			];
+			$pointsfile = fopen("api/points_data.json", "w");
+			fwrite($pointsfile, json_encode($new_data));
+			fclose($pointsfile);
+			header("Location: admin.php");
+			die("Redirecting to: admin.php");
 		}
 	}
-	setPoints();
 ?>
 <html lang="en">
 	<head>
@@ -52,6 +47,11 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet" />
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
+		<style>
+		.card{
+			padding: 5px;
+		}
+		</style>
 	</head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
@@ -271,18 +271,16 @@
           <div class="modal-body">
             <h3>Hey there!</h3>
             <p>If you want to edit the schedules that show up, you can edit them here.</p>
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <input type="text" id="new-schedule-name" name="new-schedule-name" class="form-control" required="" placeholder="House Event">
-                    </div>
-                    <div class="col-sm-5">
-                      <input type="text" id="new-schedule-link" name="new-schedule-link" class="form-control" required="" placeholder="yourlink.com">
-                    </div>
-                    <div class="col-sm-3" style="color:white;text-align:right;">
-                      <button class="btn btn-success" onclick=""><span class="fa fa-plus"></span></button> <button class="btn btn-danger"><span class="fa fa-ban"></span></button>
-                    </div>
+              <div class="card">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <input type="text" id="new-schedule-name" name="new-schedule-name" class="form-control" required="" placeholder="House Event">
+                  </div>
+                  <div class="col-sm-5">
+                    <input type="text" id="new-schedule-link" name="new-schedule-link" class="form-control" required="" placeholder="yourlink.com">
+                  </div>
+                  <div class="col-sm-2" style="color:white;text-align:center;">
+                    <button class="btn btn-success btn-lg" onclick="addScheduleData($('#new-schedule-name').val(),$('#new-schedule-link').val(),true);"><span class="fa fa-plus"></span></button>
                   </div>
                 </div>
               </div>
@@ -318,5 +316,6 @@
 			});
 		</script>
 		<script src="js/graph-points.js"></script>
+		<script src="js/editScheduleModal.js"></script>
   </body>
 </html>
