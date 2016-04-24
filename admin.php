@@ -38,7 +38,7 @@
 		if(!empty($_POST)){
 			$scheduleJSON = [
 				"timestamp" => time(),
-				"data" => json_decode($_POST["data"], true)
+				"data" => $_POST["data"],
 			];
 			$schedulesfile = fopen("api/schedule_data.json", "w");
 			fwrite($schedulesfile, json_encode($scheduleJSON));
