@@ -34,6 +34,19 @@
 			die("Redirecting to: admin.php");
 		}
 	}
+	if (isset($_GET['setPoints'])){
+		if(!empty($_POST)){
+			$scheduleJSON = [
+				"timestamp" => time(),
+				"data" => $_POST
+			];
+			$schedulesfile = fopen("api/schedule_data.json");
+			fwrite($pointsfile, $scheduleJSON);
+			fclose($pointsfile);
+			header("Location: admin.php");
+			die("Redirecting to: admin.php");
+		}
+	}
 ?>
 <html lang="en">
 	<head>

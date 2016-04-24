@@ -31,6 +31,14 @@ function revertScheduleData(){
   clearScheduleInput();
 }
 
+function submitSchedule(){
+  $.ajax({
+    method: "POST",
+    url: "admin.php?editSchedule",
+    data: scheduleListData
+  });
+}
+
 var scheduleData = JSON.parse(httpGet("api/schedule_data.json"));
 console.log(scheduleData);
 
