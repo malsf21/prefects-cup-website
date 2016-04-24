@@ -35,7 +35,7 @@ function submitSchedule(){
   $.ajax({
     method: "POST",
     url: "admin.php?editSchedule",
-    data: { "data": scheduleListData }
+    data: { "data": JSON.stringify(scheduleListData) }
   })
   .done(function() {
     console.log(scheduleListData);
