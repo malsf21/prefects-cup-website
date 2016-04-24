@@ -53,7 +53,7 @@
 					<ul class="nav navbar-nav">
 						<li class="hidden"><a href="#page-top"></a></li>
 						<li><a class="page-scroll" href="#information">Info</a></li>
-						<li><a class="page-scroll" href="#events">Events</a></li>
+						<!--<li><a class="page-scroll" href="#events">Events</a></li>-->
 						<li><a class="page-scroll" href="#schedule">Schedule</a></li>
 						<li><a class="page-scroll" href="#standings">Standings</a></li>
 						<li><a class="page-scroll" href="#contact">Contact</a></li>
@@ -97,11 +97,11 @@
 					<h2>
 						<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
 					</h2>
-					<a class="page-scroll btn btn-default btn-lg" href="#events" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+					<a class="page-scroll btn btn-default btn-lg" href="#schedule" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</div>
 			</div>
 		</section>
-
+		<!--
 		<section id="events" class="section-two">
 			<div class="center-parent">
 				<div class="center-child">
@@ -154,70 +154,17 @@
 				</div>
 			</div>
 		</section>
-
+	-->
 		<section id="schedule" class ="section-one">
 			<div class="center-parent">
 				<div class="center-child">
 					<h2>Event Schedules</h2>
+					<h4><a href="softball.html">House Softball</a></h4>
+					<!--
 					<h4><a href="https://docs.google.com/spreadsheets/d/1GzFvd7Y6hQpUnl_AjiJjQYygN6WydNMemBAoPJXPo4s/pubhtml">House Hockey</a></h4>
 					<h4><a href="files/senior_house_ball.xls">Senior House Basketball</h4>
-			<!--
-			<div class="table-responsive">
-				<h1>Schedule</h1>
-				<table style="width:100%;">
-					<tr class="table-index">
-						<td></td>
-						<td>Monday</td>
-						<td>Tuesday</td>
-						<td>Wednesday</td>
-						<td>Thursday</td>
-						<td>Friday</td>
-					</tr>
-					<tr>
-						<td class="table-index">Special Events</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td class="table-index">Before School</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td class="table-index">During School</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td class="table-index">Lunch</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td class="table-index">After School</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
-			</div>
-			-->
-
-				<a class="page-scroll btn btn-default btn-lg" href="#standings" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+					-->
+					<a class="page-scroll btn btn-default btn-lg" href="#standings" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</div>
 			</div>
 		</section>
