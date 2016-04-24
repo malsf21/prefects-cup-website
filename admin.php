@@ -40,7 +40,7 @@
 				"timestamp" => time(),
 				"data" => $_POST["data"]
 			];
-			$schedulesfile = fopen("api/schedule_data.json");
+			$schedulesfile = fopen("api/schedule_data.json", "w");
 			fwrite($schedulesfile, json_encode($scheduleJSON));
 			fclose($schedulesfile);
 			header("Location: admin.php");
