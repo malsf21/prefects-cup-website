@@ -34,7 +34,7 @@
 			die("Redirecting to: admin.php");
 		}
 	}
-	if (isset($_GET['setPoints'])){
+	if (isset($_GET['editSchedule'])){
 		if(!empty($_POST)){
 			$scheduleJSON = [
 				"timestamp" => time(),
