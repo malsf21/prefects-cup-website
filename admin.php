@@ -41,7 +41,7 @@
 				"data" => $_POST["data"]
 			];
 			$schedulesfile = fopen("api/schedule_data.json");
-			fwrite($schedulesfile, $scheduleJSON);
+			fwrite($schedulesfile, json_encode($scheduleJSON));
 			fclose($schedulesfile);
 			header("Location: admin.php");
 			die("Redirecting to: admin.php");
