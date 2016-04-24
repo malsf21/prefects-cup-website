@@ -37,9 +37,10 @@ function submitSchedule(){
     url: "admin.php?editSchedule",
     data: { "data": scheduleListData }
   })
-  /*.done(function() {
+  .done(function() {
+    console.log(scheduleListData);
     alert( "Success");
-  })*/;
+  });
 }
 
 var scheduleData = JSON.parse(httpGet("api/schedule_data.json"));
