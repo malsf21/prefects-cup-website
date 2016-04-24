@@ -36,9 +36,11 @@
 	}
 	if (isset($_GET['editSchedule'])){
 		if(!empty($_POST)){
+			$current_time = time();
+			$new_data =  json_decode($_POST["data"], true);
 			$scheduleJSON = [
-				"timestamp" => time(),
-				"data" => json_decode($_POST["data"], true)
+				"timestamp" => $current_time,
+				"data" => $new_data,
 			];
 			$schedulesfile = fopen("api/schedule_data.json", "w");
 			fwrite($schedulesfile, json_encode($scheduleJSON));
