@@ -35,8 +35,11 @@ function submitSchedule(){
   $.ajax({
     method: "POST",
     url: "admin.php?editSchedule",
-    data: scheduleListData
-  });
+    data: { "data": scheduleListData }
+  })
+  /*.done(function() {
+    alert( "Success");
+  })*/;
 }
 
 var scheduleData = JSON.parse(httpGet("api/schedule_data.json"));
