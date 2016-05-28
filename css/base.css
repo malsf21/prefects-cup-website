@@ -20,26 +20,22 @@
 }
 
 body {
-  min-width: 100%;
-  min-height: 100%;
+	position: relative;
+  width: 100%;
+  height: 100%;
   font-family:Nexa;
 	padding-top: 75px;
-	margin-bottom: 60px;
-}
-
-.navbar-nav a{
-	font-weight: normal;
 }
 
 html {
 	position: relative;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
 }
+
 h1,h2{
 	font-weight: bold;
 }
-
 
 @media(min-width:767px) {
   .navbar {
@@ -54,21 +50,21 @@ h1,h2{
   }
 }
 .section-one {
-  min-height: 100%;
+  height: 100%;
   padding-top: 80px;
   text-align: center;
   background: #FFF;
 }
 
 .section-two {
-  min-height: 100%;
-  padding-top: 50px;
+  height: 100%;
+  padding-top: 80px;
   text-align: center;
   background: #337ab7;
   color: #FFF;
 }
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 60px;
