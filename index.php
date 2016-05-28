@@ -82,6 +82,7 @@
 		<section id="information" class="section-one">
 			<div class="center-parent">
 				<div class="center-child">
+					<!--
 					<h1>This year's contenders are: </h1>
 					<span style="color:red; font-weight: bold;">Bremner's, </span>
 					<span style="color:orange; font-weight: bold;">Howard's, </span>
@@ -97,6 +98,10 @@
 					<h2>
 						<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
 					</h2>
+					-->
+					<h1>This year's winner?</h1>
+					<h1 class="page-header" style="color:red;">BREMNERS</h1>
+					<h2 style="color:red;">#BREMNATION</h2>
 					<a class="page-scroll btn btn-default btn-lg" href="#schedule" style="color:black;background-color:#FFF;border:0px;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
 				</div>
 			</div>
