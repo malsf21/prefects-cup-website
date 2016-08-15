@@ -5,51 +5,6 @@
 		die("Redirecting to login.php");
 	}
 ?>
-<?php
-	$pointsfile = fopen("api/points_data.json", "r");
-	$points_data = json_decode(fread($pointsfile,filesize("api/points_data.json")),true);
-	fclose($pointsfile);
-	if (isset($_GET['setPoints'])){
-		if(!empty($_POST)){
-			$current_time = time();
-			$new_data = $points_data;
-			$new_data["timestamp"] = $current_time;
-			$new_data["data"]["points"] =
-			[
-				"bremner" => $_POST["bremner"],
-	      "howard" => $_POST["howard"],
-	      "jackson" => $_POST["jackson"],
-	      "martland" => $_POST["martland"],
-	      "mchugh" => $_POST["mchugh"],
-	      "mowbray" => $_POST["mowbray"],
-	      "orr" => $_POST["orr"],
-	      "scadding" =>  $_POST["scadding"],
-	      "seaton" =>  $_POST["seaton"],
-	      "wedd" =>  $_POST["wedd"],
-			];
-			$pointsfile = fopen("api/points_data.json", "w");
-			fwrite($pointsfile, json_encode($new_data));
-			fclose($pointsfile);
-			header("Location: admin.php");
-			die("Redirecting to: admin.php");
-		}
-	}
-	if (isset($_GET['editSchedule'])){
-		if(!empty($_POST)){
-			$current_time = time();
-			$new_data =  json_decode($_POST["data"], true);
-			$scheduleJSON = [
-				"timestamp" => $current_time,
-				"data" => $new_data,
-			];
-			$schedulesfile = fopen("api/schedule_data.json", "w");
-			fwrite($schedulesfile, json_encode($scheduleJSON));
-			fclose($schedulesfile);
-			header("Location: admin.php");
-			die("Redirecting to: admin.php");
-		}
-	}
-?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -108,7 +63,7 @@
 					</div>
 					<div class="col-xs-6" style="text-align:left;">
 			      <button type="button" class="btn btn-secondary-outline btn-lg" data-toggle="modal" data-target="#addPointsModal">
-			        Add Points
+			        Add Points <span class="label label-warning">WIP</label>
 			      </button>
 					</div>
 			</div>
@@ -119,7 +74,7 @@
 				<h1>Schedule</h1>
 				<div id="schedule"></div>
 				<button type="button" class="btn btn-primary-outline btn-lg" data-toggle="modal" data-target="#editScheduleModal">
-					Edit Schedule
+					Edit Schedule <span class="label label-warning">WIP</label>
 				</button>
 			</div>
 		</div>
@@ -138,7 +93,7 @@
 						<h4 class="modal-title" id="setPointsModalLabel">Set some points!</h4>
 					</div>
 					<div class="modal-body">
-						<form class="form-signin" action="?setPoints" method="post">
+						<form class="form-signin" action="update_standings.php" method="post">
 							<h4>Set Points</h4>
 							<p>
 							Input values to <b>set</b> the points for each house. If you to add a new set of points, please use the add set button instead.
@@ -146,51 +101,51 @@
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>Bremner's</h4>
-									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['bremner']; ?>" autofocus="">
+									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="" autofocus="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Howard's</h4>
-									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['howard']; ?>">
+									<input type="text" id="howard" name="howard" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>Jackson's</h4>
-									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['jackson']; ?>">
+									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Martland's</h4>
-									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['martland']; ?>">
+									<input type="text" id="martland" name="martland" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>McHugh's</h4>
-									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mchugh']; ?>">
+									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Mowbray's</h4>
-									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mowbray']; ?>">
+									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>Orr's</h4>
-									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['orr']; ?>">
+									<input type="text" id="orr" name="orr" class="form-control" required="" value="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Scadding's</h4>
-									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['scadding']; ?>">
+									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>Seaton's</h4>
-									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['seaton']; ?>">
+									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Wedd's</h4>
-									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['wedd']; ?>">
+									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="">
 								</div>
 							</div>
 					</div>
@@ -221,51 +176,51 @@
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>Bremner's</h4>
-									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['bremner']; ?>" autofocus="">
+									<input type="text" id="bremner" name="bremner" class="form-control" required="" value="" autofocus="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Howard's</h4>
-									<input type="text" id="howard" name="howard" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['howard']; ?>">
+									<input type="text" id="howard" name="howard" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>Jackson's</h4>
-									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['jackson']; ?>">
+									<input type="text" id="jackson" name="jackson" class="form-control" required="" value="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Martland's</h4>
-									<input type="text" id="martland" name="martland" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['martland']; ?>">
+									<input type="text" id="martland" name="martland" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>McHugh's</h4>
-									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mchugh']; ?>">
+									<input type="text" id="mchugh" name="mchugh" class="form-control" required="" value="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Mowbray's</h4>
-									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['mowbray']; ?>">
+									<input type="text" id="mowbray" name="mowbray" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>Orr's</h4>
-									<input type="text" id="orr" name="orr" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['orr']; ?>">
+									<input type="text" id="orr" name="orr" class="form-control" required="" value="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Scadding's</h4>
-									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['scadding']; ?>">
+									<input type="text" id="scadding" name="scadding" class="form-control" required="" value="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<h4>Seaton's</h4>
-									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['seaton']; ?>">
+									<input type="text" id="seaton" name="seaton" class="form-control" required="" value="">
 								</div>
 								<div class="col-sm-6">
 									<h4>Wedd's</h4>
-									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="<?php echo $points_data["data"]["points"]['wedd']; ?>">
+									<input type="text" id="wedd" name="wedd" class="form-control" required="" value="">
 								</div>
 							</div>
 					</div>
@@ -332,5 +287,17 @@
 		</script>
 		<script src="js/graph-points.js"></script>
 		<script src="js/editScheduleModal.js"></script>
+		<script>
+			$("#bremner").attr("value", bremner);
+			$("#howard").attr("value", howard);
+			$("#jackson").attr("value", jackson);
+			$("#martland").attr("value", martland);
+			$("#mchugh").attr("value", mchugh);
+			$("#mowbray").attr("value", mowbray);
+			$("#orr").attr("value", orr);
+			$("#scadding").attr("value", scadding);
+			$("#seaton").attr("value", seaton);
+			$("#wedd").attr("value", wedd);
+		</script>
   </body>
 </html>

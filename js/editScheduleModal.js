@@ -1,3 +1,4 @@
+/*
 $(document).on('click', '.list-close', function () {
   $(this).parents('div.card').fadeOut();
 });
@@ -53,3 +54,4 @@ for (var key in scheduleData["data"]){
 }
 
 var scheduleListDataOld = scheduleListData;
+*/

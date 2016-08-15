@@ -3,23 +3,70 @@
 ## About
 Hey, Matthew Wang here. This repository contains everything involved in the [prefects cup website](http://pc.ucc.on.ca). It's a nice pet project that also serves some sort of useful purpose.
 
-Right now, I'm rewriting the code to rely less and less on databases, be updated to newer Bootstrap Versions, be less crappy, and be easier to clone/replicate. That involves switching chart data from a SQL Database to JSON, updating the website's design feel to look less ew, and rewriting a lot of the mechanisms that I use to make the site work out.
-
 You can find a test version of the most stable release at [my website](http://matthewwang.me/pc).
 
 ## Setup
-Firstly, you need to copy the api_example folder to api. This is mostly just for giving a starting point to the files.
+
+In order to run the Prefects Cup Website locally, you'll need a few things.
+
+* A MySQL server, to store and access the information used in the web application
+* A PHP/Apache server stack, to run the PHP code that's used in the WebApp
+* [Git](https://git-scm.com/), to clone this repository
+* A Browser, to view the website of course!
+
+To download this repository, just type this in your command line:
+
 ```
-cp api_example/ api/
-```
-Secondly, you need to give PHP write permission to the api folder. It'll look something like this (though it depends on whatever user PHP is running from).
-```
-chown -R www-data:www-data api
-chmod -R g+w api
+git clone https://github.com/malsf21/prefects-cup-website.git
 ```
 
+### Server Installations
+
+You can get a MySQL server + PHP/Apache Server, all bundled in one, using some packages. Which one you'll use depends on your Operating System.
+
+* Windows: [WAMP](http://www.wampserver.com/en/)
+* Mac: [MAMP](https://www.mamp.info/en/)
+* Linux: While there isn't a dedicated bundle installer, you can follow [these steps](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu) to get LAMP running.
+
+After you're done that, we need to configure our MySQL Database. Luckily, I've done most of the work for you. You need to do **two things**.
+
+### 1. Change the root password in common.php
+
+In `common.php`, there's a section of code that looks like this:
+
+```php
+
+$username = "root";
+$password = "";
+$host = "localhost";
+$dbname = "prefectscup";
+
+```
+
+Ensure that your variables look like that. Then, we're going to change the `$password` string to "root".
+
+It should now look like this:
+
+```php
+
+$username = "root";
+$password = "root";
+$host = "localhost";
+$dbname = "prefectscup";
+
+```
+
+### 2. Run the MySQL Setup Script
+
+Now, you can run your WAMP/LAMP/MAMP configuration. Included in this repository is a file named `setup.sql`. Running this SQL script sets up all the Databases and Tables you'll need to run the PC website locally.
+
+### Conclusion
+
+Once you're done these two steps, simply visit wherever the prefects-cup-website repository was placed (we recommend placing the repository in your webroot, which depends on the server installation you use). And ta-da, you have your own working version of the Prefects Cup Website!
+
+
 ## API
-I've made a semi-legitimate API for the website. You can get data on each house's individual points, when they were last updated, as well as a lot of other data (that hasn't actually been implemented yet). You can find more about each API and its usage/format in the README of the api_example folder.
+I've made a semi-legitimate API for the website. You can get data on each house's individual points, when they were last updated, as well as a lot of other data (that hasn't actually been implemented yet). Documentation coming soon!
 
 ## Credit
 * [Bootstrap](http://getbootstrap.com), the framework I've used for responsive utilities, pretty web UI elements, and robust Javascript.
