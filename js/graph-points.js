@@ -31,18 +31,22 @@ var trace1 = {
   }
 };
 
+var trace2 = {
+  x: yValue,
+  y: xValue,
+  type: 'bar',
+  marker:{
+    color: ['red', 'orange', "yellow", 'purple', 'brown', 'gray', 'blue', 'teal', 'green', 'black']
+  },
+  orientation: 'h'
+};
+
 var data = [trace1];
+var datah = [trace2];
 
 var annotationContent = [];
 
 var layout = {
-  xaxis: {
-    title: 'House'
-  },
-  yaxis: {
-    title: 'Total Points',
-    showticklabels: 'false'
-  },
   font: {
     family: '"Nexa Light","Open Sans", verdana, arial, sans-serif',
     color: 'white'
@@ -51,6 +55,15 @@ var layout = {
   plot_bgcolor: 'rgba(0,0,0,0)',
   annotations: annotationContent
 };
+
+var layouth = {
+  font: {
+    family: '"Nexa Light","Open Sans", verdana, arial, sans-serif',
+    color: 'white'
+  },
+  paper_bgcolor: 'rgba(0,0,0,0)',
+  plot_bgcolor: 'rgba(0,0,0,0)',
+}
 
 //global info
 var tweaks = {
@@ -71,3 +84,4 @@ for( var i = 0 ; i < xValue.length ; i++ ){
 
 
 Plotly.newPlot('graph', data, layout, tweaks);
+Plotly.newPlot('graph-h', datah, layouth, tweaks);
