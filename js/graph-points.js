@@ -49,7 +49,7 @@ var annotationContent = [];
 var layout = {
   font: {
     family: '"Nexa Light","Open Sans", verdana, arial, sans-serif',
-    color: 'white'
+    color: 'blue'
   },
   paper_bgcolor: 'rgba(0,0,0,0)',
   plot_bgcolor: 'rgba(0,0,0,0)',
@@ -59,7 +59,7 @@ var layout = {
 var layouth = {
   font: {
     family: '"Nexa Light","Open Sans", verdana, arial, sans-serif',
-    color: 'white'
+    color: 'blue'
   },
   paper_bgcolor: 'rgba(0,0,0,0)',
   plot_bgcolor: 'rgba(0,0,0,0)',
