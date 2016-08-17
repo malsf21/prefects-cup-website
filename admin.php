@@ -26,30 +26,25 @@
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
 			<div class="container">
-				<button class="hamburger hamburger--spring navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#collapse-navbar">
-				  <span class="hamburger-box">
-				    <span class="hamburger-inner"></span>
-				  </span>
-				</button>
-				  <a class="navbar-brand">Admin Panel</a>
-				  <ul class="nav navbar-nav collapse navbar-toggleable-xs" id="collapse-navbar">
-				    <li class="nav-item">
-				      <a class="nav-link page-scroll" href="#points">Edit Points</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link page-scroll" href="#events">Edit Events</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link page-scroll" href="#schedule">Edit Schedule</a>
-				    </li>
-						<li class="nav-item">
-				      <a class="nav-link page-scroll" href="#standings">Standings</a>
-				    </li>
-						<li class="nav-item">
-				      <a class="nav-link page-scroll" href="#contact">Contact</a>
-				    </li>
-						<a class="btn btn-info-outline pull-xs-right" href="index.html">To Home</a>
-				  </ul>
+			  <a class="navbar-brand">Admin Panel</a>
+			  <ul class="nav navbar-nav collapse navbar-toggleable-xs hidden-sm-down" id="collapse-navbar">
+			    <li class="nav-item">
+			      <a class="nav-link page-scroll" href="#points">Edit Points</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link page-scroll" href="#events">Edit Events</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link page-scroll" href="#schedule">Edit Schedule</a>
+			    </li>
+					<li class="nav-item">
+			      <a class="nav-link page-scroll" href="#standings">Standings</a>
+			    </li>
+					<li class="nav-item">
+			      <a class="nav-link page-scroll" href="#contact">Contact</a>
+			    </li>
+			  </ul>
+				<a class="btn btn-info-outline pull-xs-right" href="index.html">To Home</a>
 			</div>
 		</nav>
 		<div class="section-two" id="points">
@@ -57,7 +52,7 @@
 				<div id="graph" class="img-responsive"></div>
 				<div class="row">
 					<div class="col-xs-6" style="text-align:right;">
-						<button type="button" class="btn btn-secondary-outline btn-lg" data-toggle="modal" data-target="#setPointsModal">
+						<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
 			        Set Points
 			      </button>
 					</div>
@@ -78,11 +73,11 @@
 				</button>
 			</div>
 		</div>
-		<footer class="footer">
+		<div class="footer hidden-sm-down">
       <div class="container">
-        <span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span>
+        <p><span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span></p>
       </div>
-    </footer>
+    </div>
 		<div class="modal fade" id="setPointsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
