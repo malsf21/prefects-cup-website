@@ -1,20 +1,6 @@
 <?php
 	require("common.php");
 	if(!empty($_POST)) {
-		if(
-			empty($_POST['bremner'])  ||
-			empty($_POST['howard'])   ||
-			empty($_POST['jackson'])  ||
-			empty($_POST['martland']) ||
-			empty($_POST['mchugh'])   ||
-			empty($_POST['mowbray'])  ||
-			empty($_POST['orr'])      ||
-			empty($_POST['scadding']) ||
-			empty($_POST['seaton'])   ||
-			empty($_POST['wedd'])
-		) {
-			die("You missed a field");
-		}
 
 		$_POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
 
