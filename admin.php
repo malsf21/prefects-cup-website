@@ -11,37 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="Prefects Cup">
-		<meta name="author" content="">
+		<meta name="author" content="Matthew Wang">
 		<title>Admin Panel | Prefects Cup</title>
 		<link rel="icon" href="css/favicon.ico" />
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet" />
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
 	</head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-		<nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
-			<div class="container">
-			  <a class="navbar-brand">Admin Panel</a>
-			  <ul class="nav navbar-nav collapse navbar-toggleable-xs hidden-sm-down" id="collapse-navbar">
-			    <li class="nav-item">
-			      <a class="nav-link page-scroll" href="#points">Edit Points</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link page-scroll" href="#events">Edit Events</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link page-scroll" href="#schedule">Edit Schedule</a>
-			    </li>
-					<li class="nav-item">
-			      <a class="nav-link page-scroll" href="#standings">Standings</a>
-			    </li>
-					<li class="nav-item">
-			      <a class="nav-link page-scroll" href="#contact">Contact</a>
-			    </li>
-			  </ul>
-				<a class="btn btn-info-outline pull-xs-right" href="index.html">To Home</a>
-			</div>
-		</nav>
+  <body>
+		<a class="pull-xs-right" href="index.html">To Home</a>
 		<div class="section-one" id="points">
 			<div class="container">
 				<canvas class="img-fluid" id="graph"></canvas>
@@ -50,17 +28,6 @@
 				</button>
 			</div>
 		</div>
-		<!--
-		<div class="section-one" id="schedule">
-			<div class="container">
-				<h1>Schedule</h1>
-				<div id="schedule"></div>
-				<button type="button" class="btn btn-primary-outline btn-lg" data-toggle="modal" data-target="#editScheduleModal">
-					Edit Schedule <span class="label label-warning">WIP</label>
-				</button>
-			</div>
-		</div>
-		-->
 		<footer class="text-xs-center">
       <div class="container">
         <p><span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span></p>
@@ -140,7 +107,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!--
 		<div class="modal fade" id="addPointsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -249,6 +216,7 @@
         </div>
       </div>
     </div>
+		-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/google_analytics.js"></script>
