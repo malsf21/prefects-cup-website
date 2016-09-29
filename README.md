@@ -70,7 +70,7 @@ I've made a semi-legitimate API for the website. You can get data on each house'
 
 ## Credit
 * [Bootstrap](http://getbootstrap.com), the framework I've used for responsive utilities, pretty web UI elements, and robust Javascript.
-* [plotly.js](https://plot.ly/javascript/), the (better) framework I've used for creating that nice looking bar graph.
+* [Charts.js](http://www.chartjs.org/), the superior charts library I've used to make those sexy graphs.
 * [Font Awesome](https://fortawesome.github.io), the collection of nice icons that I use.
 * [Nick Elder](http://elder.ca), the cool dude who maintained the website before me.
 * [Jack Sarick](http://sarick.tech), the cool dude who built a lot of the login framework that I base this one off of (for WAC).
