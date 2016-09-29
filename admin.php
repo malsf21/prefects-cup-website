@@ -17,11 +17,6 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet" />
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
-		<style>
-		.card{
-			padding: 5px;
-		}
-		</style>
 	</head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
@@ -47,23 +42,15 @@
 				<a class="btn btn-info-outline pull-xs-right" href="index.html">To Home</a>
 			</div>
 		</nav>
-		<div class="section-two" id="points">
+		<div class="section-one" id="points">
 			<div class="container">
-				<div id="graph" class="img-responsive"></div>
-				<div class="row">
-					<div class="col-xs-6" style="text-align:right;">
-						<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#setPointsModal">
-			        Set Points
-			      </button>
-					</div>
-					<div class="col-xs-6" style="text-align:left;">
-			      <button type="button" class="btn btn-secondary-outline btn-lg" data-toggle="modal" data-target="#addPointsModal">
-			        Add Points <span class="label label-warning">WIP</label>
-			      </button>
-					</div>
-			</div>
+				<canvas class="img-fluid" id="graph"></canvas>
+				<button type="button" class="btn btn-primary-outline btn-lg" data-toggle="modal" data-target="#setPointsModal">
+					Set Points
+				</button>
 			</div>
 		</div>
+		<!--
 		<div class="section-one" id="schedule">
 			<div class="container">
 				<h1>Schedule</h1>
@@ -73,11 +60,12 @@
 				</button>
 			</div>
 		</div>
-		<div class="footer hidden-sm-down">
+		-->
+		<footer class="text-xs-center">
       <div class="container">
         <p><span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span></p>
       </div>
-    </div>
+    </footer>
 		<div class="modal fade" id="setPointsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -264,9 +252,7 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/google_analytics.js"></script>
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/scrolling-nav.js"></script>
-		<script src="js/plotly.min.js"></script>
+		<script src="js/chart.min.js"></script>
 		<script>
 			function httpGet(theUrl){
 				var xmlHttp = new XMLHttpRequest();
@@ -274,14 +260,8 @@
 				xmlHttp.send( null );
 				return xmlHttp.responseText;
 			}
-			//setting up the hamburger
-			var $hamburger = $(".hamburger");
-			$hamburger.on("click", function(e) {
-				$hamburger.toggleClass("is-active");
-			});
 		</script>
 		<script src="js/graph-points.js"></script>
-		<script src="js/editScheduleModal.js"></script>
 		<script>
 			$("#bremner").attr("value", bremner);
 			$("#howard").attr("value", howard);

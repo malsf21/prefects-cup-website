@@ -13,40 +13,14 @@
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/animate.min.css" rel="stylesheet" />
 	</head>
-
-	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
-		<!-- NAVBAR -->
-		<nav class="navbar navbar-light bg-faded navbar-fixed-top" role="navigation">
-			<div class="container">
-			  <a class="navbar-brand page-scroll" href="#start">Prefects Cup</a>
-			  <ul class="nav navbar-nav collapse navbar-toggleable-xs hidden-sm-down" id="collapse-navbar">
-			    <li class="nav-item">
-			      <a class="nav-link page-scroll" href="#information">Info</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link page-scroll" href="#events">Events</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link page-scroll" href="#schedule">Schedule</a>
-			    </li>
-					<li class="nav-item">
-			      <a class="nav-link page-scroll" href="#standings">Standings</a>
-			    </li>
-					<li class="nav-item">
-			      <a class="nav-link page-scroll" href="#contact">Contact</a>
-			    </li>
-					<a class="btn btn-success-outline pull-xs-right" href="admin.php" role="button">Manage</a>
-			  </ul>
-			</div>
-		</nav>
-
+	<body>
+		<a class="pull-xs-right manage-text" href="admin.php">Manage</a>
 		<!-- BODY CONTENT -->
 		<div id="start" class="section-two">
 			<div class="container animated tada">
 				<h1 class="display-1" style="color:gold;"><span class="fa fa-trophy"></span></h1>
 				<h1 class="display-3">The Prefects Cup</h1>
 				<h1>2016-2017</h1>
-				<a class="page-scroll btn btn-default btn-lg scroll-btn-white hidden-xs-down" href="#information"><span class="fa fa-chevron-down" aria-hidden="true"></span></a>
 			</div>
 		</div>
 
@@ -73,78 +47,40 @@
 				<h2>
 					<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
 				</h2>
-				<a class="page-scroll btn btn-default btn-lg scroll-btn-black hidden-xs-down" href="#events"><span class="fa fa-chevron-down" aria-hidden="true"></span></a>
 			</div>
 		</div>
-
+		<!--
 		<div id="events" class="section-two">
 			<div class="container">
 				<h1>Events</h1>
-				<table class="table">
-					<thead>
-						<tr>
-							<th>Event</th>
-							<th>Season</th>
-							<th>Supervisors</th>
-						</tr>
-					</thead>
-					<tbody style="text-align:left;">
-						<tr>
-							<td>House Basektball</td>
-							<td>Winter</td>
-							<td>Mario Sturino</td>
-						</tr>
-					</tbody>
-				</table>
-				<a class="page-scroll btn btn-default btn-lg scroll-btn-white hidden-xs-down" href="#schedule"><span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+				<h2>Coming soon!</h2>
 			</div>
 		</div>
 
 		<div id="schedule" class="section-one">
 			<div class="container">
 				<h1>Event Schedules</h1>
-				<h4><a href="https://docs.google.com/spreadsheets/d/1GzFvd7Y6hQpUnl_AjiJjQYygN6WydNMemBAoPJXPo4s/pubhtml">House Hockey</a></h4>
-				<h4><a href="files/senior_house_ball.xls">Senior House Basketball</h4>
-					<a class="page-scroll btn btn-default btn-lg scroll-btn-black hidden-xs-down" href="#standings"><span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+				<h2>Coming soon!</h2>
 			</div>
 		</div>
+		-->
 
 		<div id="standings" class="section-two">
 			<div class="container">
-				<div style="text-align:center;">
-					<h3>Coming soon!</h3>
-					<!--
-					<div class="card card-block">
-						<ul class="nav nav-pills">
-							<li class="nav-item">
-								<a class="nav-link disabled" href="#">Standings</a>
-							</li>
-						  <li class="nav-item">
-						    <a class="nav-link" data-toggle="collapse" href="#horz-graph" aria-expanded="false" aria-controls="horizontal-graph">Horizontal</a>
-						  </li>
-						  <li class="nav-item">
-						    <a class="nav-link" data-toggle="collapse" href="#vert-graph" aria-expanded="false" aria-controls="vert-graph">Vertical</a>
-						  </li>
-						</ul>
-					</div>
-					<div class="collapse" id="vert-graph">
-					  <div class="card card-block img-responsive" id="graph">
-					  </div>
-					</div>
-					<div class="collapse" id="horz-graph">
-					  <div class="card card-block img-responsive" id="graph-h">
-					  </div>
-					</div>
-				-->
+				<div class="card card-block">
+					<canvas class="img-fluid" id="graph"></canvas>
 				</div>
 			</div>
 		</div>
 
 		<div id="contact" class="section-one">
-			<h2>Thanks For Supporting Your House!</h2>
-			<h1>Need to contact us?</h1>
 			<div class="container">
-				<div class="table-responsive">
+				<h2>Thanks For Supporting Your House!</h2>
+				<h1>Need to contact us?</h1>
+				<div class="hidden-sm-up">
+					Contact Matthew Wang at <a href="mailto:matthew.wang@ucc.on.ca">matthew.wang@ucc.on.ca</a>
+				</div>
+				<div class="table-responsive hidden-xs-down">
 					<table class="table borderless">
 						<tr>
 							<td>Web Designer:</td>
@@ -195,25 +131,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer hidden-sm-down">
+		<footer class="text-xs-center">
       <div class="container">
         <p><span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span></p>
       </div>
-    </div>
+    </footer>
 		<!-- JAVASCRIPT; loaded last to load page quicker -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/scrolling-nav.js"></script>
 		<script src="js/google_analytics.js"></script>
 		<script src="js/countdown.js"></script>
-		<script type="text/javascript">
-			var deadLine = "6/1/2017"; //Countdown date in MM/DD/YYYY format (no 0's required)
-			window.setInterval(function(){
-				$("#timeLeft").html(getTimeRemaining(deadLine));
-			}, 1000);
-		</script>
-		<script src="js/plotly.min.js"></script>
+		<script src="js/chart.min.js"></script>
 		<script type="text/javascript">
 			function httpGet(theUrl){
 			  var xmlHttp = new XMLHttpRequest();
@@ -221,6 +149,11 @@
 			  xmlHttp.send( null );
 			  return xmlHttp.responseText;
 			}
+
+			var deadLine = "6/1/2017"; //Countdown date in MM/DD/YYYY format (no 0's required)
+			window.setInterval(function(){
+				$("#timeLeft").html(getTimeRemaining(deadLine));
+			}, 1000);
 		</script>
 		<script src="js/graph-points.js"></script>
 	</body>
