@@ -79,6 +79,7 @@
 		<div id="contact" class="section-one">
 			<div class="container">
 				<h2>Thanks For Supporting Your House!</h2>
+				<!--
 				<h1>Need to contact us?</h1>
 				<div class="hidden-sm-up">
 					Contact Matthew Wang at <a href="mailto:matthew.wang@ucc.on.ca">matthew.wang@ucc.on.ca</a>
@@ -132,6 +133,7 @@
 						</tr>
 					</table>
 				</div>
+			-->
 			</div>
 		</div>
 		<footer class="text-xs-center">
@@ -146,17 +148,11 @@
 		<script src="js/countdown.js"></script>
 		<script src="js/chart.min.js"></script>
 		<script type="text/javascript">
-			function httpGet(theUrl){
-			  var xmlHttp = new XMLHttpRequest();
-			  xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-			  xmlHttp.send( null );
-			  return xmlHttp.responseText;
-			}
-
 			var deadLine = "6/1/2017"; //Countdown date in MM/DD/YYYY format (no 0's required)
 			window.setInterval(function(){
 				$("#timeLeft").html(getTimeRemaining(deadLine));
 			}, 1000);
+			var adminPage = false;
 		</script>
 		<script src="js/graph-points.js"></script>
 	</body>

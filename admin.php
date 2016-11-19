@@ -224,26 +224,7 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/google_analytics.js"></script>
 		<script src="js/chart.min.js"></script>
-		<script>
-			function httpGet(theUrl){
-				var xmlHttp = new XMLHttpRequest();
-				xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-				xmlHttp.send( null );
-				return xmlHttp.responseText;
-			}
-		</script>
+		<script>var adminPage = true;</script>
 		<script src="js/graph-points.js"></script>
-		<script>
-			$("#bremner").attr("value", bremner);
-			$("#howard").attr("value", howard);
-			$("#jackson").attr("value", jackson);
-			$("#martland").attr("value", martland);
-			$("#mchugh").attr("value", mchugh);
-			$("#mowbray").attr("value", mowbray);
-			$("#orr").attr("value", orr);
-			$("#scadding").attr("value", scadding);
-			$("#seaton").attr("value", seaton);
-			$("#wedd").attr("value", wedd);
-		</script>
   </body>
 </html>
