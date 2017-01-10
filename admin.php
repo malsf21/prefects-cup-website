@@ -22,16 +22,16 @@
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
 	</head>
   <body>
-		<a class="pull-xs-right" href="index.html">To Home</a>
+		<a class="float-right" href="index.html">To Home</a>
 		<div class="section-one" id="points">
 			<div class="container">
 				<canvas class="img-fluid" id="graph"></canvas>
-				<button type="button" class="btn btn-primary-outline btn-lg" data-toggle="modal" data-target="#setPointsModal">
+				<button type="button" class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#setPointsModal">
 					Set Points
 				</button>
 			</div>
 		</div>
-		<footer class="text-xs-center">
+		<footer class="text-center">
       <div class="container">
         <p><span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span></p>
       </div>
@@ -103,8 +103,8 @@
 							</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-danger-outline" data-dismiss="modal">Cancel</button>
-						<button type="submit" class="btn btn-success-outline">Save changes</button>
+						<button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-outline-success">Save changes</button>
 					</form>
 					</div>
 				</div>
