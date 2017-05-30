@@ -4,8 +4,6 @@
 		header("Location: admin.php");
 		die("Redirecting to admin.php");
 	}
-?>
-<?php
 	function register(){
 		$allowed = false;
 		if ($allowed == true){
@@ -115,28 +113,23 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet" />
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
-		<style>
-			.row{
-				padding-top: 20px;
-			}
-		</style>
 	</head>
 <body>
 		<div class="container">
 			<h1 class="display-4">Account Registration</h1>
 			<h3>In order to get the secret password, you need to contact Matthew Wang at <a href="mailto:matthew.wang@ucc.on.ca">matthew.wang@ucc.on.ca</a></h3>
 			<form class="form-signin" action="?register" method="post">
-				<div class = "row">
-					<div class = "col-md-6">
+				<div class="row pt-2">
+					<div class="col-md-6">
 						<h3>Email</h3>
 						<input type="email" id="email" class="form-control" placeholder="john.smith@ucc.on.ca" name="email" required="" autofocus="">
 					</div>
-					<div class = "col-md-6">
+					<div class="col-md-6">
 						<h3>Name</h3>
 						<input type="text" id="name" class="form-control" placeholder="John Smith" name="name" required="">
 					</div>
 				</div>
-				<div class="row">
+				<div class="row pt-2">
 					<div class="col-md-6">
 						<h3>Password</h3>
 						<input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
@@ -146,7 +139,7 @@
 						<input type="password" id="password2" name="password2" class="form-control" placeholder="Confirm Password" required="">
 					</div>
 				</div>
-				<div class="row">
+				<div class="row pt-2">
 					<div class="col-md-12">
 						<h3>Secret Password</h3>
 						<input type="password" id="secretpassword" name="secretpassword" class="form-control" placeholder="Secret Password" required="">
@@ -160,9 +153,9 @@
 				</div>
 			</form>
 		</div>
-		<footer class="footer">
+		<footer class="text-center">
       <div class="container">
-        <span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:purple;"></span></a></span>
+        <p><span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:black;"></span></a></span></p>
       </div>
     </footer>
 		<script src="js/jquery.min.js"></script>

@@ -4,8 +4,7 @@
 		header("Location: admin.php");
 		die("Redirecting to admin.php");
 	}
-?>
-<?php
+
 	function login(){
 		if (isset($_GET['login'])){
 			require("common.php");
@@ -92,35 +91,35 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/base.css" rel="stylesheet" />
 		<link href="css/font-awesome.min.css" rel="stylesheet" />
-		<style>
-			.row{
-				padding-top: 20px;
-			}
-		</style>
 	</head>
   <body>
   	<div class="container">
   		<h1>Account Login</h1>
   		<h3>Don't have an account? <b><a href="mailto:matthew.wang@ucc.on.ca">Contact Matthew Wang</a></b>.</h3>
   		<form class="form-signin" action="?login" method="post">
-  			<div class = "row">
-  				<div class = "col-md-12">
+  			<div class="row pt-2">
+  				<div class="col-md-12">
   					<input type="email" id="email" class="form-control" placeholder="john.smith@ucc.on.ca" name="email" required="" autofocus="">
   				</div>
   			</div>
-  			<div class = "row">
-  				<div class = "col-md-12">
+  			<div class="row pt-2">
+  				<div class="col-md-12">
   					<input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
   				</div>
   			</div>
   			</br>
-  			<div class = "row">
-  				<div class = "col-md-12">
+  			<div class="row pt-2">
+  				<div class="col-md-12">
   					<button class="btn btn-lg btn-primary btn-block" type="submit" value="Login">Login</button>
   				</div>
   			</div>
   		</form>
   	</div>
+		<footer class="text-center">
+      <div class="container">
+        <p><span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:black;"></span></a></span></p>
+      </div>
+    </footer>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/google_analytics.js"></script>
