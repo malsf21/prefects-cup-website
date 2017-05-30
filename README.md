@@ -1,7 +1,7 @@
-# Website for the Prefect Cup
+# [Prefects Cup Website](https://pc.ucc.on.ca)
 
 ## About
-Hey, Matthew Wang here. This repository contains everything involved in the [prefects cup website](http://pc.ucc.on.ca). It's a nice pet project that also serves some sort of useful purpose.
+Hey, Matthew Wang here. This repository contains everything involved in the [prefects cup website](https://pc.ucc.on.ca). It's a nice pet project that also serves some sort of useful purpose.
 
 You can find a test version of the most stable release at [my website](http://matthewwang.me/pc).
 
