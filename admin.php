@@ -37,7 +37,7 @@
         <p><span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:black;"></span></a></span></p>
       </div>
     </footer>
-		<div class="modal fade" id="setPointsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="setPointsModal" tabindex="-1" role="dialog" aria-labelledby="setPointsModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -222,6 +222,7 @@
     </div>
 		-->
 		<script src="js/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/google_analytics.js"></script>
 		<script src="js/chart.min.js"></script>
