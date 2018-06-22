@@ -1,5 +1,5 @@
 // gets data
-$.get( "api/standings.php", function( data ) {
+$.get( "https://pc.ucc.on.ca/standings.php", function( data ) {
   var pointsData = JSON.parse(data);
   //This part is just importing the variables from the JSON values
   var bremner = pointsData["bremner"];

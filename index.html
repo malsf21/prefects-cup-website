@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="Prefects Cup">
 		<meta name="author" content="Matthew Wang">
@@ -11,133 +11,67 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-		<link href="css/bootstrap.min.css" rel="stylesheet" />
-		<link href="css/base.css" rel="stylesheet"  />
-		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" defer></script>
 	</head>
 	<body>
-		<a class="float-right manage-text" href="admin.php">Manage</a>
 		<!-- BODY CONTENT -->
-		<div id="start" class="section-two">
-			<div class="container animated-logo pb-5">
-				<span class="fa fa-trophy fa-5x logo"></span>
-				<h1 class="display-3">The Prefects Cup</h1>
-				<h2>2017-2018</h2>
-			</div>
-			<div class="container mt-5">
-				<h2>
-					<div id="timeLeft">000 Days, 00 Hours, 00 Minutes, and 00 Seconds!</div>
+		<section class="section has-background-link has-text-white">
+			<div class="container">
+				<h1 class="title has-text-white">
+					<span class="fa fa-trophy has-text-warning animated-trophy"></span>
+					<span class="has-text-weight-bold">The Prefects' Cup</span>
+					<span class="has-text-weight-light">2018-2019</span>
+				</h1>
+				<h2 class="subtitle has-text-white">
+					<span id="info-block">000 Days, 00 Hours, 00 Minutes, and 00 Seconds until the winner is announced!</span>
 				</h2>
-				<h3>Until the winner is announced!</h3>
 			</div>
-		</div>
-		<!--
-		<div id="events" class="section-two">
+		</section>
+		<section class="section">
 			<div class="container">
-				<h1>Events</h1>
-				<h2>Coming soon!</h2>
-			</div>
-		</div>
-
-		<div id="schedule" class="section-one">
-			<div class="container">
-				<h1>Event Schedules</h1>
-				<h2>Coming soon!</h2>
-			</div>
-		</div>
-		-->
-
-		<div id="standings" class="section-one">
-			<div class="container">
-				<div class="card card-block graph-container">
-					<canvas class="graph-fluid" id="graph"></canvas>
-				</div>
-				<div class="d-xl-none d-lg-none text-center mt-2">
-					Hey there, I notice you're viewing this website on a small screen! I'm trying to improve the code for viewing these graphs on mobile, bear with me. Thanks for your patience!
+				<div class="card">
+					<canvas id="graph"></canvas>
 				</div>
 			</div>
-		</div>
-		<!--
-		<div id="contact" class="section-one">
-			<div class="container">
-				<h2>Thanks For Supporting Your House!</h2>
-				<h1>Need to contact us?</h1>
-				<div class="hidden-sm-up">
-					Contact Matthew Wang at <a href="mailto:matthew.wang@ucc.on.ca">matthew.wang@ucc.on.ca</a>
-				</div>
-				<div class="table-responsive hidden-xs-down">
-					<table class="table borderless">
-						<tr>
-							<td>Web Designer:</td>
-							<td>Matthew Wang</td>
-							<td><a href="mailto:matthew.wang@ucc.on.ca">matthew.wang@ucc.on.ca</a></td>
-						</tr>
-						<tr>
-							<td>Head Organiser:</td>
-							<td>Evan Williams</td>
-							<td><a href="ewilliams@ucc.on.ca">ewilliams@ucc.on.ca</a></td>
-						</tr>
-						<tr>
-							<td>House Soccer Organiser:</td>
-							<td>Felipe Nilo</td>
-							<td><a href="fnilo@ucc.on.ca">fnilo@ucc.on.ca</a></td>
-						</tr>
-						<tr>
-							<td>House Soccer Organiser:</td>
-							<td>Reem Aweida-Parsons</td>
-							<td><a href="raweida-parsons@ucc.on.ca">raweida-parsons@ucc.on.ca</a></td>
-						</tr>
-						<tr>
-							<td>Junior House Soccer Organiser:</td>
-							<td>Kevin Olds</td>
-							<td><a href="kolds@ucc.on.ca">kolds@ucc.on.ca</a></td>
-						</tr>
-						<tr>
-							<td>House Basketball Organiser:</td>
-							<td>Mario Sturino</td>
-							<td><a href="msturino@ucc.on.ca">msturino@ucc.on.ca</a></td>
-						</tr>
-						<tr>
-							<td>House Volleyball Organiser:</td>
-							<td>Mario Sturino</td>
-							<td><a href="msturino@ucc.on.ca">msturino@ucc.on.ca</a></td>
-						</tr>
-						<tr>
-							<td>House Hockey Organiser:</td>
-							<td>Ian Toope</td>
-							<td><a href="itoope@ucc.on.ca">itoope@ucc.on.ca</a></td>
-						</tr>
-						<tr>
-							<td>House Softball Organiser:</td>
-							<td>Richard Turner</td>
-							<td><a href="rturner@ucc.on.ca">rturner@ucc.on.ca</a></td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-		-->
-		<footer class="text-center">
-      <div class="container">
-        <p><span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart" style="color:red;"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fa fa-github" style="color:black;"></span></a></span></p>
+		</section>
+		<footer class="footer">
+			<div class="content has-text-centered">
 				<p>
-					<span class="text-muted">Points updated by Evan Williams</span>
+					<strong>The Prefects' Cup Website</strong>
 				</p>
-      </div>
-    </footer>
+				<p>
+					<span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart has-text-danger animated-heartbeat"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fab fa-github has-text-black"></span></a></span>
+				</p>
+				<p>
+					(and <a href="https://bulma.io">Bulma</a>, <a href="https://www.chartjs.org">Chart.js</a>, <a href="https://firebase.google.com">Firebase</a> and <a href="https://fontawesome.com">Font Awesome</a>)
+				</p>
+				<p>
+					Points updated by Evan Williams
+				</p>
+		  </div>
+		</footer>
 		<!-- JAVASCRIPT; loaded last to load page quicker -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<script src="js/google_analytics.js"></script>
-		<script src="js/countdown.js"></script>
-		<script src="js/chart.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+		<script src="js/graph.js"></script>
 		<script type="text/javascript">
 			var deadLine = "6/1/2018"; //Countdown date in MM/DD/YYYY format (no 0's required)
-			window.setInterval(function(){
-				$("#timeLeft").html(getTimeRemaining(deadLine));
-			}, 1000);
-			var adminPage = false;
+			function getTimeRemaining(endtime){
+				var t = Date.parse(endtime) - Date.parse(new Date());
+				var seconds = Math.floor( (t/1000) % 60 );
+				var minutes = Math.floor( (t/1000/60) % 60 );
+				var hours = Math.floor( (t/(1000*60*60)) % 24 );
+				var days = Math.floor( t/(1000*60*60*24) );
+
+				if (t > 0){
+					return days + " Days, " + hours + " Hours, " + minutes + " Minutes, and " + seconds + " Seconds!";
+				}
+				else {
+					return "Oops!";
+				}
+			}
 		</script>
-		<script src="js/graph-points.js"></script>
 	</body>
 </html>
