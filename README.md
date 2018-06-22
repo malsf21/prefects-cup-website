@@ -2,6 +2,8 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f9473ed506154df0bca43ed9b1ec9e28)](https://www.codacy.com/app/malsf21/prefects-cup-website?utm_source=github.com&utm_medium=referral&utm_content=malsf21/prefects-cup-website&utm_campaign=badger)
 
+**NOTE:** Over the summer, I will rewrite this tiny web-app to be a client-side only app with Firebase, so it can be hosted on GitHub Pages (and require no hosted backend). Stay tuned.
+
 ## About
 Hey, Matthew Wang here. This repository contains everything involved in the [prefects cup website](https://pc.ucc.on.ca). It's a nice pet project that also serves some sort of useful purpose.
 
