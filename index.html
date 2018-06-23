@@ -42,6 +42,9 @@
 					<strong>The Prefects' Cup Website</strong>
 				</p>
 				<p>
+					<a href="index.html">Home</a> | <a href="manage.html">Manage</a>
+				</p>
+				<p>
 					<span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart has-text-danger animated-heartbeat"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fab fa-github has-text-black"></span></a></span>
 				</p>
 				<p>
@@ -53,9 +56,35 @@
 		  </div>
 		</footer>
 		<!-- JAVASCRIPT; loaded last to load page quicker -->
-		<script src="js/google_analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyB7movfLtHxREJjB2lNIFrY9LQR_0EUly8",
+		    authDomain: "prefects-cup-website.firebaseapp.com",
+		    databaseURL: "https://prefects-cup-website.firebaseio.com",
+		    projectId: "prefects-cup-website",
+		    storageBucket: "prefects-cup-website.appspot.com",
+		    messagingSenderId: "21735143583"
+		  }
+		  firebase.initializeApp(config);
+		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 		<script src="js/graph.js"></script>
+		<script>
+			var dbPointsData = firebase.database().ref('points');
+			dbPointsData.on('value', function(snapshot) {
+				var responseData = snapshot.val()
+				graph.data.datasets[0].data = Object.values(responseData).map(x => Number(x))
+				graph.update()
+			})
+			var dbLastUpdated = firebase.database().ref('last-updated');
+			dbLastUpdated.on('value', function(snapshot) {
+				var responseData = snapshot.val()
+				graph.data.datasets[0].label = "Prefect\'s Cup Points as of " + new Date(responseData).toDateString()
+				graph.update()
+			})
+		</script>
 		<script type="text/javascript">
 			var deadLine = "6/1/2018"; //Countdown date in MM/DD/YYYY format (no 0's required)
 			function getTimeRemaining(endtime){
