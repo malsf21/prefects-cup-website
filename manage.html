@@ -58,8 +58,33 @@
 				<button class="button is-danger" id="logout">Logout</button>
 			</div>
 		</section>
-		<section class="section" id="data-section">
+		<section class="section" id="countdown-section">
 			<div class="container">
+				<h1 class="title has-text-centered">Countdown Time</h1>
+				<div class="card">
+					<div class="card-content">
+						<p id="info-block">000 Days, 00 Hours, 00 Minutes, and 00 Seconds until the winner is announced!</p>
+						<br />
+						<div class="field has-addons">
+						  <div class="control">
+						    <input class="input" type="number" placeholder="Enter Unix Timestamp" name="countdown" id="countdown">
+						  </div>
+						  <div class="control">
+						    <a class="button is-info" href="#" id="submit-countdown">
+						      Set Time
+						    </a>
+						  </div>
+						</div>
+						<p>
+							Get the Unix Timestamp from <a href="https://www.unixtimestamp.com/index.php">this website</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section" id="points-section">
+			<div class="container">
+				<h1 class="title has-text-centered">Points Data</h1>
 				<div class="columns">
 					<div class="column">
 						<div class="card">
@@ -168,7 +193,8 @@
 		<script>
 			document.getElementById('login-section').style.display = "block"
 			document.getElementById('user-section').style.display = "none"
-			document.getElementById('data-section').style.display = "none"
+			document.getElementById('countdown-section').style.display = "none"
+			document.getElementById('points-section').style.display = "none"
 
 		  // Initialize Firebase
 		  var config = {
@@ -185,12 +211,14 @@
 			  if (user) {
 					document.getElementById('login-section').style.display = "none"
 					document.getElementById('user-section').style.display = "block"
-					document.getElementById('data-section').style.display = "block"
+					document.getElementById('countdown-section').style.display = "block"
+					document.getElementById('points-section').style.display = "block"
 					document.getElementById('user-email').innerHTML = user.email
 			  } else {
 					document.getElementById('login-section').style.display = "block"
 					document.getElementById('user-section').style.display = "none"
-					document.getElementById('data-section').style.display = "none"
+					document.getElementById('countdown-section').style.display = "none"
+					document.getElementById('points-section').style.display = "none"
 			  }
 			})
 
@@ -218,7 +246,7 @@
 
 			document.getElementById('submit-data').addEventListener('click', function() {
 				var houses = ['bremners', 'howards', 'jacksons', 'martlands', 'mchughs', 'mowbrays', 'orrs', 'scaddings', 'seatons', 'wedds']
-				var dataValues = houses.map(x => document.getElementById(x).value)
+				var dataValues = houses.map(x => Number(document.getElementById(x).value))
 				var houseData = {}
 				for(i = 0; i < houses.length; i++){
 					houseData[houses[i]] = dataValues[i]
@@ -226,25 +254,61 @@
 			  firebase.database().ref('points').set(houseData);
 				firebase.database().ref('last-updated').set(Date.now());
 			}, false)
+
+			document.getElementById('submit-countdown').addEventListener('click', function() {
+				var countdownTime = Number(document.getElementById('countdown').value)
+			  firebase.database().ref('countdown').set(countdownTime);
+			}, false)
+
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 		<script src="js/graph.js"></script>
 		<script>
+			var countdownTimer;
+
+			function getTimeRemaining(countdownTime){
+				var countdownString = "";
+				var t = countdownTime*1000 - Date.now()
+
+				if (t > 0){
+					var seconds = Math.floor( (t/1000) % 60 );
+					var minutes = Math.floor( (t/1000/60) % 60 );
+					var hours = Math.floor( (t/(1000*60*60)) % 24 );
+					var days = Math.floor( t/(1000*60*60*24) );
+					countdownString = "The winner will be announced in " + days + " Days, " + hours + " Hours, " + minutes + " Minutes, and " + seconds + " Seconds!";
+					return countdownString
+				}
+				else {
+					firebase.database().ref('points').once('value').then(function(snapshot) {
+						var responseData = snapshot.val()
+						winner = Object.keys(responseData).reduce(function(a, b){ return responseData[a] > responseData[b] ? a : b })
+						winnerFormatted = winner.charAt(0).toUpperCase() + winner.substr(1, winner.length - 2) + "'" + "s";
+						countdownString = "This year's winner is " + winnerFormatted + " House with " + responseData[winner] + " points!"
+						return countdownString
+					});
+				}
+			}
+
+			var dbCountdownTime = firebase.database().ref('countdown');
+			dbCountdownTime.on('value', function(snapshot) {
+				var responseData = Number(snapshot.val())
+				clearInterval(countdownTimer)
+				countdownTimer = window.setInterval(function(){
+					document.getElementById('info-block').innerHTML = getTimeRemaining(responseData)
+				}, 1000)
+			})
+
 			var dbPointsData = firebase.database().ref('points');
 			dbPointsData.on('value', function(snapshot) {
 				var responseData = snapshot.val()
-				for (var key in responseData) {
-					if (responseData.hasOwnProperty(key)) {
-						document.getElementById(key).value = responseData[key]
-					}
-				}
 				graph.data.datasets[0].data = Object.values(responseData).map(x => Number(x))
 				graph.update()
 			})
+
 			var dbLastUpdated = firebase.database().ref('last-updated');
 			dbLastUpdated.on('value', function(snapshot) {
 				var responseData = snapshot.val()
-				graph.data.datasets[0].label = "Prefect\'s Cup Points as of " + new Date(responseData).toDateString()
+				graph.data.datasets[0].label = "Prefects\' Cup Points as of " + new Date(responseData).toDateString()
 				graph.update()
 			})
 		</script>
