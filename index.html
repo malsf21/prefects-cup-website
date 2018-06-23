@@ -75,6 +75,7 @@
 		<script src="js/graph.js"></script>
 		<script>
 			var countdownTimer;
+
 			function getTimeRemaining(countdownTime){
 				var countdownString = "";
 				var t = countdownTime*1000 - Date.now()
@@ -97,6 +98,7 @@
 					});
 				}
 			}
+
 			var dbCountdownTime = firebase.database().ref('countdown');
 			dbCountdownTime.on('value', function(snapshot) {
 				var responseData = Number(snapshot.val())
@@ -105,12 +107,14 @@
 					document.getElementById('info-block').innerHTML = getTimeRemaining(responseData)
 				}, 1000)
 			})
+
 			var dbPointsData = firebase.database().ref('points');
 			dbPointsData.on('value', function(snapshot) {
 				var responseData = snapshot.val()
 				graph.data.datasets[0].data = Object.values(responseData).map(x => Number(x))
 				graph.update()
 			})
+
 			var dbLastUpdated = firebase.database().ref('last-updated');
 			dbLastUpdated.on('value', function(snapshot) {
 				var responseData = snapshot.val()

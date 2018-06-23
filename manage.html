@@ -292,6 +292,7 @@
 			var dbCountdownTime = firebase.database().ref('countdown');
 			dbCountdownTime.on('value', function(snapshot) {
 				var responseData = Number(snapshot.val())
+				document.getElementById('countdown').value = responseData
 				clearInterval(countdownTimer)
 				countdownTimer = window.setInterval(function(){
 					document.getElementById('info-block').innerHTML = getTimeRemaining(responseData)
@@ -301,6 +302,11 @@
 			var dbPointsData = firebase.database().ref('points');
 			dbPointsData.on('value', function(snapshot) {
 				var responseData = snapshot.val()
+				for (var key in responseData) {
+					if (responseData.hasOwnProperty(key)) {
+						document.getElementById(key).value = responseData[key]
+					}
+				}
 				graph.data.datasets[0].data = Object.values(responseData).map(x => Number(x))
 				graph.update()
 			})
