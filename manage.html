@@ -269,24 +269,12 @@
 			function getTimeRemaining(countdownTime){
 				var countdownString = "";
 				var t = countdownTime*1000 - Date.now()
-
-				if (t > 0){
-					var seconds = Math.floor( (t/1000) % 60 );
-					var minutes = Math.floor( (t/1000/60) % 60 );
-					var hours = Math.floor( (t/(1000*60*60)) % 24 );
-					var days = Math.floor( t/(1000*60*60*24) );
-					countdownString = "The winner will be announced in " + days + " Days, " + hours + " Hours, " + minutes + " Minutes, and " + seconds + " Seconds!";
-					return countdownString
-				}
-				else {
-					firebase.database().ref('points').once('value').then(function(snapshot) {
-						var responseData = snapshot.val()
-						winner = Object.keys(responseData).reduce(function(a, b){ return responseData[a] > responseData[b] ? a : b })
-						winnerFormatted = winner.charAt(0).toUpperCase() + winner.substr(1, winner.length - 2) + "'" + "s";
-						countdownString = "This year's winner is " + winnerFormatted + " House with " + responseData[winner] + " points!"
-						return countdownString
-					});
-				}
+				var seconds = Math.floor( (t/1000) % 60 );
+				var minutes = Math.floor( (t/1000/60) % 60 );
+				var hours = Math.floor( (t/(1000*60*60)) % 24 );
+				var days = Math.floor( t/(1000*60*60*24) );
+				countdownString = "The winner will be announced in " + days + " Days, " + hours + " Hours, " + minutes + " Minutes, and " + seconds + " Seconds!";
+				return countdownString
 			}
 
 			var dbCountdownTime = firebase.database().ref('countdown');
@@ -294,9 +282,20 @@
 				var responseData = Number(snapshot.val())
 				document.getElementById('countdown').value = responseData
 				clearInterval(countdownTimer)
-				countdownTimer = window.setInterval(function(){
-					document.getElementById('info-block').innerHTML = getTimeRemaining(responseData)
-				}, 1000)
+				if (responseData*1000 - Date.now() > 0){
+					countdownTimer = window.setInterval(function(){
+						document.getElementById('info-block').innerHTML = getTimeRemaining(responseData)
+					}, 1000)
+				}
+				else{
+					firebase.database().ref('points').once('value').then(function(snapshot) {
+						var responseData = snapshot.val()
+						winner = Object.keys(responseData).reduce(function(a, b){ return responseData[a] > responseData[b] ? a : b })
+						winnerFormatted = winner.charAt(0).toUpperCase() + winner.substr(1, winner.length - 2) + "'" + "s";
+						winnerString = "This year's winner is " + winnerFormatted + " House with " + responseData[winner] + " points!"
+						document.getElementById('info-block').innerHTML = winnerString
+					});
+				}
 			})
 
 			var dbPointsData = firebase.database().ref('points');
