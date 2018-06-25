@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="Prefects Cup">
+		<meta name="author" content="Matthew Wang">
+		<title>Prefects Cup</title>
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" defer></script>
+	</head>
+	<body>
+		<!-- BODY CONTENT -->
+		<section class="section has-background-link has-text-white">
+			<div class="container">
+				<h1 class="title has-text-white">
+					<span class="fa fa-trophy has-text-warning animated-trophy"></span>
+					<span class="has-text-weight-bold">The Prefects' Cup</span>
+					<span class="has-text-weight-light" id="year">2018-2019</span>
+				</h1>
+				<h2 class="subtitle has-text-white">
+					Website Management
+				</h2>
+			</div>
+		</section>
+		<section class="section" id="login-section">
+			<div class="container">
+				<div class="field">
+				  <p class="control has-icons-left has-icons-right">
+				    <input class="input" type="email" placeholder="Email" name="email" id="email">
+				    <span class="icon is-small is-left">
+				      <i class="fas fa-envelope"></i>
+				    </span>
+				  </p>
+				</div>
+				<div class="field">
+				  <p class="control has-icons-left">
+				    <input class="input" type="password" placeholder="Password" name="password" id="password">
+				    <span class="icon is-small is-left">
+				      <i class="fas fa-lock"></i>
+				    </span>
+				  </p>
+				</div>
+				<div class="control">
+			    <button class="button is-link" id="login">Login</button>
+			  </div>
+			</div>
+		</section>
+		<section class="section" id="user-section">
+			<div class="container">
+				<h3 class="title">Welcome <span id="user-email"></span>!</h3>
+				<button class="button is-danger" id="logout">Logout</button>
+			</div>
+		</section>
+		<section class="section" id="countdown-section">
+			<div class="container">
+				<h1 class="title has-text-centered">Countdown Time</h1>
+				<div class="card">
+					<div class="card-content">
+						<p id="info-block">000 Days, 00 Hours, 00 Minutes, and 00 Seconds until the winner is announced!</p>
+						<br />
+						<div class="field has-addons">
+						  <div class="control">
+						    <input class="input" type="number" placeholder="Enter Unix Timestamp" name="countdown" id="countdown">
+						  </div>
+						  <div class="control">
+						    <a class="button is-info" href="#" id="submit-countdown">
+						      Set Time
+						    </a>
+						  </div>
+						</div>
+						<p>
+							Get the Unix Timestamp from <a href="https://www.unixtimestamp.com/index.php">this website</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section" id="points-section">
+			<div class="container">
+				<h1 class="title has-text-centered">Points Data</h1>
+				<div class="columns">
+					<div class="column">
+						<div class="card">
+							<canvas id="graph"></canvas>
+						</div>
+					</div>
+					<div class="column">
+						<div class="card">
+							<div class="card-content">
+								<div class="columns">
+									<div class="column">
+										<div class="field">
+										  <label class="label">Bremner's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="bremners" id="bremners">
+										  </div>
+										</div>
+										<div class="field">
+										  <label class="label">Howard's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="howards" id="howards">
+										  </div>
+										</div>
+										<div class="field">
+										  <label class="label">Jackson's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="jacksons" id="jacksons">
+										  </div>
+										</div>
+										<div class="field">
+										  <label class="label">Martlands's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="martlands" id="martlands">
+										  </div>
+										</div>
+										<div class="field">
+										  <label class="label">McHugh's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="mchughs" id="mchughs">
+										  </div>
+										</div>
+									</div>
+									<div class="column">
+										<div class="field">
+										  <label class="label">Mowbray's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="mowbrays" id="mowbrays">
+										  </div>
+										</div>
+										<div class="field">
+										  <label class="label">Orr's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="orrs" id="orrs">
+										  </div>
+										</div>
+										<div class="field">
+										  <label class="label">Scadding's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="scaddings" id="scaddings">
+										  </div>
+										</div>
+										<div class="field">
+										  <label class="label">Seaton's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="seatons" id="seatons">
+										  </div>
+										</div>
+										<div class="field">
+										  <label class="label">Wedd's</label>
+										  <div class="control">
+										    <input class="input" type="number" placeholder="123" name="wedds" id="wedds">
+										  </div>
+										</div>
+									</div>
+								</div>
+								<button class="button is-success" id="submit-data">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p>
+					<strong>The Prefects' Cup Website</strong>
+				</p>
+				<p>
+					<a href="index.html">Home</a> | <a href="manage.html">Manage</a>
+				</p>
+				<p>
+					<span class="text-muted">Made by Matthew Wang with <span class="fa fa-heart has-text-danger animated-heartbeat"></span> and <a href="http://github.com/malsf21/prefects-cup-website"><span class="fab fa-github has-text-black"></span></a></span>
+				</p>
+				<p>
+					(and <a href="https://bulma.io">Bulma</a>, <a href="https://www.chartjs.org">Chart.js</a>, <a href="https://firebase.google.com">Firebase</a> and <a href="https://fontawesome.com">Font Awesome</a>)
+				</p>
+				<p>
+					Points updated by Evan Williams
+				</p>
+		  </div>
+		</footer>
+		<!-- JAVASCRIPT; loaded last to load page quicker -->
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+		<script>
+			document.getElementById('login-section').style.display = "block"
+			document.getElementById('user-section').style.display = "none"
+			document.getElementById('countdown-section').style.display = "none"
+			document.getElementById('points-section').style.display = "none"
+
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyB7movfLtHxREJjB2lNIFrY9LQR_0EUly8",
+		    authDomain: "prefects-cup-website.firebaseapp.com",
+		    databaseURL: "https://prefects-cup-website.firebaseio.com",
+		    projectId: "prefects-cup-website",
+		    storageBucket: "prefects-cup-website.appspot.com",
+		    messagingSenderId: "21735143583"
+		  }
+		  firebase.initializeApp(config);
+
+			firebase.auth().onAuthStateChanged(function(user) {
+			  if (user) {
+					document.getElementById('login-section').style.display = "none"
+					document.getElementById('user-section').style.display = "block"
+					document.getElementById('countdown-section').style.display = "block"
+					document.getElementById('points-section').style.display = "block"
+					document.getElementById('user-email').innerHTML = user.email
+			  } else {
+					document.getElementById('login-section').style.display = "block"
+					document.getElementById('user-section').style.display = "none"
+					document.getElementById('countdown-section').style.display = "none"
+					document.getElementById('points-section').style.display = "none"
+			  }
+			})
+
+			document.getElementById('login').addEventListener('click', function() {
+				document.getElementById('login').disabled = true
+				var email = document.getElementById('email').value
+				var password = document.getElementById('password').value
+				firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+					if (error.code == 'auth/weak-password') {
+          	alert('The password is too weak.')
+	        } else {
+	          alert(error.message)
+	        }
+	        console.log(error)
+				})
+			}, false)
+
+			document.getElementById('logout').addEventListener('click', function() {
+				firebase.auth().signOut().then(function() {
+				  console.log('Signed Out');
+				}, function(error) {
+				  console.error('Sign Out Error', error);
+				});
+			}, false)
+
+			document.getElementById('submit-data').addEventListener('click', function() {
+				var houses = ['bremners', 'howards', 'jacksons', 'martlands', 'mchughs', 'mowbrays', 'orrs', 'scaddings', 'seatons', 'wedds']
+				var dataValues = houses.map(x => Number(document.getElementById(x).value))
+				var houseData = {}
+				for(i = 0; i < houses.length; i++){
+					houseData[houses[i]] = dataValues[i]
+				}
+			  firebase.database().ref('points').set(houseData);
+				firebase.database().ref('last-updated').set(Date.now());
+			}, false)
+
+			document.getElementById('submit-countdown').addEventListener('click', function() {
+				var countdownTime = Number(document.getElementById('countdown').value)
+			  firebase.database().ref('countdown').set(countdownTime);
+			}, false)
+
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+		<script src="js/graph.js"></script>
+		<script>
+			var countdownTimer;
+
+			function getTimeRemaining(countdownTime){
+				var countdownString = "";
+				var t = countdownTime*1000 - Date.now()
+				var seconds = Math.floor( (t/1000) % 60 );
+				var minutes = Math.floor( (t/1000/60) % 60 );
+				var hours = Math.floor( (t/(1000*60*60)) % 24 );
+				var days = Math.floor( t/(1000*60*60*24) );
+				countdownString = "The winner will be announced in " + days + " Days, " + hours + " Hours, " + minutes + " Minutes, and " + seconds + " Seconds!";
+				return countdownString
+			}
+
+			var dbCountdownTime = firebase.database().ref('countdown');
+			dbCountdownTime.on('value', function(snapshot) {
+				var responseData = Number(snapshot.val())
+				document.getElementById('countdown').value = responseData
+				clearInterval(countdownTimer)
+				if (responseData*1000 - Date.now() > 0){
+					countdownTimer = window.setInterval(function(){
+						document.getElementById('info-block').innerHTML = getTimeRemaining(responseData)
+					}, 1000)
+				}
+				else{
+					firebase.database().ref('points').once('value').then(function(snapshot) {
+						var responseData = snapshot.val()
+						winner = Object.keys(responseData).reduce(function(a, b){ return responseData[a] > responseData[b] ? a : b })
+						winnerFormatted = winner.charAt(0).toUpperCase() + winner.substr(1, winner.length - 2) + "'" + "s";
+						winnerString = "This year's winner is " + winnerFormatted + " House with " + responseData[winner] + " points!"
+						document.getElementById('info-block').innerHTML = winnerString
+					});
+				}
+			})
+
+			var dbPointsData = firebase.database().ref('points');
+			dbPointsData.on('value', function(snapshot) {
+				var responseData = snapshot.val()
+				for (var key in responseData) {
+					if (responseData.hasOwnProperty(key)) {
+						document.getElementById(key).value = responseData[key]
+					}
+				}
+				graph.data.datasets[0].data = Object.values(responseData).map(x => Number(x))
+				graph.update()
+			})
+
+			var dbLastUpdated = firebase.database().ref('last-updated');
+			dbLastUpdated.on('value', function(snapshot) {
+				var responseData = snapshot.val()
+				graph.data.datasets[0].label = "Prefects\' Cup Points as of " + new Date(responseData).toDateString()
+				graph.update()
+			})
+
+			var yearstring = "";
+			var d = new Date();
+			var year = d.getFullYear();
+
+			if (d.getMonth() >= 6){
+				yearstring = year + "-" + (year+1)
+			}
+			else{
+				yearstring = year-1 + "-" + year
+			}
+
+			document.getElementById('year').innerHTML = yearstring;
+		</script>
+	</body>
+</html>
