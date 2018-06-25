@@ -22,7 +22,7 @@
 				<h1 class="title has-text-white">
 					<span class="fa fa-trophy has-text-warning animated-trophy"></span>
 					<span class="has-text-weight-bold">The Prefects' Cup</span>
-					<span class="has-text-weight-light">2018-2019</span>
+					<span class="has-text-weight-light" id="year">2018-2019</span>
 				</h1>
 				<h2 class="subtitle has-text-white">
 					<p id="info-block">000 Days, 00 Hours, 00 Minutes, and 00 Seconds until the winner is announced!</p>
@@ -120,6 +120,20 @@
 				graph.data.datasets[0].label = "Prefects\' Cup Points as of " + new Date(responseData).toDateString()
 				graph.update()
 			})
+
+			var yearstring = "";
+			var d = new Date();
+			var year = d.getFullYear();
+
+			if (d.getMonth() >= 6){
+				yearstring = year + "-" + (year+1)
+			}
+			else{
+				yearstring = year-1 + "-" + year
+			}
+
+			document.getElementById('year').innerHTML = yearstring;
+			
 		</script>
 	</body>
 </html>
