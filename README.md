@@ -1,7 +1,7 @@
-# [Prefects' Cup Website](https://pc.ucc.on.ca)
+# Prefects' Cup Website
 
 ## About
-Hey, Matthew Wang here. This repository contains everything involved in the [Prefects' Cup website](https://pc.ucc.on.ca). The website itself is pretty simple - it features a public-facing graph and countdown, as well as a small admin page to manage the points system. The entire website is client-side, and uses [Firebase](http://firebase.google.com/) as its backend. This design is intentional - it means that the website can be hosted on GitHub Pages or some equivalent service.
+Hey, Matthew Wang here. This repository contains everything involved in the Prefects' Cup website. The website itself is pretty simple - it features a public-facing graph and countdown, as well as a small admin page to manage the points system. The entire website is client-side, and uses [Firebase](http://firebase.google.com/) as its backend. This design is intentional - it means that the website can be hosted on GitHub Pages or some equivalent service.
 
 Previously, there have been iterations of this website made with PHP and mySQL - you can check those out by looking at the different branches and releases.
 
@@ -9,7 +9,7 @@ The Prefects' Cup is an annual competition between houses held at Upper Canada C
 
 ## Setup
 
-Running your own copy of this website is dead simple - all you need to do is configure [Firebase](http://firebase.google.com/). Sign up for an account on Firebase, find your web config, and replace the config in `index.html` and `manage.html` with the correct information for your own Firebase project. You're looking for a code block that looks like this:
+Running your own copy of this website is pretty simple - all you need to do is configure [Firebase](http://firebase.google.com/). Sign up for an account on Firebase, find your web config, and replace the config in `index.html` and `manage.html` with the correct information for your own Firebase project. You're looking for a code block that looks like this:
 
 ```javascript
 var config = {
@@ -23,7 +23,7 @@ var config = {
 firebase.initializeApp(config);
 ```
 
-Then, you should configure your database rules (so that read and write operations are controlled). For a "controlled" login system, you should set write-only to be a set of UIDs that are managed in the Firebase backend.
+Then, you should configure your database rules (so that read and write operations are controlled). While it's totally fine for the app to have global read permissions, I suggest that you restrict write access. For a "controlled" login system, you should set write-only to be a set of UIDs that are managed in the Firebase backend - only those UIDs will be able to write to the database.
 
 ```json
 
@@ -36,7 +36,7 @@ Then, you should configure your database rules (so that read and write operation
 
 ```
 
-And then in your database,
+And then in your database, create an object called `allowedUids` that contains each valid UID as a key. You can create users from the authentication view in Firebase, and find their UID once created.
 
 ```json
 {
