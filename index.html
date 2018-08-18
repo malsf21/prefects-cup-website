@@ -87,7 +87,7 @@
 				return countdownString
 			}
 
-			var dbCountdownTime = firebase.database().ref('countdown');
+			var dbCountdownTime = firebase.database().ref('public/countdown');
 			dbCountdownTime.on('value', function(snapshot) {
 				var responseData = Number(snapshot.val())
 				clearInterval(countdownTimer)
@@ -97,7 +97,7 @@
 					}, 1000)
 				}
 				else{
-					firebase.database().ref('points').once('value').then(function(snapshot) {
+					firebase.database().ref('public/points').once('value').then(function(snapshot) {
 						var responseData = snapshot.val()
 						winner = Object.keys(responseData).reduce(function(a, b){ return responseData[a] > responseData[b] ? a : b })
 						winnerFormatted = winner.charAt(0).toUpperCase() + winner.substr(1, winner.length - 2) + "'" + "s";
@@ -107,14 +107,14 @@
 				}
 			})
 
-			var dbPointsData = firebase.database().ref('points');
+			var dbPointsData = firebase.database().ref('public/points');
 			dbPointsData.on('value', function(snapshot) {
 				var responseData = snapshot.val()
 				graph.data.datasets[0].data = Object.values(responseData).map(x => Number(x))
 				graph.update()
 			})
 
-			var dbLastUpdated = firebase.database().ref('last-updated');
+			var dbLastUpdated = firebase.database().ref('public/last-updated');
 			dbLastUpdated.on('value', function(snapshot) {
 				var responseData = snapshot.val()
 				graph.data.datasets[0].label = "Prefects\' Cup Points as of " + new Date(responseData).toDateString()
