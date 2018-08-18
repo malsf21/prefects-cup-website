@@ -28,14 +28,14 @@ Then, you should configure your database rules (so that read and write operation
 ```json
 
 {
-  "rules": {
-    ".read": false,
-    ".write": false,
-    "public":{
+	"rules": {
+		".read": false,
+		".write": false,
+		"public":{
 			".read": true,
-      ".write": "root.child('allowedUids').child(auth.uid).exists()",
+			".write": "root.child('allowedUids').child(auth.uid).exists()",
 		}
-  }
+	}
 }
 
 ```
