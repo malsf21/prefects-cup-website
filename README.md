@@ -23,15 +23,19 @@ var config = {
 firebase.initializeApp(config);
 ```
 
-Then, you should configure your database rules (so that read and write operations are controlled). While it's totally fine for the app to have global read permissions, I suggest that you restrict write access. For a "controlled" login system, you should set write-only to be a set of UIDs that are managed in the Firebase backend - only those UIDs will be able to write to the database.
+Then, you should configure your database rules (so that read and write operations are controlled). We'll set the default read/write operations to be false, and only specify that information in the "public" object is readable by the public. Then, we only allow a set of UIDs that are managed in the Firebase backend to write data to the public object - these are UIDs that you'll whitelist.
 
 ```json
 
 {
   "rules": {
-        ".read": true,
-        ".write": "root.child('allowedUids').child(auth.uid).exists()",
-      }
+    ".read": false,
+    ".write": false,
+    "public":{
+			".read": true,
+      ".write": "root.child('allowedUids').child(auth.uid).exists()",
+		}
+  }
 }
 
 ```
