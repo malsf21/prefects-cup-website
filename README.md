@@ -1,4 +1,6 @@
 # Prefects' Cup Website
+[![GitHub Release](https://img.shields.io/github/release/malsf21/prefects-cup-website.svg)](https://github.com/malsf21/liteweight/releases)
+[![Website Up Status](https://img.shields.io/website-up-down-green-red/https/pc.ucc.on.ca.svg?label=pc.ucc.on.ca)](https://pc.ucc.on.ca)
 
 ## About
 Hey, Matthew Wang here. This repository contains everything involved in the Prefects' Cup website. The website itself is pretty simple - it features a public-facing graph and countdown, as well as a small admin page to manage the points system. The entire website is client-side, and uses [Firebase](http://firebase.google.com/) as its backend. This design is intentional - it means that the website can be hosted on GitHub Pages or some equivalent service.
