@@ -281,7 +281,7 @@
 			var dbCountdownTime = firebase.database().ref('public/countdown');
 			dbCountdownTime.on('value', function(snapshot) {
 				var responseData = Number(snapshot.val())
-				document.getElementById('countdown').value = responseData
+				document.getElementById('countdown').value = responseData/1000
 				clearInterval(countdownTimer)
 				if (responseData - Date.now() > 0){
 					countdownTimer = window.setInterval(function(){
