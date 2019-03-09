@@ -99,7 +99,8 @@
 					}, 1000)
 				}
 				else{
-					firebase.database().ref('public/points').once('value').then(function(snapshot) {
+					var dbPointsData = firebase.database().ref('public/points');
+					dbPointsData.on('value', function(snapshot) {
 						var responseData = snapshot.val()
 						winner = Object.keys(responseData).reduce(function(a, b){ return responseData[a] > responseData[b] ? a : b })
 						winnerFormatted = winner.charAt(0).toUpperCase() + winner.substr(1, winner.length - 2) + "'" + "s";
